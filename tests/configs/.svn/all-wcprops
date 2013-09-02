@@ -1,0 +1,227 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs
+END
+simple-timing.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/simple-timing.py
+END
+realview-simple-atomic.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/realview-simple-atomic.py
+END
+tsunami-simple-timing-dual.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/tsunami-simple-timing-dual.py
+END
+o3-timing-mp.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/o3-timing-mp.py
+END
+realview-o3-dual.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/realview-o3-dual.py
+END
+tsunami-inorder.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/tsunami-inorder.py
+END
+simple-atomic-dummychecker.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/simple-atomic-dummychecker.py
+END
+inorder-timing.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/inorder-timing.py
+END
+simple-timing-mp.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/simple-timing-mp.py
+END
+simple-atomic-mp-ruby.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/simple-atomic-mp-ruby.py
+END
+tsunami-simple-timing.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/tsunami-simple-timing.py
+END
+memtest-ruby.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/memtest-ruby.py
+END
+pc-simple-timing-ruby.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/pc-simple-timing-ruby.py
+END
+tsunami-o3.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/tsunami-o3.py
+END
+realview-o3-checker.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/realview-o3-checker.py
+END
+realview-simple-atomic-dual.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/realview-simple-atomic-dual.py
+END
+simple-atomic.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/simple-atomic.py
+END
+pc-o3-timing.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/pc-o3-timing.py
+END
+o3-timing-checker.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/o3-timing-checker.py
+END
+realview-simple-timing-dual.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/realview-simple-timing-dual.py
+END
+memtest.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/memtest.py
+END
+pc-simple-timing.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/pc-simple-timing.py
+END
+tsunami-simple-atomic.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/tsunami-simple-atomic.py
+END
+tsunami-o3-dual.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/tsunami-o3-dual.py
+END
+o3-timing-ruby.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/o3-timing-ruby.py
+END
+twosys-tsunami-simple-atomic.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/twosys-tsunami-simple-atomic.py
+END
+realview-simple-timing.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/realview-simple-timing.py
+END
+simple-timing-ruby.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/simple-timing-ruby.py
+END
+realview-o3.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/realview-o3.py
+END
+o3-timing-mp-ruby.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/o3-timing-mp-ruby.py
+END
+rubytest-ruby.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/rubytest-ruby.py
+END
+pc-simple-atomic.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/pc-simple-atomic.py
+END
+tsunami-simple-atomic-dual.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/tsunami-simple-atomic-dual.py
+END
+t1000-simple-atomic.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/t1000-simple-atomic.py
+END
+o3-timing.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/o3-timing.py
+END
+simple-timing-mp-ruby.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/simple-timing-mp-ruby.py
+END
+simple-atomic-mp.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/configs/simple-atomic-mp.py
+END

@@ -1,0 +1,281 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc
+END
+locked_mem.hh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/locked_mem.hh
+END
+isa.cc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/isa.cc
+END
+asi.cc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/asi.cc
+END
+utility.hh
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/utility.hh
+END
+types.hh
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/types.hh
+END
+nativetrace.hh
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/nativetrace.hh
+END
+registers.hh
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/registers.hh
+END
+remote_gdb.hh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/remote_gdb.hh
+END
+tlb.cc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/tlb.cc
+END
+miscregs.hh
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/miscregs.hh
+END
+vtophys.hh
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/vtophys.hh
+END
+process.hh
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/process.hh
+END
+interrupts.hh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/interrupts.hh
+END
+mt.hh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/mt.hh
+END
+microcode_rom.hh
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/microcode_rom.hh
+END
+pagetable.hh
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/pagetable.hh
+END
+faults.cc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/faults.cc
+END
+system.hh
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/system.hh
+END
+SparcNativeTrace.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/SparcNativeTrace.py
+END
+SConscript
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/SConscript
+END
+utility.cc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/utility.cc
+END
+nativetrace.cc
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/nativetrace.cc
+END
+mmapped_ipr.hh
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/mmapped_ipr.hh
+END
+SConsopts
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/SConsopts
+END
+remote_gdb.cc
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/remote_gdb.cc
+END
+sparc_traits.hh
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/sparc_traits.hh
+END
+handlers.hh
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/handlers.hh
+END
+SparcInterrupts.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/SparcInterrupts.py
+END
+isa_traits.hh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/isa_traits.hh
+END
+ua2005.cc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/ua2005.cc
+END
+vtophys.cc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/vtophys.cc
+END
+SparcTLB.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/SparcTLB.py
+END
+process.cc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/process.cc
+END
+decoder.hh
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/decoder.hh
+END
+interrupts.cc
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/interrupts.cc
+END
+SparcSystem.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/SparcSystem.py
+END
+pagetable.cc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/pagetable.cc
+END
+system.cc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/system.cc
+END
+isa.hh
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/isa.hh
+END
+asi.hh
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/asi.hh
+END
+tlb_map.hh
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/tlb_map.hh
+END
+tlb.hh
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/tlb.hh
+END
+stacktrace.hh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/stacktrace.hh
+END
+decoder.cc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/decoder.cc
+END
+kernel_stats.hh
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/kernel_stats.hh
+END
+faults.hh
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/faults.hh
+END

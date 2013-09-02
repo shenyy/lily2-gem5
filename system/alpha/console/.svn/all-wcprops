@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/system/alpha/console
+END
+console.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/system/alpha/console/console.c
+END
+printf.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/system/alpha/console/printf.c
+END
+dbmentry.S
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/system/alpha/console/dbmentry.S
+END
+paljtoslave.S
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/system/alpha/console/paljtoslave.S
+END
+paljtokern.S
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/system/alpha/console/paljtokern.S
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/system/alpha/console/Makefile
+END

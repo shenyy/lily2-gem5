@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/lily2-gem5/!svn/ver/2/gem5-stable-f75ee4849c40/src/arch/lily2/bare_iron
+END
+system.hh
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/lily2-gem5/!svn/ver/2/gem5-stable-f75ee4849c40/src/arch/lily2/bare_iron/system.hh
+END
+system.cc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/lily2-gem5/!svn/ver/2/gem5-stable-f75ee4849c40/src/arch/lily2/bare_iron/system.cc
+END

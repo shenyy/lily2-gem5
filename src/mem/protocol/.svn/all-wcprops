@@ -1,0 +1,257 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol
+END
+Network_test-dir.sm
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/Network_test-dir.sm
+END
+MOESI_hammer-dma.sm
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/MOESI_hammer-dma.sm
+END
+MOESI_hammer-cache.sm
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/MOESI_hammer-cache.sm
+END
+Network_test.slicc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/Network_test.slicc
+END
+MOESI_CMP_token-L1cache.sm
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/MOESI_CMP_token-L1cache.sm
+END
+MOESI_CMP_token-dma.sm
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/MOESI_CMP_token-dma.sm
+END
+MOESI_CMP_token-L2cache.sm
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/MOESI_CMP_token-L2cache.sm
+END
+Network_test-msg.sm
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/Network_test-msg.sm
+END
+MOESI_CMP_directory.slicc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/MOESI_CMP_directory.slicc
+END
+SConsopts
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/SConsopts
+END
+MOESI_hammer.slicc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/MOESI_hammer.slicc
+END
+Network_test-cache.sm
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/Network_test-cache.sm
+END
+MOESI_CMP_token.slicc
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/MOESI_CMP_token.slicc
+END
+RubySlicc_Defines.sm
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/RubySlicc_Defines.sm
+END
+MESI_CMP_directory-dir.sm
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/MESI_CMP_directory-dir.sm
+END
+MI_example-dir.sm
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/MI_example-dir.sm
+END
+RubySlicc_Util.sm
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/RubySlicc_Util.sm
+END
+MESI_CMP_directory.slicc
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/MESI_CMP_directory.slicc
+END
+MI_example.slicc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/MI_example.slicc
+END
+MESI_CMP_directory-msg.sm
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/MESI_CMP_directory-msg.sm
+END
+MI_example-msg.sm
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/MI_example-msg.sm
+END
+SConscript
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/SConscript
+END
+MOESI_CMP_directory-dir.sm
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/MOESI_CMP_directory-dir.sm
+END
+MESI_CMP_directory-L1cache.sm
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/MESI_CMP_directory-L1cache.sm
+END
+MESI_CMP_directory-L2cache.sm
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/MESI_CMP_directory-L2cache.sm
+END
+MESI_CMP_directory-dma.sm
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/MESI_CMP_directory-dma.sm
+END
+MI_example-dma.sm
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/MI_example-dma.sm
+END
+RubySlicc_interfaces.slicc
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/RubySlicc_interfaces.slicc
+END
+MOESI_hammer-dir.sm
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/MOESI_hammer-dir.sm
+END
+MI_example-cache.sm
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/MI_example-cache.sm
+END
+RubySlicc_Types.sm
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/RubySlicc_Types.sm
+END
+MOESI_CMP_directory-msg.sm
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/MOESI_CMP_directory-msg.sm
+END
+RubySlicc_Exports.sm
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/RubySlicc_Exports.sm
+END
+MOESI_CMP_token-dir.sm
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/MOESI_CMP_token-dir.sm
+END
+MOESI_hammer-msg.sm
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/MOESI_hammer-msg.sm
+END
+RubySlicc_ComponentMapping.sm
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/RubySlicc_ComponentMapping.sm
+END
+MOESI_CMP_directory-L1cache.sm
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/MOESI_CMP_directory-L1cache.sm
+END
+RubySlicc_MemControl.sm
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/RubySlicc_MemControl.sm
+END
+MOESI_CMP_directory-L2cache.sm
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/MOESI_CMP_directory-L2cache.sm
+END
+MOESI_CMP_directory-dma.sm
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/MOESI_CMP_directory-dma.sm
+END
+MOESI_CMP_token-msg.sm
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/MOESI_CMP_token-msg.sm
+END
+RubySlicc_Profiler.sm
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/protocol/RubySlicc_Profiler.sm
+END

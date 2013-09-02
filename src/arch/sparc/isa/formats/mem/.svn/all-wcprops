@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/isa/formats/mem
+END
+basicmem.isa
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/isa/formats/mem/basicmem.isa
+END
+blockmem.isa
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/isa/formats/mem/blockmem.isa
+END
+swap.isa
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/isa/formats/mem/swap.isa
+END
+util.isa
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/isa/formats/mem/util.isa
+END
+mem.isa
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/isa/formats/mem/mem.isa
+END

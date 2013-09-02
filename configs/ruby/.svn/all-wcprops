@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/configs/ruby
+END
+MOESI_CMP_directory.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/configs/ruby/MOESI_CMP_directory.py
+END
+MESI_CMP_directory.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/configs/ruby/MESI_CMP_directory.py
+END
+MI_example.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/configs/ruby/MI_example.py
+END
+Ruby.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/configs/ruby/Ruby.py
+END
+MOESI_hammer.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/configs/ruby/MOESI_hammer.py
+END
+Network_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/configs/ruby/Network_test.py
+END
+MOESI_CMP_token.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/configs/ruby/MOESI_CMP_token.py
+END

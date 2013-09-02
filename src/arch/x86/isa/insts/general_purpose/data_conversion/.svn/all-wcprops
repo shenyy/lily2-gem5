@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/general_purpose/data_conversion
+END
+extract_sign_mask.py
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/general_purpose/data_conversion/extract_sign_mask.py
+END
+sign_extension.py
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/general_purpose/data_conversion/sign_extension.py
+END
+translate.py
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/general_purpose/data_conversion/translate.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/general_purpose/data_conversion/__init__.py
+END
+ascii_adjust.py
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/general_purpose/data_conversion/ascii_adjust.py
+END
+bcd_adjust.py
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/general_purpose/data_conversion/bcd_adjust.py
+END
+endian_conversion.py
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/general_purpose/data_conversion/endian_conversion.py
+END

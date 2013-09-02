@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/general_purpose/rotate_and_shift
+END
+shift.py
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/general_purpose/rotate_and_shift/shift.py
+END
+rotate.py
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/general_purpose/rotate_and_shift/rotate.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/general_purpose/rotate_and_shift/__init__.py
+END

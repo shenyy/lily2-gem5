@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/load_constants
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/load_constants/__init__.py
+END
+load_logarithm.py
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/load_constants/load_logarithm.py
+END
+load_0_1_or_pi.py
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/load_constants/load_0_1_or_pi.py
+END

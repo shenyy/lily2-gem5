@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/kern
+END
+operatingsystem.cc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/kern/operatingsystem.cc
+END
+kernel_stats.cc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/kern/kernel_stats.cc
+END
+system_events.hh
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/kern/system_events.hh
+END
+SConscript
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/kern/SConscript
+END
+operatingsystem.hh
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/kern/operatingsystem.hh
+END
+kernel_stats.hh
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/kern/kernel_stats.hh
+END
+system_events.cc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/kern/system_events.cc
+END

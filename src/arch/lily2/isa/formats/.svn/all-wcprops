@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/lily2-gem5/!svn/ver/2/gem5-stable-f75ee4849c40/src/arch/lily2/isa/formats
+END
+unknown.isa
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/lily2-gem5/!svn/ver/2/gem5-stable-f75ee4849c40/src/arch/lily2/isa/formats/unknown.isa
+END
+fp.isa
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/lily2-gem5/!svn/ver/2/gem5-stable-f75ee4849c40/src/arch/lily2/isa/formats/fp.isa
+END
+trap.isa
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/lily2-gem5/!svn/ver/2/gem5-stable-f75ee4849c40/src/arch/lily2/isa/formats/trap.isa
+END
+noop.isa
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/lily2-gem5/!svn/ver/2/gem5-stable-f75ee4849c40/src/arch/lily2/isa/formats/noop.isa
+END
+formats.isa
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/lily2-gem5/!svn/ver/2/gem5-stable-f75ee4849c40/src/arch/lily2/isa/formats/formats.isa
+END
+util.isa
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/lily2-gem5/!svn/ver/2/gem5-stable-f75ee4849c40/src/arch/lily2/isa/formats/util.isa
+END
+mem.isa
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/lily2-gem5/!svn/ver/2/gem5-stable-f75ee4849c40/src/arch/lily2/isa/formats/mem.isa
+END
+tlbop.isa
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lily2-gem5/!svn/ver/2/gem5-stable-f75ee4849c40/src/arch/lily2/isa/formats/tlbop.isa
+END
+mt.isa
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/lily2-gem5/!svn/ver/2/gem5-stable-f75ee4849c40/src/arch/lily2/isa/formats/mt.isa
+END
+control.isa
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/lily2-gem5/!svn/ver/2/gem5-stable-f75ee4849c40/src/arch/lily2/isa/formats/control.isa
+END
+basic.isa
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lily2-gem5/!svn/ver/2/gem5-stable-f75ee4849c40/src/arch/lily2/isa/formats/basic.isa
+END
+dsp.isa
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/lily2-gem5/!svn/ver/2/gem5-stable-f75ee4849c40/src/arch/lily2/isa/formats/dsp.isa
+END
+unimp.isa
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lily2-gem5/!svn/ver/2/gem5-stable-f75ee4849c40/src/arch/lily2/isa/formats/unimp.isa
+END
+int.isa
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/lily2-gem5/!svn/ver/2/gem5-stable-f75ee4849c40/src/arch/lily2/isa/formats/int.isa
+END
+branch.isa
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/lily2-gem5/!svn/ver/2/gem5-stable-f75ee4849c40/src/arch/lily2/isa/formats/branch.isa
+END

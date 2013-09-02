@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/util/statetrace/arch/i686
+END
+tracechild.hh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/util/statetrace/arch/i686/tracechild.hh
+END
+tracechild.cc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/util/statetrace/arch/i686/tracechild.cc
+END

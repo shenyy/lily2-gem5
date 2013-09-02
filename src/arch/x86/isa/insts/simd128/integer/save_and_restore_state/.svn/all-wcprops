@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/simd128/integer/save_and_restore_state
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/simd128/integer/save_and_restore_state/__init__.py
+END
+save_and_restore_state.py
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/simd128/integer/save_and_restore_state/save_and_restore_state.py
+END
+save_and_restore_control_and_status.py
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/simd128/integer/save_and_restore_state/save_and_restore_control_and_status.py
+END

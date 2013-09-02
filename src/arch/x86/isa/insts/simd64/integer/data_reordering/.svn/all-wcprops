@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/simd64/integer/data_reordering
+END
+shuffle_and_swap.py
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/simd64/integer/data_reordering/shuffle_and_swap.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/simd64/integer/data_reordering/__init__.py
+END
+extract_and_insert.py
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/simd64/integer/data_reordering/extract_and_insert.py
+END
+unpack_and_interleave.py
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/simd64/integer/data_reordering/unpack_and_interleave.py
+END
+pack_with_saturation.py
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/simd64/integer/data_reordering/pack_with_saturation.py
+END

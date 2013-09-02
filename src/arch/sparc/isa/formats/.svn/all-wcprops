@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/isa/formats
+END
+trap.isa
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/isa/formats/trap.isa
+END
+unimp.isa
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/isa/formats/unimp.isa
+END
+micro.isa
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/isa/formats/micro.isa
+END
+formats.isa
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/isa/formats/formats.isa
+END
+integerop.isa
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/isa/formats/integerop.isa
+END
+nop.isa
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/isa/formats/nop.isa
+END
+branch.isa
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/isa/formats/branch.isa
+END
+unknown.isa
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/isa/formats/unknown.isa
+END
+priv.isa
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/isa/formats/priv.isa
+END
+basic.isa
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/sparc/isa/formats/basic.isa
+END

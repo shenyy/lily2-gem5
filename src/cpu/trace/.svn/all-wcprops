@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/trace
+END
+opt_cpu.cc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/trace/opt_cpu.cc
+END
+trace_cpu.hh
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/trace/trace_cpu.hh
+END
+SConscript
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/trace/SConscript
+END
+opt_cpu.hh
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/trace/opt_cpu.hh
+END
+trace_cpu.cc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/trace/trace_cpu.cc
+END

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/bios
+END
+E820.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/bios/E820.py
+END
+intelmp.hh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/bios/intelmp.hh
+END
+SConscript
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/bios/SConscript
+END
+acpi.hh
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/bios/acpi.hh
+END
+smbios.hh
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/bios/smbios.hh
+END
+e820.hh
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/bios/e820.hh
+END
+intelmp.cc
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/bios/intelmp.cc
+END
+IntelMP.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/bios/IntelMP.py
+END
+acpi.cc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/bios/acpi.cc
+END
+smbios.cc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/bios/smbios.cc
+END
+e820.cc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/bios/e820.cc
+END
+ACPI.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/bios/ACPI.py
+END
+SMBios.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/bios/SMBios.py
+END

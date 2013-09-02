@@ -1,0 +1,44 @@
+build/LILY2/cpu/risc/isa/categories/fp.cc:2728:8: error: macro names must be identifiers
+build/LILY2/cpu/risc/isa/categories/fp.cc: In member function 'virtual void LILY2_NS::MPYADD_SP_M::execute(RiscCPU*) const':
+build/LILY2/cpu/risc/isa/categories/fp.cc:1330:18: error: 'class RiscCPU' has no member named 'read_dst_sp_operand'
+build/LILY2/cpu/risc/isa/categories/fp.cc: In member function 'virtual void LILY2_NS::MPYADD_DP_M::execute(RiscCPU*) const':
+build/LILY2/cpu/risc/isa/categories/fp.cc:1403:18: error: 'class RiscCPU' has no member named 'read_dst_dp_operand'
+build/LILY2/cpu/risc/isa/categories/fp.cc: In constructor 'LILY2_NS::NMPYADD_SP_M::NMPYADD_SP_M(LILY2_NS::ExtMachInst)':
+build/LILY2/cpu/risc/isa/categories/fp.cc:1466:24: error: 'RD_M' was not declared in this scope
+build/LILY2/cpu/risc/isa/categories/fp.cc: In member function 'virtual void LILY2_NS::NMPYADD_SP_M::execute(RiscCPU*) const':
+build/LILY2/cpu/risc/isa/categories/fp.cc:1476:18: error: 'class RiscCPU' has no member named 'read_dst_sp_operand'
+build/LILY2/cpu/risc/isa/categories/fp.cc: In member function 'virtual void LILY2_NS::NMPYADD_DP_M::execute(RiscCPU*) const':
+build/LILY2/cpu/risc/isa/categories/fp.cc:1549:18: error: 'class RiscCPU' has no member named 'read_dst_dp_operand'
+build/LILY2/cpu/risc/isa/categories/fp.cc: In member function 'virtual void LILY2_NS::MPYSUB_SP_M::execute(RiscCPU*) const':
+build/LILY2/cpu/risc/isa/categories/fp.cc:1622:18: error: 'class RiscCPU' has no member named 'read_dst_sp_operand'
+build/LILY2/cpu/risc/isa/categories/fp.cc: In member function 'virtual void LILY2_NS::MPYSUB_DP_M::execute(RiscCPU*) const':
+build/LILY2/cpu/risc/isa/categories/fp.cc:1695:18: error: 'class RiscCPU' has no member named 'read_dst_dp_operand'
+build/LILY2/cpu/risc/isa/categories/fp.cc: In member function 'virtual void LILY2_NS::NMPYSUB_SP_M::execute(RiscCPU*) const':
+build/LILY2/cpu/risc/isa/categories/fp.cc:1767:18: error: 'class RiscCPU' has no member named 'read_dst_sp_operand'
+build/LILY2/cpu/risc/isa/categories/fp.cc: In member function 'virtual void LILY2_NS::NMPYSUB_DP_M::execute(RiscCPU*) const':
+build/LILY2/cpu/risc/isa/categories/fp.cc:1839:18: error: 'class RiscCPU' has no member named 'read_dst_dp_operand'
+build/LILY2/cpu/risc/isa/categories/fp.cc: At global scope:
+build/LILY2/cpu/risc/isa/categories/fp.cc:2697:1: error: redefinition of 'std::string LILY2_NS::EXP_DP_M::generate_disassembly() const'
+build/LILY2/cpu/risc/isa/categories/fp.cc:2553:1: error: 'virtual std::string LILY2_NS::EXP_DP_M::generate_disassembly() const' previously defined here
+In file included from build/LILY2/cpu/risc/isa/categories/fp.cc:13:0:
+build/LILY2/cpu/risc/isa/utility.hh: In function 'T LILY2_NS::nmac(T, T, T) [with T = float]':
+build/LILY2/cpu/risc/isa/categories/fp.cc:1479:35:   instantiated from here
+build/LILY2/cpu/risc/isa/utility.hh:316:25: error: wrong type argument to bit-complement
+build/LILY2/cpu/risc/isa/utility.hh: In function 'T LILY2_NS::nmac(T, T, T) [with T = double]':
+build/LILY2/cpu/risc/isa/categories/fp.cc:1552:35:   instantiated from here
+build/LILY2/cpu/risc/isa/utility.hh:316:25: error: wrong type argument to bit-complement
+build/LILY2/cpu/risc/isa/utility.hh: In function 'T LILY2_NS::nmsu(T, T, T) [with T = float]':
+build/LILY2/cpu/risc/isa/categories/fp.cc:1770:35:   instantiated from here
+build/LILY2/cpu/risc/isa/utility.hh:340:25: error: wrong type argument to bit-complement
+build/LILY2/cpu/risc/isa/utility.hh: In function 'T LILY2_NS::nmsu(T, T, T) [with T = double]':
+build/LILY2/cpu/risc/isa/categories/fp.cc:1842:35:   instantiated from here
+build/LILY2/cpu/risc/isa/utility.hh:340:25: error: wrong type argument to bit-complement
+build/LILY2/cpu/risc/isa/utility.hh:341:1: error: control reaches end of non-void function [-Werror=return-type]
+build/LILY2/cpu/risc/isa/utility.hh: In function 'T LILY2_NS::nmsu(T, T, T) [with T = float]':
+build/LILY2/cpu/risc/isa/utility.hh:341:1: error: control reaches end of non-void function [-Werror=return-type]
+build/LILY2/cpu/risc/isa/utility.hh: In function 'T LILY2_NS::nmac(T, T, T) [with T = double]':
+build/LILY2/cpu/risc/isa/utility.hh:317:1: error: control reaches end of non-void function [-Werror=return-type]
+build/LILY2/cpu/risc/isa/utility.hh: In function 'T LILY2_NS::nmac(T, T, T) [with T = float]':
+build/LILY2/cpu/risc/isa/utility.hh:317:1: error: control reaches end of non-void function [-Werror=return-type]
+cc1plus: all warnings being treated as errors
+scons: *** [build/LILY2/cpu/risc/isa/categories/fp.o] Error 1

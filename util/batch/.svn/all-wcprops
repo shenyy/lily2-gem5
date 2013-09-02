@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/util/batch
+END
+batch.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/util/batch/batch.py
+END
+send.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/util/batch/send.py
+END
+job.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/util/batch/job.py
+END

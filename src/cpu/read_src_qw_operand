@@ -1,0 +1,2186 @@
+base.cc:        cpu->schedule(this, curTick() + _interval);
+base.cc:    Counter temp = cpu->totalOps();
+base.cc:    double ipc = double(temp - lastNumInst) / (_interval / cpu->ticks(1));
+base.cc:             "%lli, IPC: %0.8d\n", cpu->name(), temp, temp - lastNumInst,
+base.cc:            "committed: %lli\n", curTick(), cpu->name(), temp,
+base.cc:        cpu->schedule(this, curTick() + _interval);
+base.cc:    ThreadID size = cpu->threadContexts.size();
+base.cc:        ThreadContext *tc = cpu->threadContexts[i];
+base.cc:    cpu->schedule(this, curTick() + interval);
+base_dyn_inst.hh:        cpu->demapPage(vaddr, asn);
+base_dyn_inst.hh:        cpu->demapPage(vaddr, asn);
+base_dyn_inst.hh:        cpu->demapPage(vaddr, asn);
+base_dyn_inst.hh:    int cpuId() { return cpu->cpuId(); }
+base_dyn_inst.hh:    MasterID masterId() { return cpu->dataMasterId(); }
+base_dyn_inst.hh:            if (cpu->checker) {
+base_dyn_inst.hh:            fault = cpu->read(req, sreqLow, sreqHigh, data, lqIdx);
+base_dyn_inst.hh:        if (cpu->checker) {
+base_dyn_inst.hh:        fault = cpu->write(req, sreqLow, sreqHigh, data, sqIdx);
+base_dyn_inst.hh:    unsigned block_size = cpu->getDataPort().peerBlockSize();
+base_dyn_inst.hh:        cpu->dtb->translateTiming(req, thread->getTC(), trans, mode);
+base_dyn_inst.hh:        cpu->dtb->translateTiming(sreqLow, thread->getTC(), stransLow, mode);
+base_dyn_inst.hh:        cpu->dtb->translateTiming(sreqHigh, thread->getTC(), stransHigh, mode);
+base_dyn_inst_impl.hh:    ++cpu->instcount;
+base_dyn_inst_impl.hh:    if (cpu->instcount > 1500) {
+base_dyn_inst_impl.hh:        cpu->dumpInsts();
+base_dyn_inst_impl.hh:        assert(cpu->instcount <= 1500);
+base_dyn_inst_impl.hh:        seqNum, cpu->name(), cpu->instcount);
+base_dyn_inst_impl.hh:    cpu->snList.insert(seqNum);
+base_dyn_inst_impl.hh:    --cpu->instcount;
+base_dyn_inst_impl.hh:        seqNum, cpu->name(), cpu->instcount);
+base_dyn_inst_impl.hh:    cpu->snList.erase(seqNum);
+base_dyn_inst_impl.hh:    std::set<InstSeqNum>::iterator sn_it = cpu->snList.begin();
+base_dyn_inst_impl.hh:    while (sn_it != cpu->snList.end()) {
+checker/.svn/text-base/thread_context.hh.svn-base:        : actualTC(actual_tc), checkerTC(checker_cpu->thread),
+checker/thread_context.hh:        : actualTC(actual_tc), checkerTC(checker_cpu->thread),
+inorder/.svn/text-base/thread_context.hh.svn-base:    TheISA::TLB *getITBPtr() { return cpu->getITBPtr(); }
+inorder/.svn/text-base/thread_context.hh.svn-base:    TheISA::TLB *getDTBPtr() { return cpu->getDTBPtr(); }
+inorder/.svn/text-base/thread_context.hh.svn-base:        return cpu->getDecoderPtr(thread->contextId());
+inorder/.svn/text-base/thread_context.hh.svn-base:    System *getSystemPtr() { return cpu->system; }
+inorder/.svn/text-base/thread_context.hh.svn-base:    std::string getCpuName() { return cpu->name(); }
+inorder/.svn/text-base/thread_context.hh.svn-base:    int cpuId() { return cpu->cpuId(); }
+inorder/.svn/text-base/thread_context.hh.svn-base:    { return cpu->pcState(thread->threadId()); }
+inorder/.svn/text-base/thread_context.hh.svn-base:    { cpu->pcState(val, thread->threadId()); }
+inorder/.svn/text-base/thread_context.hh.svn-base:    { return cpu->instAddr(thread->threadId()); }
+inorder/.svn/text-base/thread_context.hh.svn-base:    { return cpu->nextInstAddr(thread->threadId()); }
+inorder/.svn/text-base/thread_context.hh.svn-base:    { return cpu->microPC(thread->threadId()); }
+inorder/.svn/text-base/thread_context.hh.svn-base:    { return cpu->readMiscRegNoEffect(misc_reg, thread->threadId()); }
+inorder/.svn/text-base/thread_context.hh.svn-base:    { return cpu->readMiscReg(misc_reg, thread->threadId()); }
+inorder/.svn/text-base/thread_context.hh.svn-base:    { return cpu->isa[thread->threadId()].flattenIntIndex(reg); }
+inorder/.svn/text-base/thread_context.hh.svn-base:    { return cpu->isa[thread->threadId()].flattenFloatIndex(reg); }
+inorder/.svn/text-base/thread_context.hh.svn-base:    { cpu->activateContext(thread->threadId(), delay); }
+inorder/.svn/text-base/thread_context.hh.svn-base:    { cpu->deallocateContext(thread->threadId()); }
+inorder/.svn/text-base/thread_context.hh.svn-base:    { return cpu->syscall(callnum, thread->threadId()); }
+inorder/.svn/text-base/cpu.cc.svn-base:    cpu->tick();
+inorder/.svn/text-base/cpu.cc.svn-base:        cpu->activateThread(tid);
+inorder/.svn/text-base/cpu.cc.svn-base:        cpu->resPool->activateThread(tid);
+inorder/.svn/text-base/cpu.cc.svn-base:        cpu->activateNextReadyThread();
+inorder/.svn/text-base/cpu.cc.svn-base:        cpu->deactivateThread(tid);
+inorder/.svn/text-base/cpu.cc.svn-base:        cpu->resPool->deactivateThread(tid);
+inorder/.svn/text-base/cpu.cc.svn-base:        cpu->haltThread(tid);
+inorder/.svn/text-base/cpu.cc.svn-base:        cpu->resPool->deactivateThread(tid);
+inorder/.svn/text-base/cpu.cc.svn-base:        cpu->suspendThread(tid);
+inorder/.svn/text-base/cpu.cc.svn-base:        cpu->resPool->suspendThread(tid);
+inorder/.svn/text-base/cpu.cc.svn-base:        cpu->squashDueToMemStall(inst->squashingStage, inst->seqNum, tid);
+inorder/.svn/text-base/cpu.cc.svn-base:        cpu->resPool->squashDueToMemStall(inst, inst->squashingStage,
+inorder/.svn/text-base/cpu.cc.svn-base:        cpu->trap(fault, tid, inst);
+inorder/.svn/text-base/cpu.cc.svn-base:        cpu->resPool->trap(fault, tid, inst);
+inorder/.svn/text-base/cpu.cc.svn-base:        cpu->trapPending[tid] = false;
+inorder/.svn/text-base/cpu.cc.svn-base:        cpu->syscall(inst->syscallNum, tid);
+inorder/.svn/text-base/cpu.cc.svn-base:        cpu->resPool->trap(fault, tid, inst);
+inorder/.svn/text-base/cpu.cc.svn-base:    cpu->cpuEventRemoveList.push(this);
+inorder/.svn/text-base/cpu.cc.svn-base:    cpu->reschedule(this, cpu->nextCycle(curTick() + cpu->ticks(delay)), true);
+inorder/.svn/text-base/cpu.cc.svn-base:        //inst->traceData->setCPSeq(cpu->tcBase(tid)->numInst);
+inorder/.svn/text-base/thread_context.cc.svn-base:    cpu->activateContext(thread->threadId(), delay);
+inorder/.svn/text-base/thread_context.cc.svn-base:    cpu->suspendContext(thread->threadId());
+inorder/.svn/text-base/thread_context.cc.svn-base:    cpu->haltContext(thread->threadId());
+inorder/.svn/text-base/thread_context.cc.svn-base:        thread->kernelStats = new TheISA::Kernel::Statistics(cpu->system);
+inorder/.svn/text-base/thread_context.cc.svn-base:    cpu->isa[thread->threadId()].clear();
+inorder/.svn/text-base/thread_context.cc.svn-base:    reg_idx = cpu->isa[tid].flattenIntIndex(reg_idx);
+inorder/.svn/text-base/thread_context.cc.svn-base:    return cpu->readIntReg(reg_idx, tid);
+inorder/.svn/text-base/thread_context.cc.svn-base:    reg_idx = cpu->isa[tid].flattenFloatIndex(reg_idx);
+inorder/.svn/text-base/thread_context.cc.svn-base:    return cpu->readFloatReg(reg_idx, tid);
+inorder/.svn/text-base/thread_context.cc.svn-base:    reg_idx = cpu->isa[tid].flattenFloatIndex(reg_idx);
+inorder/.svn/text-base/thread_context.cc.svn-base:    return cpu->readFloatRegBits(reg_idx, tid);
+inorder/.svn/text-base/thread_context.cc.svn-base:    return cpu->readRegOtherThread(reg_idx, tid);
+inorder/.svn/text-base/thread_context.cc.svn-base:    reg_idx = cpu->isa[tid].flattenIntIndex(reg_idx);
+inorder/.svn/text-base/thread_context.cc.svn-base:    cpu->setIntReg(reg_idx, val, tid);
+inorder/.svn/text-base/thread_context.cc.svn-base:    reg_idx = cpu->isa[tid].flattenFloatIndex(reg_idx);
+inorder/.svn/text-base/thread_context.cc.svn-base:    cpu->setFloatReg(reg_idx, val, tid);
+inorder/.svn/text-base/thread_context.cc.svn-base:    reg_idx = cpu->isa[tid].flattenFloatIndex(reg_idx);
+inorder/.svn/text-base/thread_context.cc.svn-base:    cpu->setFloatRegBits(reg_idx, val, tid);
+inorder/.svn/text-base/thread_context.cc.svn-base:    cpu->setRegOtherThread(misc_reg, val, tid);
+inorder/.svn/text-base/thread_context.cc.svn-base:    cpu->setMiscRegNoEffect(misc_reg, val, thread->threadId());
+inorder/.svn/text-base/thread_context.cc.svn-base:    cpu->setMiscReg(misc_reg, val, thread->threadId());
+inorder/.svn/text-base/resource.cc.svn-base:    return cpu->name() + "."  + resName;
+inorder/.svn/text-base/resource.cc.svn-base:    cpu->pipelineStage[stage_num]->setupSquash(inst, tid);
+inorder/.svn/text-base/resource.cc.svn-base:    cpu->resPool->scheduleEvent(
+inorder/.svn/text-base/resource.cc.svn-base:    cpu->trapContext(inst->fault, tid, inst);
+inorder/.svn/text-base/resource.cc.svn-base:    return cpu->ticks(num_cycles);
+inorder/.svn/text-base/resource.cc.svn-base:            cpu->ticks(delay) + curTick());
+inorder/.svn/text-base/resource.cc.svn-base:        res->cpu->resReqCount--;
+inorder/.svn/text-base/resource.cc.svn-base:                res->cpu->resReqCount);
+inorder/.svn/text-base/resource.cc.svn-base:    resource->cpu->reschedule(this,
+inorder/.svn/text-base/first_stage.cc.svn-base:    fetchPriorityList = &cpu->fetchPriorityList;
+inorder/.svn/text-base/first_stage.cc.svn-base:    cpu->removeInstsUntil(squash_seq_num, tid);
+inorder/.svn/text-base/first_stage.cc.svn-base:                                      cpu->thread[tid],
+inorder/.svn/text-base/first_stage.cc.svn-base:                                      cpu->nextInstSeqNum(tid),
+inorder/.svn/text-base/first_stage.cc.svn-base:                                      cpu->stageTracing,
+inorder/.svn/text-base/first_stage.cc.svn-base:                                      cpu->thread[tid]->getTC());
+inorder/.svn/text-base/first_stage.cc.svn-base:            inst->setInstListIt(cpu->addInst(inst));
+inorder/.svn/text-base/first_stage.cc.svn-base:            inst->setFrontSked(cpu->frontEndSked);
+inorder/.svn/text-base/first_stage.cc.svn-base:    ThreadID num_active_threads = cpu->numActiveThreads();
+inorder/.svn/text-base/first_stage.cc.svn-base:            return cpu->activeThreadId();
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:     return cpu->name() + ".stage" + to_string(stageNum);
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:    utilization = (runCycles / cpu->numCycles) * 100;
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:    tracer = dynamic_cast<Trace::InOrderTrace *>(cpu->getTracer());
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:        cpu->activateStage(stageNum);
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:    if (cpu->lastSquashCycle[tid] == curTick() &&
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:        cpu->squashSeqNum[tid] < inst->seqNum){
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:                inst->seqNum, cpu->squashSeqNum[tid]);
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:        cpu->lastSquashCycle[tid] = curTick();
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:        cpu->squashSeqNum[tid] = squash_seq_num;
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:            prevStage->insts[i] = cpu->dummyBufferInst;
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:    if (cpu->pipelineStage[stage_num]->prevStageValid) {
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:        buffer_avail = cpu->pipelineStage[stage_num]->stageBufferAvail() -
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:            cpu->pipelineStage[stage_num-1]->nextStage->insts.size() >= 1;
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:            cpu->activateStage(stageNum);
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:            cpu->deactivateStage(stageNum);
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:    if (cpu->threadModel == InOrderCPU::SwitchOnCacheMiss) {
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:            cpu->resPool->scheduleEvent((InOrderCPU::CPUEventType)
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:            cpu->updateContextSwitchStats();            
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:                cpu->pipelineStage[stageNum - 1]->
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:                if (cpu->pipelineStage[prev_stage]->stageStatus[tid] == Running ||
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:                    cpu->pipelineStage[prev_stage]->stageStatus[tid] == Idle) {
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:                    cpu->pipelineStage[prev_stage]->stageStatus[tid] = Unblocking;
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:            prevStage->insts[i] = cpu->dummyBufferInst;
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:        cpu->activityThisCycle();
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:                    "\n", tid, inst->seqNum, cpu->resPool->name(res_num));
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:            ResReqPtr req = cpu->resPool->request(res_num, inst);
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:                        cpu->resPool->name(res_num));
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:                        "\n", tid, inst->seqNum, cpu->resPool->name(res_num));
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:                    cpu->threadModel == InOrderCPU::SwitchOnCacheMiss) {
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:                    cpu->squashFromMemStall(inst, tid);  
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:                    cpu->suspendContext(tid);                    
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:                    cpu->activateNextReadyContext();
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:    return cpu->pipelineStage[stage_num]->nextStageValid;
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:        if (inst->seqNum > cpu->squashSeqNum[tid] &&
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:            curTick() == cpu->lastSquashCycle[tid]) {
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:                        cpu->pipelineStage[next_stage]->stageBufferAvail());
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:                    cpu->pipelineStage[prev_stage]->nextStage->insts.size(),
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:                    cpu->pipelineStage[prev_stage]->nextStageQueue->id());
+inorder/.svn/text-base/pipeline_stage.cc.svn-base:            cpu->pipelineStage[prev_stage]->nextStage->insts.push_back(inst);
+inorder/.svn/text-base/reg_dep_map.cc.svn-base:    return cpu->name() + ".RegDepMap";
+inorder/.svn/text-base/reg_dep_map.cc.svn-base:        TheISA::RegIndex flat_idx = cpu->flattenRegIdx(raw_idx,
+inorder/.svn/text-base/reg_dep_map.cc.svn-base:            InOrderCPU::RegType reg_type = cpu->getRegType(inst->destRegIdx(i));
+inorder/.svn/text-base/thread_state.cc.svn-base:    std::ostream *os = simout.create(csprintf("profile.%s.dat", cpu->name()));
+inorder/.svn/text-base/resource_pool.9stage.cc.svn-base:    return cpu->name() + ".ResourcePool";
+inorder/.svn/text-base/resource_pool.9stage.cc.svn-base:            res_pool_event->schedule(curTick() + cpu->cycles(delay));
+inorder/.svn/text-base/resource_pool.9stage.cc.svn-base:            res_pool_event->schedule(curTick() + cpu->cycles(delay));
+inorder/.svn/text-base/resource_pool.9stage.cc.svn-base:            res_pool_event->schedule(curTick() + cpu->cycles(delay));
+inorder/.svn/text-base/resource_pool.9stage.cc.svn-base:            res_pool_event->schedule(curTick() + cpu->cycles(delay));
+inorder/.svn/text-base/resource_pool.9stage.cc.svn-base:    resPool->cpu->cpuEventRemoveList.push(this);
+inorder/.svn/text-base/resource_pool.9stage.cc.svn-base:        reschedule(curTick() + resPool->cpu->cycles(delay));
+inorder/.svn/text-base/resource_pool.9stage.cc.svn-base:        schedule(curTick() + resPool->cpu->cycles(delay));
+inorder/.svn/text-base/inorder_dyn_inst.cc.svn-base:    return cpu->cpuId();
+inorder/.svn/text-base/inorder_dyn_inst.cc.svn-base:    pc.npc(this->cpu->readMiscRegNoEffect(AlphaISA::IPR_EXC_ADDR,
+inorder/.svn/text-base/inorder_dyn_inst.cc.svn-base:        ThreadContext *tc = this->cpu->tcBase(this->threadNumber);
+inorder/.svn/text-base/inorder_dyn_inst.cc.svn-base:    this->cpu->hwrei(this->threadNumber);
+inorder/.svn/text-base/inorder_dyn_inst.cc.svn-base:    this->cpu->trap(fault, this->threadNumber, this);
+inorder/.svn/text-base/inorder_dyn_inst.cc.svn-base:    return this->cpu->simPalCheck(palFunc, this->threadNumber);
+inorder/.svn/text-base/inorder_dyn_inst.cc.svn-base:    cpu->syscallContext(NoFault, this->threadNumber, this);
+inorder/.svn/text-base/inorder_dyn_inst.cc.svn-base:    return this->cpu->readMiscReg(misc_reg, threadNumber);
+inorder/.svn/text-base/inorder_dyn_inst.cc.svn-base:        tid = TheISA::getTargetThread(this->cpu->tcBase(threadNumber));
+inorder/.svn/text-base/inorder_dyn_inst.cc.svn-base:        return this->cpu->readIntReg(reg_idx, tid);
+inorder/.svn/text-base/inorder_dyn_inst.cc.svn-base:        return this->cpu->readFloatRegBits(reg_idx, tid);
+inorder/.svn/text-base/inorder_dyn_inst.cc.svn-base:        return this->cpu->readMiscReg(reg_idx, tid);  // Misc. Register File
+inorder/.svn/text-base/inorder_dyn_inst.cc.svn-base:    this->cpu->setMiscReg(misc_reg, val, threadNumber);
+inorder/.svn/text-base/inorder_dyn_inst.cc.svn-base:        tid = TheISA::getTargetThread(this->cpu->tcBase(threadNumber));
+inorder/.svn/text-base/inorder_dyn_inst.cc.svn-base:        this->cpu->setIntReg(reg_idx, val, tid);
+inorder/.svn/text-base/inorder_dyn_inst.cc.svn-base:        this->cpu->setFloatRegBits(reg_idx, val, tid);
+inorder/.svn/text-base/inorder_dyn_inst.cc.svn-base:        this->cpu->setMiscReg(reg_idx, val, tid); // Misc. Register File
+inorder/.svn/text-base/inorder_dyn_inst.cc.svn-base:    this->cpu->deallocateContext(thread_num);
+inorder/.svn/text-base/inorder_dyn_inst.cc.svn-base:    return cpu->read(this, addr, data, size, flags);
+inorder/.svn/text-base/inorder_dyn_inst.cc.svn-base:    return cpu->write(this, data, size, addr, flags, res);
+inorder/.svn/text-base/resource_pool.cc.svn-base:    int stage_width = cpu->stageWidth;
+inorder/.svn/text-base/resource_pool.cc.svn-base:    return cpu->name() + ".ResourcePool";
+inorder/.svn/text-base/resource_pool.cc.svn-base:    Tick when = cpu->nextCycle(curTick() + cpu->ticks(delay));
+inorder/.svn/text-base/resource_pool.cc.svn-base:            cpu->schedule(res_pool_event, when);
+inorder/.svn/text-base/resource_pool.cc.svn-base:            cpu->schedule(res_pool_event, when);
+inorder/.svn/text-base/resource_pool.cc.svn-base:            cpu->schedule(res_pool_event, when);
+inorder/.svn/text-base/resource_pool.cc.svn-base:    bool do_activate = cpu->threadModel != InOrderCPU::SwitchOnCacheMiss ||
+inorder/.svn/text-base/resource_pool.cc.svn-base:        cpu->numActiveThreads() < 1 ||
+inorder/.svn/text-base/resource_pool.cc.svn-base:        cpu->activeThreadId() == tid;
+inorder/.svn/text-base/resource_pool.cc.svn-base:    resPool->cpu->cpuEventRemoveList.push(this);
+inorder/.svn/text-base/resource_pool.cc.svn-base:    cpu->reschedule(this, cpu->nextCycle(curTick() + cpu->ticks(delay)), true);
+inorder/resource.cc:    return cpu->name() + "."  + resName;
+inorder/resource.cc:    cpu->pipelineStage[stage_num]->setupSquash(inst, tid);
+inorder/resource.cc:    cpu->resPool->scheduleEvent(
+inorder/resource.cc:    cpu->trapContext(inst->fault, tid, inst);
+inorder/resource.cc:    return cpu->ticks(num_cycles);
+inorder/resource.cc:            cpu->ticks(delay) + curTick());
+inorder/resource.cc:        res->cpu->resReqCount--;
+inorder/resource.cc:                res->cpu->resReqCount);
+inorder/resource.cc:    resource->cpu->reschedule(this,
+inorder/thread_state.cc:    std::ostream *os = simout.create(csprintf("profile.%s.dat", cpu->name()));
+inorder/reg_dep_map.cc:    return cpu->name() + ".RegDepMap";
+inorder/reg_dep_map.cc:        TheISA::RegIndex flat_idx = cpu->flattenRegIdx(raw_idx,
+inorder/reg_dep_map.cc:            InOrderCPU::RegType reg_type = cpu->getRegType(inst->destRegIdx(i));
+inorder/thread_context.hh:    TheISA::TLB *getITBPtr() { return cpu->getITBPtr(); }
+inorder/thread_context.hh:    TheISA::TLB *getDTBPtr() { return cpu->getDTBPtr(); }
+inorder/thread_context.hh:        return cpu->getDecoderPtr(thread->contextId());
+inorder/thread_context.hh:    System *getSystemPtr() { return cpu->system; }
+inorder/thread_context.hh:    std::string getCpuName() { return cpu->name(); }
+inorder/thread_context.hh:    int cpuId() { return cpu->cpuId(); }
+inorder/thread_context.hh:    { return cpu->pcState(thread->threadId()); }
+inorder/thread_context.hh:    { cpu->pcState(val, thread->threadId()); }
+inorder/thread_context.hh:    { return cpu->instAddr(thread->threadId()); }
+inorder/thread_context.hh:    { return cpu->nextInstAddr(thread->threadId()); }
+inorder/thread_context.hh:    { return cpu->microPC(thread->threadId()); }
+inorder/thread_context.hh:    { return cpu->readMiscRegNoEffect(misc_reg, thread->threadId()); }
+inorder/thread_context.hh:    { return cpu->readMiscReg(misc_reg, thread->threadId()); }
+inorder/thread_context.hh:    { return cpu->isa[thread->threadId()].flattenIntIndex(reg); }
+inorder/thread_context.hh:    { return cpu->isa[thread->threadId()].flattenFloatIndex(reg); }
+inorder/thread_context.hh:    { cpu->activateContext(thread->threadId(), delay); }
+inorder/thread_context.hh:    { cpu->deallocateContext(thread->threadId()); }
+inorder/thread_context.hh:    { return cpu->syscall(callnum, thread->threadId()); }
+inorder/cpu.cc:    cpu->tick();
+inorder/cpu.cc:        cpu->activateThread(tid);
+inorder/cpu.cc:        cpu->resPool->activateThread(tid);
+inorder/cpu.cc:        cpu->activateNextReadyThread();
+inorder/cpu.cc:        cpu->deactivateThread(tid);
+inorder/cpu.cc:        cpu->resPool->deactivateThread(tid);
+inorder/cpu.cc:        cpu->haltThread(tid);
+inorder/cpu.cc:        cpu->resPool->deactivateThread(tid);
+inorder/cpu.cc:        cpu->suspendThread(tid);
+inorder/cpu.cc:        cpu->resPool->suspendThread(tid);
+inorder/cpu.cc:        cpu->squashDueToMemStall(inst->squashingStage, inst->seqNum, tid);
+inorder/cpu.cc:        cpu->resPool->squashDueToMemStall(inst, inst->squashingStage,
+inorder/cpu.cc:        cpu->trap(fault, tid, inst);
+inorder/cpu.cc:        cpu->resPool->trap(fault, tid, inst);
+inorder/cpu.cc:        cpu->trapPending[tid] = false;
+inorder/cpu.cc:        cpu->syscall(inst->syscallNum, tid);
+inorder/cpu.cc:        cpu->resPool->trap(fault, tid, inst);
+inorder/cpu.cc:    cpu->cpuEventRemoveList.push(this);
+inorder/cpu.cc:    cpu->reschedule(this, cpu->nextCycle(curTick() + cpu->ticks(delay)), true);
+inorder/cpu.cc:        //inst->traceData->setCPSeq(cpu->tcBase(tid)->numInst);
+inorder/inorder_dyn_inst.cc:    return cpu->cpuId();
+inorder/inorder_dyn_inst.cc:    pc.npc(this->cpu->readMiscRegNoEffect(AlphaISA::IPR_EXC_ADDR,
+inorder/inorder_dyn_inst.cc:        ThreadContext *tc = this->cpu->tcBase(this->threadNumber);
+inorder/inorder_dyn_inst.cc:    this->cpu->hwrei(this->threadNumber);
+inorder/inorder_dyn_inst.cc:    this->cpu->trap(fault, this->threadNumber, this);
+inorder/inorder_dyn_inst.cc:    return this->cpu->simPalCheck(palFunc, this->threadNumber);
+inorder/inorder_dyn_inst.cc:    cpu->syscallContext(NoFault, this->threadNumber, this);
+inorder/inorder_dyn_inst.cc:    return this->cpu->readMiscReg(misc_reg, threadNumber);
+inorder/inorder_dyn_inst.cc:        tid = TheISA::getTargetThread(this->cpu->tcBase(threadNumber));
+inorder/inorder_dyn_inst.cc:        return this->cpu->readIntReg(reg_idx, tid);
+inorder/inorder_dyn_inst.cc:        return this->cpu->readFloatRegBits(reg_idx, tid);
+inorder/inorder_dyn_inst.cc:        return this->cpu->readMiscReg(reg_idx, tid);  // Misc. Register File
+inorder/inorder_dyn_inst.cc:    this->cpu->setMiscReg(misc_reg, val, threadNumber);
+inorder/inorder_dyn_inst.cc:        tid = TheISA::getTargetThread(this->cpu->tcBase(threadNumber));
+inorder/inorder_dyn_inst.cc:        this->cpu->setIntReg(reg_idx, val, tid);
+inorder/inorder_dyn_inst.cc:        this->cpu->setFloatRegBits(reg_idx, val, tid);
+inorder/inorder_dyn_inst.cc:        this->cpu->setMiscReg(reg_idx, val, tid); // Misc. Register File
+inorder/inorder_dyn_inst.cc:    this->cpu->deallocateContext(thread_num);
+inorder/inorder_dyn_inst.cc:    return cpu->read(this, addr, data, size, flags);
+inorder/inorder_dyn_inst.cc:    return cpu->write(this, data, size, addr, flags, res);
+inorder/resources/fetch_seq_unit.cc:                inst->setSeqNum(cpu->getAndIncrementInstSeq(tid));
+inorder/resources/fetch_seq_unit.cc:                    cpu->pipelineStage[stage_num]->
+inorder/resources/fetch_seq_unit.cc:                        bdelay_it = cpu->findInst(branch_delay_num, tid);
+inorder/resources/fetch_seq_unit.cc:                    if (bdelay_it != cpu->instList[tid].end()) {
+inorder/resources/fetch_seq_unit.cc:                    cpu->pipelineStage[pcBlockStage[tid]]->
+inorder/resources/fetch_seq_unit.cc:        fs_res->pc[i] = fs_res->cpu->pcState(i);
+inorder/resources/fetch_seq_unit.cc:    pc[tid] = cpu->pcState(tid);
+inorder/resources/fetch_seq_unit.cc:    cpu->fetchPriorityList.push_back(tid);
+inorder/resources/fetch_seq_unit.cc:    list<ThreadID>::iterator thread_it = find(cpu->fetchPriorityList.begin(),
+inorder/resources/fetch_seq_unit.cc:                                              cpu->fetchPriorityList.end(),
+inorder/resources/fetch_seq_unit.cc:    if (thread_it != cpu->fetchPriorityList.end())
+inorder/resources/fetch_seq_unit.cc:        cpu->fetchPriorityList.erase(thread_it);
+inorder/resources/fetch_seq_unit.cc:    pc[tid] = cpu->pcState(tid);
+inorder/resources/fetch_seq_unit.cc:    if (cpu->thread[tid]->lastGradIsBranch) {
+inorder/resources/fetch_seq_unit.cc:        assert(cpu->nextInstAddr(tid) == inst->instAddr());
+inorder/resources/fetch_seq_unit.cc:        pc[tid] = cpu->thread[tid]->lastBranchPC;
+inorder/resources/.svn/text-base/branch_predictor.cc.svn-base:            if (inst->seqNum > cpu->squashSeqNum[tid] &&
+inorder/resources/.svn/text-base/branch_predictor.cc.svn-base:                curTick() == cpu->lastSquashCycle[tid]) {
+inorder/resources/.svn/text-base/branch_predictor.cc.svn-base:            if (inst->seqNum > cpu->squashSeqNum[tid] &&
+inorder/resources/.svn/text-base/branch_predictor.cc.svn-base:                curTick() == cpu->lastSquashCycle[tid]) {
+inorder/resources/.svn/text-base/fetch_seq_unit.cc.svn-base:                inst->setSeqNum(cpu->getAndIncrementInstSeq(tid));
+inorder/resources/.svn/text-base/fetch_seq_unit.cc.svn-base:                    cpu->pipelineStage[stage_num]->
+inorder/resources/.svn/text-base/fetch_seq_unit.cc.svn-base:                        bdelay_it = cpu->findInst(branch_delay_num, tid);
+inorder/resources/.svn/text-base/fetch_seq_unit.cc.svn-base:                    if (bdelay_it != cpu->instList[tid].end()) {
+inorder/resources/.svn/text-base/fetch_seq_unit.cc.svn-base:                    cpu->pipelineStage[pcBlockStage[tid]]->
+inorder/resources/.svn/text-base/fetch_seq_unit.cc.svn-base:        fs_res->pc[i] = fs_res->cpu->pcState(i);
+inorder/resources/.svn/text-base/fetch_seq_unit.cc.svn-base:    pc[tid] = cpu->pcState(tid);
+inorder/resources/.svn/text-base/fetch_seq_unit.cc.svn-base:    cpu->fetchPriorityList.push_back(tid);
+inorder/resources/.svn/text-base/fetch_seq_unit.cc.svn-base:    list<ThreadID>::iterator thread_it = find(cpu->fetchPriorityList.begin(),
+inorder/resources/.svn/text-base/fetch_seq_unit.cc.svn-base:                                              cpu->fetchPriorityList.end(),
+inorder/resources/.svn/text-base/fetch_seq_unit.cc.svn-base:    if (thread_it != cpu->fetchPriorityList.end())
+inorder/resources/.svn/text-base/fetch_seq_unit.cc.svn-base:        cpu->fetchPriorityList.erase(thread_it);
+inorder/resources/.svn/text-base/fetch_seq_unit.cc.svn-base:    pc[tid] = cpu->pcState(tid);
+inorder/resources/.svn/text-base/fetch_seq_unit.cc.svn-base:    if (cpu->thread[tid]->lastGradIsBranch) {
+inorder/resources/.svn/text-base/fetch_seq_unit.cc.svn-base:        assert(cpu->nextInstAddr(tid) == inst->instAddr());
+inorder/resources/.svn/text-base/fetch_seq_unit.cc.svn-base:        pc[tid] = cpu->thread[tid]->lastBranchPC;
+inorder/resources/.svn/text-base/mult_div_unit.cc.svn-base:    cpu->wakeCPU();
+inorder/resources/.svn/text-base/inst_buffer.cc.svn-base:            } else if(cpu->pipelineStage[bypass_stage]->isBlocked(tid)) {
+inorder/resources/.svn/text-base/inst_buffer.cc.svn-base:            } else if(cpu->pipelineStage[bypass_stage]->
+inorder/resources/.svn/text-base/fetch_unit.cc.svn-base:    decoder[tid]->setTC(cpu->thread[tid]->getTC());
+inorder/resources/.svn/text-base/fetch_unit.cc.svn-base:                        cpu->instMasterId(), inst->instAddr(), cpu->readCpuId(),
+inorder/resources/.svn/text-base/fetch_unit.cc.svn-base:    int asid = cpu->asid[tid];
+inorder/resources/.svn/text-base/fetch_unit.cc.svn-base:    short asid = cpu->asid[tid];
+inorder/resources/.svn/text-base/fetch_unit.cc.svn-base:        cpu->threadModel == InOrderCPU::SwitchOnCacheMiss) {
+inorder/resources/.svn/text-base/fetch_unit.cc.svn-base:        cpu->activateContext(tid);
+inorder/resources/.svn/text-base/fetch_unit.cc.svn-base:    cpu->wakeCPU();
+inorder/resources/.svn/text-base/fetch_unit.cc.svn-base:            tid, cpu->pipelineStage[stage_num]->name());
+inorder/resources/.svn/text-base/fetch_unit.cc.svn-base:    cpu->switchToActive(stage_num);
+inorder/resources/.svn/text-base/fetch_unit.cc.svn-base:    int asid = cpu->asid[tid];
+inorder/resources/.svn/text-base/tlb_unit.hh.svn-base:                                            res->cpu->instMasterId(),
+inorder/resources/.svn/text-base/tlb_unit.hh.svn-base:                                            res->cpu->readCpuId(),
+inorder/resources/.svn/text-base/tlb_unit.hh.svn-base:                                           res->cpu->dataMasterId(),
+inorder/resources/.svn/text-base/tlb_unit.hh.svn-base:                                           res->cpu->readCpuId(),
+inorder/resources/.svn/text-base/decode_unit.cc.svn-base:        regDepMap[tid] = &cpu->archRegDepMap[tid];
+inorder/resources/.svn/text-base/decode_unit.cc.svn-base:                inst->setBackSked(cpu->faultSked);
+inorder/resources/.svn/text-base/decode_unit.cc.svn-base:                inst->setBackSked(cpu->createBackEndSked(inst));
+inorder/resources/.svn/text-base/tlb_unit.cc.svn-base:    assert(cpu->thread[tid]->getTC() != 0x0);
+inorder/resources/.svn/text-base/tlb_unit.cc.svn-base:    assert(cpu->pipelineStage[stage_num] != 0x0);
+inorder/resources/.svn/text-base/tlb_unit.cc.svn-base:                                      cpu->thread[tid]->getTC(), TheISA::TLB::Execute);
+inorder/resources/.svn/text-base/tlb_unit.cc.svn-base:                cpu->pipelineStage[stage_num]->setResStall(tlb_req, tid);
+inorder/resources/.svn/text-base/tlb_unit.cc.svn-base:                cpu->trap(tlb_req->fault, tid);
+inorder/resources/.svn/text-base/tlb_unit.cc.svn-base:                                      cpu->thread[tid]->getTC(), tlb_mode);
+inorder/resources/.svn/text-base/tlb_unit.cc.svn-base:                    cpu->pipelineStage[stage_num]->setResStall(tlb_req, tid);
+inorder/resources/.svn/text-base/tlb_unit.cc.svn-base:                    cpu->trap(tlb_req->fault, tid, inst);
+inorder/resources/.svn/text-base/tlb_unit.cc.svn-base:    tlb_res->cpu->pipelineStage[stage_num]->
+inorder/resources/.svn/text-base/tlb_unit.cc.svn-base:             cpu->pipelineStage[stall_stage]->
+inorder/resources/.svn/text-base/cache_unit.cc.svn-base:        cachePort = &cpu->getInstPort();
+inorder/resources/.svn/text-base/cache_unit.cc.svn-base:        cachePort = &cpu->getDataPort();
+inorder/resources/.svn/text-base/cache_unit.cc.svn-base:                new Request(cpu->asid[tid], aligned_addr, acc_size, flags,
+inorder/resources/.svn/text-base/cache_unit.cc.svn-base:                            cpu->dataMasterId(),
+inorder/resources/.svn/text-base/cache_unit.cc.svn-base:                            cpu->readCpuId(), //@todo: use context id
+inorder/resources/.svn/text-base/cache_unit.cc.svn-base:            inst->splitMemReq = new Request(cpu->asid[tid], 
+inorder/resources/.svn/text-base/cache_unit.cc.svn-base:                                            cpu->dataMasterId(),
+inorder/resources/.svn/text-base/cache_unit.cc.svn-base:                                            cpu->readCpuId(), 
+inorder/resources/.svn/text-base/cache_unit.cc.svn-base:    ThreadContext *tc = cpu->thread[tid]->getTC();
+inorder/resources/.svn/text-base/cache_unit.cc.svn-base:            inst->setBackSked(cpu->createBackEndSked(inst));
+inorder/resources/.svn/text-base/cache_unit.cc.svn-base:                                          cpu->resPool->getResIdx(DCache),
+inorder/resources/.svn/text-base/cache_unit.cc.svn-base:                                          cpu->resPool->getResIdx(DCache),
+inorder/resources/.svn/text-base/cache_unit.cc.svn-base:        cpu->wakeCPU();
+inorder/resources/.svn/text-base/cache_unit.cc.svn-base:        cpu->wakeCPU();
+inorder/resources/.svn/text-base/cache_unit.cc.svn-base:                                       cpu->dataMasterId(),
+inorder/resources/.svn/text-base/cache_unit.cc.svn-base:        cpu->threadModel == InOrderCPU::SwitchOnCacheMiss) {
+inorder/resources/.svn/text-base/cache_unit.cc.svn-base:        cpu->activateContext(tid);
+inorder/resources/.svn/text-base/cache_unit.cc.svn-base:    cpu->wakeCPU();
+inorder/resources/.svn/text-base/cache_unit.cc.svn-base:            tid, cpu->pipelineStage[stage_num]->name());
+inorder/resources/.svn/text-base/cache_unit.cc.svn-base:    cpu->switchToActive(stage_num);
+inorder/resources/.svn/text-base/cache_unit.cc.svn-base:    cpu->wakeCPU();
+inorder/resources/.svn/text-base/cache_unit.cc.svn-base:    inst->fault->invoke(tlb_res->cpu->tcBase(tid), inst->staticInst);
+inorder/resources/.svn/text-base/cache_unit.cc.svn-base:    tlb_res->cpu->pipelineStage[stage_num]->
+inorder/resources/.svn/text-base/cache_unit.cc.svn-base:    tlb_res->cpu->wakeCPU();
+inorder/resources/.svn/text-base/cache_unit.cc.svn-base:                cpu->pipelineStage[stall_stage]->
+inorder/resources/.svn/text-base/use_def.cc.svn-base:        nonSpecInstActive[tid] = &cpu->nonSpecInstActive[tid];
+inorder/resources/.svn/text-base/use_def.cc.svn-base:        nonSpecSeqNum[tid] = &cpu->nonSpecSeqNum[tid];
+inorder/resources/.svn/text-base/use_def.cc.svn-base:        regDepMap[tid] = &cpu->archRegDepMap[tid];
+inorder/resources/.svn/text-base/use_def.cc.svn-base:        cpu->instList[tid].front() != inst) {
+inorder/resources/.svn/text-base/use_def.cc.svn-base:            RegIndex flat_idx = cpu->flattenRegIdx(reg_idx, reg_type, tid);
+inorder/resources/.svn/text-base/use_def.cc.svn-base:                                cpu->readIntReg(flat_idx,inst->readTid()));
+inorder/resources/.svn/text-base/use_def.cc.svn-base:                                        cpu->readIntReg(flat_idx,
+inorder/resources/.svn/text-base/use_def.cc.svn-base:                                cpu->readFloatRegBits(flat_idx,
+inorder/resources/.svn/text-base/use_def.cc.svn-base:                                cpu->readFloatReg(flat_idx,
+inorder/resources/.svn/text-base/use_def.cc.svn-base:                                          cpu->readFloatReg(flat_idx,
+inorder/resources/.svn/text-base/use_def.cc.svn-base:                                                 cpu->readFloatRegBits(flat_idx,
+inorder/resources/.svn/text-base/use_def.cc.svn-base:                                cpu->readMiscReg(flat_idx,
+inorder/resources/.svn/text-base/use_def.cc.svn-base:                                        cpu->readMiscReg(flat_idx,
+inorder/resources/.svn/text-base/use_def.cc.svn-base:            RegIndex flat_idx = cpu->flattenRegIdx(reg_idx, reg_type, tid);
+inorder/resources/.svn/text-base/use_def.cc.svn-base:                        cpu->setIntReg(flat_idx,
+inorder/resources/.svn/text-base/use_def.cc.svn-base:                            cpu->setFloatRegBits(flat_idx,
+inorder/resources/.svn/text-base/use_def.cc.svn-base:                            cpu->setFloatReg(flat_idx,
+inorder/resources/.svn/text-base/use_def.cc.svn-base:                            cpu->setFloatReg(flat_idx,
+inorder/resources/.svn/text-base/use_def.cc.svn-base:                        cpu->setMiscReg(flat_idx,
+inorder/resources/.svn/text-base/graduation_unit.cc.svn-base:        nonSpecInstActive[tid] = &cpu->nonSpecInstActive[tid];
+inorder/resources/.svn/text-base/graduation_unit.cc.svn-base:        nonSpecSeqNum[tid] = &cpu->nonSpecSeqNum[tid];
+inorder/resources/.svn/text-base/graduation_unit.cc.svn-base:    if (cpu->trapPending[tid]) {
+inorder/resources/.svn/text-base/graduation_unit.cc.svn-base:            cpu->instDone(inst, tid);
+inorder/resources/graduation_unit.cc:        nonSpecInstActive[tid] = &cpu->nonSpecInstActive[tid];
+inorder/resources/graduation_unit.cc:        nonSpecSeqNum[tid] = &cpu->nonSpecSeqNum[tid];
+inorder/resources/graduation_unit.cc:    if (cpu->trapPending[tid]) {
+inorder/resources/graduation_unit.cc:            cpu->instDone(inst, tid);
+inorder/resources/inst_buffer.cc:            } else if(cpu->pipelineStage[bypass_stage]->isBlocked(tid)) {
+inorder/resources/inst_buffer.cc:            } else if(cpu->pipelineStage[bypass_stage]->
+inorder/resources/tlb_unit.hh:                                            res->cpu->instMasterId(),
+inorder/resources/tlb_unit.hh:                                            res->cpu->readCpuId(),
+inorder/resources/tlb_unit.hh:                                           res->cpu->dataMasterId(),
+inorder/resources/tlb_unit.hh:                                           res->cpu->readCpuId(),
+inorder/resources/mult_div_unit.cc:    cpu->wakeCPU();
+inorder/resources/use_def.cc:        nonSpecInstActive[tid] = &cpu->nonSpecInstActive[tid];
+inorder/resources/use_def.cc:        nonSpecSeqNum[tid] = &cpu->nonSpecSeqNum[tid];
+inorder/resources/use_def.cc:        regDepMap[tid] = &cpu->archRegDepMap[tid];
+inorder/resources/use_def.cc:        cpu->instList[tid].front() != inst) {
+inorder/resources/use_def.cc:            RegIndex flat_idx = cpu->flattenRegIdx(reg_idx, reg_type, tid);
+inorder/resources/use_def.cc:                                cpu->readIntReg(flat_idx,inst->readTid()));
+inorder/resources/use_def.cc:                                        cpu->readIntReg(flat_idx,
+inorder/resources/use_def.cc:                                cpu->readFloatRegBits(flat_idx,
+inorder/resources/use_def.cc:                                cpu->readFloatReg(flat_idx,
+inorder/resources/use_def.cc:                                          cpu->readFloatReg(flat_idx,
+inorder/resources/use_def.cc:                                                 cpu->readFloatRegBits(flat_idx,
+inorder/resources/use_def.cc:                                cpu->readMiscReg(flat_idx,
+inorder/resources/use_def.cc:                                        cpu->readMiscReg(flat_idx,
+inorder/resources/use_def.cc:            RegIndex flat_idx = cpu->flattenRegIdx(reg_idx, reg_type, tid);
+inorder/resources/use_def.cc:                        cpu->setIntReg(flat_idx,
+inorder/resources/use_def.cc:                            cpu->setFloatRegBits(flat_idx,
+inorder/resources/use_def.cc:                            cpu->setFloatReg(flat_idx,
+inorder/resources/use_def.cc:                            cpu->setFloatReg(flat_idx,
+inorder/resources/use_def.cc:                        cpu->setMiscReg(flat_idx,
+inorder/resources/branch_predictor.cc:            if (inst->seqNum > cpu->squashSeqNum[tid] &&
+inorder/resources/branch_predictor.cc:                curTick() == cpu->lastSquashCycle[tid]) {
+inorder/resources/branch_predictor.cc:            if (inst->seqNum > cpu->squashSeqNum[tid] &&
+inorder/resources/branch_predictor.cc:                curTick() == cpu->lastSquashCycle[tid]) {
+inorder/resources/cache_unit.cc:        cachePort = &cpu->getInstPort();
+inorder/resources/cache_unit.cc:        cachePort = &cpu->getDataPort();
+inorder/resources/cache_unit.cc:                new Request(cpu->asid[tid], aligned_addr, acc_size, flags,
+inorder/resources/cache_unit.cc:                            cpu->dataMasterId(),
+inorder/resources/cache_unit.cc:                            cpu->readCpuId(), //@todo: use context id
+inorder/resources/cache_unit.cc:            inst->splitMemReq = new Request(cpu->asid[tid], 
+inorder/resources/cache_unit.cc:                                            cpu->dataMasterId(),
+inorder/resources/cache_unit.cc:                                            cpu->readCpuId(), 
+inorder/resources/cache_unit.cc:    ThreadContext *tc = cpu->thread[tid]->getTC();
+inorder/resources/cache_unit.cc:            inst->setBackSked(cpu->createBackEndSked(inst));
+inorder/resources/cache_unit.cc:                                          cpu->resPool->getResIdx(DCache),
+inorder/resources/cache_unit.cc:                                          cpu->resPool->getResIdx(DCache),
+inorder/resources/cache_unit.cc:        cpu->wakeCPU();
+inorder/resources/cache_unit.cc:        cpu->wakeCPU();
+inorder/resources/cache_unit.cc:                                       cpu->dataMasterId(),
+inorder/resources/cache_unit.cc:        cpu->threadModel == InOrderCPU::SwitchOnCacheMiss) {
+inorder/resources/cache_unit.cc:        cpu->activateContext(tid);
+inorder/resources/cache_unit.cc:    cpu->wakeCPU();
+inorder/resources/cache_unit.cc:            tid, cpu->pipelineStage[stage_num]->name());
+inorder/resources/cache_unit.cc:    cpu->switchToActive(stage_num);
+inorder/resources/cache_unit.cc:    cpu->wakeCPU();
+inorder/resources/cache_unit.cc:    inst->fault->invoke(tlb_res->cpu->tcBase(tid), inst->staticInst);
+inorder/resources/cache_unit.cc:    tlb_res->cpu->pipelineStage[stage_num]->
+inorder/resources/cache_unit.cc:    tlb_res->cpu->wakeCPU();
+inorder/resources/cache_unit.cc:                cpu->pipelineStage[stall_stage]->
+inorder/resources/fetch_unit.cc:    decoder[tid]->setTC(cpu->thread[tid]->getTC());
+inorder/resources/fetch_unit.cc:                        cpu->instMasterId(), inst->instAddr(), cpu->readCpuId(),
+inorder/resources/fetch_unit.cc:    int asid = cpu->asid[tid];
+inorder/resources/fetch_unit.cc:    short asid = cpu->asid[tid];
+inorder/resources/fetch_unit.cc:        cpu->threadModel == InOrderCPU::SwitchOnCacheMiss) {
+inorder/resources/fetch_unit.cc:        cpu->activateContext(tid);
+inorder/resources/fetch_unit.cc:    cpu->wakeCPU();
+inorder/resources/fetch_unit.cc:            tid, cpu->pipelineStage[stage_num]->name());
+inorder/resources/fetch_unit.cc:    cpu->switchToActive(stage_num);
+inorder/resources/fetch_unit.cc:    int asid = cpu->asid[tid];
+inorder/resources/tlb_unit.cc:    assert(cpu->thread[tid]->getTC() != 0x0);
+inorder/resources/tlb_unit.cc:    assert(cpu->pipelineStage[stage_num] != 0x0);
+inorder/resources/tlb_unit.cc:                                      cpu->thread[tid]->getTC(), TheISA::TLB::Execute);
+inorder/resources/tlb_unit.cc:                cpu->pipelineStage[stage_num]->setResStall(tlb_req, tid);
+inorder/resources/tlb_unit.cc:                cpu->trap(tlb_req->fault, tid);
+inorder/resources/tlb_unit.cc:                                      cpu->thread[tid]->getTC(), tlb_mode);
+inorder/resources/tlb_unit.cc:                    cpu->pipelineStage[stage_num]->setResStall(tlb_req, tid);
+inorder/resources/tlb_unit.cc:                    cpu->trap(tlb_req->fault, tid, inst);
+inorder/resources/tlb_unit.cc:    tlb_res->cpu->pipelineStage[stage_num]->
+inorder/resources/tlb_unit.cc:             cpu->pipelineStage[stall_stage]->
+inorder/resources/decode_unit.cc:        regDepMap[tid] = &cpu->archRegDepMap[tid];
+inorder/resources/decode_unit.cc:                inst->setBackSked(cpu->faultSked);
+inorder/resources/decode_unit.cc:                inst->setBackSked(cpu->createBackEndSked(inst));
+inorder/first_stage.cc:    fetchPriorityList = &cpu->fetchPriorityList;
+inorder/first_stage.cc:    cpu->removeInstsUntil(squash_seq_num, tid);
+inorder/first_stage.cc:                                      cpu->thread[tid],
+inorder/first_stage.cc:                                      cpu->nextInstSeqNum(tid),
+inorder/first_stage.cc:                                      cpu->stageTracing,
+inorder/first_stage.cc:                                      cpu->thread[tid]->getTC());
+inorder/first_stage.cc:            inst->setInstListIt(cpu->addInst(inst));
+inorder/first_stage.cc:            inst->setFrontSked(cpu->frontEndSked);
+inorder/first_stage.cc:    ThreadID num_active_threads = cpu->numActiveThreads();
+inorder/first_stage.cc:            return cpu->activeThreadId();
+inorder/thread_context.cc:    cpu->activateContext(thread->threadId(), delay);
+inorder/thread_context.cc:    cpu->suspendContext(thread->threadId());
+inorder/thread_context.cc:    cpu->haltContext(thread->threadId());
+inorder/thread_context.cc:        thread->kernelStats = new TheISA::Kernel::Statistics(cpu->system);
+inorder/thread_context.cc:    cpu->isa[thread->threadId()].clear();
+inorder/thread_context.cc:    reg_idx = cpu->isa[tid].flattenIntIndex(reg_idx);
+inorder/thread_context.cc:    return cpu->readIntReg(reg_idx, tid);
+inorder/thread_context.cc:    reg_idx = cpu->isa[tid].flattenFloatIndex(reg_idx);
+inorder/thread_context.cc:    return cpu->readFloatReg(reg_idx, tid);
+inorder/thread_context.cc:    reg_idx = cpu->isa[tid].flattenFloatIndex(reg_idx);
+inorder/thread_context.cc:    return cpu->readFloatRegBits(reg_idx, tid);
+inorder/thread_context.cc:    return cpu->readRegOtherThread(reg_idx, tid);
+inorder/thread_context.cc:    reg_idx = cpu->isa[tid].flattenIntIndex(reg_idx);
+inorder/thread_context.cc:    cpu->setIntReg(reg_idx, val, tid);
+inorder/thread_context.cc:    reg_idx = cpu->isa[tid].flattenFloatIndex(reg_idx);
+inorder/thread_context.cc:    cpu->setFloatReg(reg_idx, val, tid);
+inorder/thread_context.cc:    reg_idx = cpu->isa[tid].flattenFloatIndex(reg_idx);
+inorder/thread_context.cc:    cpu->setFloatRegBits(reg_idx, val, tid);
+inorder/thread_context.cc:    cpu->setRegOtherThread(misc_reg, val, tid);
+inorder/thread_context.cc:    cpu->setMiscRegNoEffect(misc_reg, val, thread->threadId());
+inorder/thread_context.cc:    cpu->setMiscReg(misc_reg, val, thread->threadId());
+inorder/resource_pool.9stage.cc:    return cpu->name() + ".ResourcePool";
+inorder/resource_pool.9stage.cc:            res_pool_event->schedule(curTick() + cpu->cycles(delay));
+inorder/resource_pool.9stage.cc:            res_pool_event->schedule(curTick() + cpu->cycles(delay));
+inorder/resource_pool.9stage.cc:            res_pool_event->schedule(curTick() + cpu->cycles(delay));
+inorder/resource_pool.9stage.cc:            res_pool_event->schedule(curTick() + cpu->cycles(delay));
+inorder/resource_pool.9stage.cc:    resPool->cpu->cpuEventRemoveList.push(this);
+inorder/resource_pool.9stage.cc:        reschedule(curTick() + resPool->cpu->cycles(delay));
+inorder/resource_pool.9stage.cc:        schedule(curTick() + resPool->cpu->cycles(delay));
+inorder/pipeline_stage.cc:     return cpu->name() + ".stage" + to_string(stageNum);
+inorder/pipeline_stage.cc:    utilization = (runCycles / cpu->numCycles) * 100;
+inorder/pipeline_stage.cc:    tracer = dynamic_cast<Trace::InOrderTrace *>(cpu->getTracer());
+inorder/pipeline_stage.cc:        cpu->activateStage(stageNum);
+inorder/pipeline_stage.cc:    if (cpu->lastSquashCycle[tid] == curTick() &&
+inorder/pipeline_stage.cc:        cpu->squashSeqNum[tid] < inst->seqNum){
+inorder/pipeline_stage.cc:                inst->seqNum, cpu->squashSeqNum[tid]);
+inorder/pipeline_stage.cc:        cpu->lastSquashCycle[tid] = curTick();
+inorder/pipeline_stage.cc:        cpu->squashSeqNum[tid] = squash_seq_num;
+inorder/pipeline_stage.cc:            prevStage->insts[i] = cpu->dummyBufferInst;
+inorder/pipeline_stage.cc:    if (cpu->pipelineStage[stage_num]->prevStageValid) {
+inorder/pipeline_stage.cc:        buffer_avail = cpu->pipelineStage[stage_num]->stageBufferAvail() -
+inorder/pipeline_stage.cc:            cpu->pipelineStage[stage_num-1]->nextStage->insts.size() >= 1;
+inorder/pipeline_stage.cc:            cpu->activateStage(stageNum);
+inorder/pipeline_stage.cc:            cpu->deactivateStage(stageNum);
+inorder/pipeline_stage.cc:    if (cpu->threadModel == InOrderCPU::SwitchOnCacheMiss) {
+inorder/pipeline_stage.cc:            cpu->resPool->scheduleEvent((InOrderCPU::CPUEventType)
+inorder/pipeline_stage.cc:            cpu->updateContextSwitchStats();            
+inorder/pipeline_stage.cc:                cpu->pipelineStage[stageNum - 1]->
+inorder/pipeline_stage.cc:                if (cpu->pipelineStage[prev_stage]->stageStatus[tid] == Running ||
+inorder/pipeline_stage.cc:                    cpu->pipelineStage[prev_stage]->stageStatus[tid] == Idle) {
+inorder/pipeline_stage.cc:                    cpu->pipelineStage[prev_stage]->stageStatus[tid] = Unblocking;
+inorder/pipeline_stage.cc:            prevStage->insts[i] = cpu->dummyBufferInst;
+inorder/pipeline_stage.cc:        cpu->activityThisCycle();
+inorder/pipeline_stage.cc:                    "\n", tid, inst->seqNum, cpu->resPool->name(res_num));
+inorder/pipeline_stage.cc:            ResReqPtr req = cpu->resPool->request(res_num, inst);
+inorder/pipeline_stage.cc:                        cpu->resPool->name(res_num));
+inorder/pipeline_stage.cc:                        "\n", tid, inst->seqNum, cpu->resPool->name(res_num));
+inorder/pipeline_stage.cc:                    cpu->threadModel == InOrderCPU::SwitchOnCacheMiss) {
+inorder/pipeline_stage.cc:                    cpu->squashFromMemStall(inst, tid);  
+inorder/pipeline_stage.cc:                    cpu->suspendContext(tid);                    
+inorder/pipeline_stage.cc:                    cpu->activateNextReadyContext();
+inorder/pipeline_stage.cc:    return cpu->pipelineStage[stage_num]->nextStageValid;
+inorder/pipeline_stage.cc:        if (inst->seqNum > cpu->squashSeqNum[tid] &&
+inorder/pipeline_stage.cc:            curTick() == cpu->lastSquashCycle[tid]) {
+inorder/pipeline_stage.cc:                        cpu->pipelineStage[next_stage]->stageBufferAvail());
+inorder/pipeline_stage.cc:                    cpu->pipelineStage[prev_stage]->nextStage->insts.size(),
+inorder/pipeline_stage.cc:                    cpu->pipelineStage[prev_stage]->nextStageQueue->id());
+inorder/pipeline_stage.cc:            cpu->pipelineStage[prev_stage]->nextStage->insts.push_back(inst);
+inorder/resource_pool.cc:    int stage_width = cpu->stageWidth;
+inorder/resource_pool.cc:    return cpu->name() + ".ResourcePool";
+inorder/resource_pool.cc:    Tick when = cpu->nextCycle(curTick() + cpu->ticks(delay));
+inorder/resource_pool.cc:            cpu->schedule(res_pool_event, when);
+inorder/resource_pool.cc:            cpu->schedule(res_pool_event, when);
+inorder/resource_pool.cc:            cpu->schedule(res_pool_event, when);
+inorder/resource_pool.cc:    bool do_activate = cpu->threadModel != InOrderCPU::SwitchOnCacheMiss ||
+inorder/resource_pool.cc:        cpu->numActiveThreads() < 1 ||
+inorder/resource_pool.cc:        cpu->activeThreadId() == tid;
+inorder/resource_pool.cc:    resPool->cpu->cpuEventRemoveList.push(this);
+inorder/resource_pool.cc:    cpu->reschedule(this, cpu->nextCycle(curTick() + cpu->ticks(delay)), true);
+intr_control.cc:    cpu->postInterrupt(int_num, index);
+intr_control.cc:    cpu->clearInterrupt(int_num, index);
+o3/.svn/text-base/thread_state.hh.svn-base:        if (cpu->params()->profile) {
+o3/.svn/text-base/thread_state.hh.svn-base:                    cpu->params()->system->kernelSymtab);
+o3/.svn/text-base/thread_state.hh.svn-base:        std::ostream *os = simout.create(csprintf("profile.%s.dat", cpu->name()));
+o3/.svn/text-base/thread_context.hh.svn-base:    TheISA::TLB *getITBPtr() { return cpu->itb; }
+o3/.svn/text-base/thread_context.hh.svn-base:    TheISA::TLB *getDTBPtr() { return cpu->dtb; }
+o3/.svn/text-base/thread_context.hh.svn-base:        return cpu->fetch.decoder[thread->threadId()];
+o3/.svn/text-base/thread_context.hh.svn-base:    virtual int cpuId() { return cpu->cpuId(); }
+o3/.svn/text-base/thread_context.hh.svn-base:    virtual System *getSystemPtr() { return cpu->system; }
+o3/.svn/text-base/thread_context.hh.svn-base:    { return cpu->pcState(thread->threadId()); }
+o3/.svn/text-base/thread_context.hh.svn-base:    { return cpu->instAddr(thread->threadId()); }
+o3/.svn/text-base/thread_context.hh.svn-base:    { return cpu->nextInstAddr(thread->threadId()); }
+o3/.svn/text-base/thread_context.hh.svn-base:    { return cpu->microPC(thread->threadId()); }
+o3/.svn/text-base/thread_context.hh.svn-base:    { return cpu->readMiscRegNoEffect(misc_reg, thread->threadId()); }
+o3/.svn/text-base/thread_context.hh.svn-base:    { return cpu->readMiscReg(misc_reg, thread->threadId()); }
+o3/.svn/text-base/thread_context.hh.svn-base:    { return cpu->syscall(callnum, thread->threadId()); }
+o3/.svn/text-base/cpu.cc.svn-base:    cpu->tick();
+o3/.svn/text-base/cpu.cc.svn-base:    cpu->activateThread(tid);
+o3/.svn/text-base/cpu.cc.svn-base:    cpu->deactivateThread(tid);
+o3/.svn/text-base/cpu.cc.svn-base:        cpu->removeThread(tid);
+o3/.svn/text-base/dyn_inst.hh.svn-base:        return this->cpu->readMiscReg(misc_reg, this->threadNumber);
+o3/.svn/text-base/dyn_inst.hh.svn-base:        return this->cpu->readMiscReg(
+o3/.svn/text-base/dyn_inst.hh.svn-base:            this->cpu->setMiscReg(
+o3/.svn/text-base/dyn_inst.hh.svn-base:                this->setIntRegOperand(this->staticInst.get(), idx, this->cpu->readIntReg(prev_phys_reg));
+o3/.svn/text-base/dyn_inst.hh.svn-base:                this->setFloatRegOperandBits(this->staticInst.get(), idx, this->cpu->readFloatRegBits(prev_phys_reg));
+o3/.svn/text-base/dyn_inst.hh.svn-base:        return this->cpu->readIntReg(this->_srcRegIdx[idx]);
+o3/.svn/text-base/dyn_inst.hh.svn-base:        return this->cpu->readFloatReg(this->_srcRegIdx[idx]);
+o3/.svn/text-base/dyn_inst.hh.svn-base:        return this->cpu->readFloatRegBits(this->_srcRegIdx[idx]);
+o3/.svn/text-base/dyn_inst.hh.svn-base:        this->cpu->setIntReg(this->_destRegIdx[idx], val);
+o3/.svn/text-base/dyn_inst.hh.svn-base:        this->cpu->setFloatReg(this->_destRegIdx[idx], val);
+o3/.svn/text-base/dyn_inst.hh.svn-base:        this->cpu->setFloatRegBits(this->_destRegIdx[idx], val);
+o3/.svn/text-base/decode_impl.hh.svn-base:    return cpu->name() + ".decode";
+o3/.svn/text-base/decode_impl.hh.svn-base:    cpu->signalDrained();
+o3/.svn/text-base/decode_impl.hh.svn-base:    cpu->removeInstsUntil(squash_seq_num, tid);
+o3/.svn/text-base/decode_impl.hh.svn-base:            cpu->activateStage(O3CPU::DecodeIdx);
+o3/.svn/text-base/decode_impl.hh.svn-base:            cpu->deactivateStage(O3CPU::DecodeIdx);
+o3/.svn/text-base/decode_impl.hh.svn-base:        cpu->activityThisCycle();
+o3/.svn/text-base/thread_context_impl.hh.svn-base:        cpu->lockFlag = false;
+o3/.svn/text-base/thread_context_impl.hh.svn-base:    cpu->activateContext(thread->threadId(), delay);
+o3/.svn/text-base/thread_context_impl.hh.svn-base:    cpu->suspendContext(thread->threadId());
+o3/.svn/text-base/thread_context_impl.hh.svn-base:    cpu->haltContext(thread->threadId());
+o3/.svn/text-base/thread_context_impl.hh.svn-base:        thread->kernelStats = new TheISA::Kernel::Statistics(cpu->system);
+o3/.svn/text-base/thread_context_impl.hh.svn-base:    cpu->isa[thread->threadId()].clear();
+o3/.svn/text-base/thread_context_impl.hh.svn-base:    reg_idx = cpu->isa[thread->threadId()].flattenIntIndex(reg_idx);
+o3/.svn/text-base/thread_context_impl.hh.svn-base:    return cpu->readArchIntReg(reg_idx, thread->threadId());
+o3/.svn/text-base/thread_context_impl.hh.svn-base:    reg_idx = cpu->isa[thread->threadId()].flattenFloatIndex(reg_idx);
+o3/.svn/text-base/thread_context_impl.hh.svn-base:    return cpu->readArchFloatReg(reg_idx, thread->threadId());
+o3/.svn/text-base/thread_context_impl.hh.svn-base:    reg_idx = cpu->isa[thread->threadId()].flattenFloatIndex(reg_idx);
+o3/.svn/text-base/thread_context_impl.hh.svn-base:    return cpu->readArchFloatRegInt(reg_idx, thread->threadId());
+o3/.svn/text-base/thread_context_impl.hh.svn-base:    reg_idx = cpu->isa[thread->threadId()].flattenIntIndex(reg_idx);
+o3/.svn/text-base/thread_context_impl.hh.svn-base:    cpu->setArchIntReg(reg_idx, val, thread->threadId());
+o3/.svn/text-base/thread_context_impl.hh.svn-base:        cpu->squashFromTC(thread->threadId());
+o3/.svn/text-base/thread_context_impl.hh.svn-base:    reg_idx = cpu->isa[thread->threadId()].flattenFloatIndex(reg_idx);
+o3/.svn/text-base/thread_context_impl.hh.svn-base:    cpu->setArchFloatReg(reg_idx, val, thread->threadId());
+o3/.svn/text-base/thread_context_impl.hh.svn-base:        cpu->squashFromTC(thread->threadId());
+o3/.svn/text-base/thread_context_impl.hh.svn-base:    reg_idx = cpu->isa[thread->threadId()].flattenFloatIndex(reg_idx);
+o3/.svn/text-base/thread_context_impl.hh.svn-base:    cpu->setArchFloatRegInt(reg_idx, val, thread->threadId());
+o3/.svn/text-base/thread_context_impl.hh.svn-base:        cpu->squashFromTC(thread->threadId());
+o3/.svn/text-base/thread_context_impl.hh.svn-base:    cpu->pcState(val, thread->threadId());
+o3/.svn/text-base/thread_context_impl.hh.svn-base:        cpu->squashFromTC(thread->threadId());
+o3/.svn/text-base/thread_context_impl.hh.svn-base:    cpu->pcState(val, thread->threadId());
+o3/.svn/text-base/thread_context_impl.hh.svn-base:        cpu->squashFromTC(thread->threadId());
+o3/.svn/text-base/thread_context_impl.hh.svn-base:    return cpu->isa[thread->threadId()].flattenIntIndex(reg);
+o3/.svn/text-base/thread_context_impl.hh.svn-base:    return cpu->isa[thread->threadId()].flattenFloatIndex(reg);
+o3/.svn/text-base/thread_context_impl.hh.svn-base:    cpu->setMiscRegNoEffect(misc_reg, val, thread->threadId());
+o3/.svn/text-base/thread_context_impl.hh.svn-base:        cpu->squashFromTC(thread->threadId());
+o3/.svn/text-base/thread_context_impl.hh.svn-base:    cpu->setMiscReg(misc_reg, val, thread->threadId());
+o3/.svn/text-base/thread_context_impl.hh.svn-base:        cpu->squashFromTC(thread->threadId());
+o3/.svn/text-base/commit_impl.hh.svn-base:    return cpu->name() + ".commit";
+o3/.svn/text-base/commit_impl.hh.svn-base:        .init(cpu->numThreads)
+o3/.svn/text-base/commit_impl.hh.svn-base:        .init(cpu->numThreads)
+o3/.svn/text-base/commit_impl.hh.svn-base:        .init(cpu->numThreads)
+o3/.svn/text-base/commit_impl.hh.svn-base:        .init(cpu->numThreads)
+o3/.svn/text-base/commit_impl.hh.svn-base:        .init(cpu->numThreads)
+o3/.svn/text-base/commit_impl.hh.svn-base:        .init(cpu->numThreads)
+o3/.svn/text-base/commit_impl.hh.svn-base:        .init(cpu->numThreads)
+o3/.svn/text-base/commit_impl.hh.svn-base:        .init(cpu->numThreads)
+o3/.svn/text-base/commit_impl.hh.svn-base:        .init(cpu->numThreads)
+o3/.svn/text-base/commit_impl.hh.svn-base:        .init(cpu->numThreads)
+o3/.svn/text-base/commit_impl.hh.svn-base:        .init(cpu->numThreads)
+o3/.svn/text-base/commit_impl.hh.svn-base:    cpu->activateStage(O3CPU::CommitIdx);
+o3/.svn/text-base/commit_impl.hh.svn-base:    cpu->activityThisCycle();
+o3/.svn/text-base/commit_impl.hh.svn-base:    trapLatency = cpu->ticks(trapLatency);
+o3/.svn/text-base/commit_impl.hh.svn-base:        cpu->deactivateStage(O3CPU::CommitIdx);
+o3/.svn/text-base/commit_impl.hh.svn-base:        cpu->activateStage(O3CPU::CommitIdx);
+o3/.svn/text-base/commit_impl.hh.svn-base:    cpu->schedule(trap, curTick() + trapLatency);
+o3/.svn/text-base/commit_impl.hh.svn-base:    cpu->activityThisCycle();
+o3/.svn/text-base/commit_impl.hh.svn-base:    cpu->activityThisCycle();
+o3/.svn/text-base/commit_impl.hh.svn-base:        cpu->signalDrained();
+o3/.svn/text-base/commit_impl.hh.svn-base:        cpu->activityThisCycle();
+o3/.svn/text-base/commit_impl.hh.svn-base:    if (!cpu->checkInterrupts(cpu->tcBase(0))) {
+o3/.svn/text-base/commit_impl.hh.svn-base:    if (canHandleInterrupts && cpu->instList.empty()) {
+o3/.svn/text-base/commit_impl.hh.svn-base:        if (cpu->checker) {
+o3/.svn/text-base/commit_impl.hh.svn-base:            cpu->checker->handlePendingInt();
+o3/.svn/text-base/commit_impl.hh.svn-base:        cpu->processInterrupts(interrupt);
+o3/.svn/text-base/commit_impl.hh.svn-base:                cpu->instList.empty() ? "" : "not " );
+o3/.svn/text-base/commit_impl.hh.svn-base:    interrupt = cpu->getInterrupts();
+o3/.svn/text-base/commit_impl.hh.svn-base:        if (cpu->checkInterrupts(cpu->tcBase(0)))
+o3/.svn/text-base/commit_impl.hh.svn-base:                    cpu->instDone(tid, head_inst);
+o3/.svn/text-base/commit_impl.hh.svn-base:                cpu->traceFunctions(pc[tid].instAddr());
+o3/.svn/text-base/commit_impl.hh.svn-base:                    cpu->system->pcEventQueue.service(thread[tid]->getTC());
+o3/.svn/text-base/commit_impl.hh.svn-base:    if (cpu->checker) {
+o3/.svn/text-base/commit_impl.hh.svn-base:        cpu->checker->verify(head_inst);
+o3/.svn/text-base/commit_impl.hh.svn-base:        if (cpu->checker) {
+o3/.svn/text-base/commit_impl.hh.svn-base:            cpu->checker->verify(head_inst);
+o3/.svn/text-base/commit_impl.hh.svn-base:        cpu->trap(inst_fault, tid, head_inst->staticInst);
+o3/.svn/text-base/rob_impl.hh.svn-base:    return cpu->name() + ".rob";
+o3/.svn/text-base/rob_impl.hh.svn-base:    cpu->removeFrontInst(head_inst);
+o3/.svn/text-base/dyn_inst_impl.hh.svn-base:    if (this->cpu->checker) {
+o3/.svn/text-base/dyn_inst_impl.hh.svn-base:    pc.npc(this->cpu->readMiscRegNoEffect(AlphaISA::IPR_EXC_ADDR,
+o3/.svn/text-base/dyn_inst_impl.hh.svn-base:        ThreadContext *tc = this->cpu->tcBase(this->threadNumber);
+o3/.svn/text-base/dyn_inst_impl.hh.svn-base:    this->cpu->hwrei(this->threadNumber);
+o3/.svn/text-base/dyn_inst_impl.hh.svn-base:    this->cpu->trap(fault, this->threadNumber, this->staticInst);
+o3/.svn/text-base/dyn_inst_impl.hh.svn-base:    return this->cpu->simPalCheck(palFunc, this->threadNumber);
+o3/.svn/text-base/dyn_inst_impl.hh.svn-base:    TheISA::PCState curPC = this->cpu->pcState(this->threadNumber);
+o3/.svn/text-base/dyn_inst_impl.hh.svn-base:    this->cpu->syscall(callnum, this->threadNumber);
+o3/.svn/text-base/dyn_inst_impl.hh.svn-base:    TheISA::PCState newPC = this->cpu->pcState(this->threadNumber);
+o3/.svn/text-base/iew_impl.hh.svn-base:    return cpu->name() + ".iew";
+o3/.svn/text-base/iew_impl.hh.svn-base:        .init(cpu->numThreads)
+o3/.svn/text-base/iew_impl.hh.svn-base:        .init(cpu->numThreads)
+o3/.svn/text-base/iew_impl.hh.svn-base:        .init(cpu->numThreads)
+o3/.svn/text-base/iew_impl.hh.svn-base:        .init(cpu->numThreads)
+o3/.svn/text-base/iew_impl.hh.svn-base:        .init(cpu->numThreads)
+o3/.svn/text-base/iew_impl.hh.svn-base:    iewExecRate = iewExecutedInsts / cpu->numCycles;
+o3/.svn/text-base/iew_impl.hh.svn-base:        .init(cpu->numThreads)
+o3/.svn/text-base/iew_impl.hh.svn-base:        .init(cpu->numThreads)
+o3/.svn/text-base/iew_impl.hh.svn-base:        .init(cpu->numThreads)
+o3/.svn/text-base/iew_impl.hh.svn-base:        .init(cpu->numThreads)
+o3/.svn/text-base/iew_impl.hh.svn-base:        .init(cpu->numThreads)
+o3/.svn/text-base/iew_impl.hh.svn-base:    wbRate = writebackCount / cpu->numCycles;
+o3/.svn/text-base/iew_impl.hh.svn-base:    if (cpu->checker) {
+o3/.svn/text-base/iew_impl.hh.svn-base:        cpu->checker->setDcachePort(&cpu->getDataPort());
+o3/.svn/text-base/iew_impl.hh.svn-base:    cpu->activateStage(O3CPU::IEWIdx);
+o3/.svn/text-base/iew_impl.hh.svn-base:    cpu->signalDrained();
+o3/.svn/text-base/iew_impl.hh.svn-base:    cpu->activityThisCycle();
+o3/.svn/text-base/iew_impl.hh.svn-base:    cpu->wakeCPU();
+o3/.svn/text-base/iew_impl.hh.svn-base:    cpu->activityThisCycle();
+o3/.svn/text-base/iew_impl.hh.svn-base:    cpu->activateStage(O3CPU::IEWIdx);
+o3/.svn/text-base/iew_impl.hh.svn-base:    cpu->deactivateStage(O3CPU::IEWIdx);
+o3/.svn/text-base/iew_impl.hh.svn-base:        cpu->activityThisCycle();
+o3/.svn/text-base/iew_impl.hh.svn-base:        cpu->activityThisCycle();
+o3/.svn/text-base/rename_impl.hh.svn-base:    return cpu->name() + ".rename";
+o3/.svn/text-base/rename_impl.hh.svn-base:    cpu->signalDrained();
+o3/.svn/text-base/rename_impl.hh.svn-base:        cpu->activityThisCycle();
+o3/.svn/text-base/rename_impl.hh.svn-base:            cpu->activateStage(O3CPU::RenameIdx);
+o3/.svn/text-base/rename_impl.hh.svn-base:            cpu->deactivateStage(O3CPU::RenameIdx);
+o3/.svn/text-base/lsq_unit_impl.hh.svn-base:                cpu->schedule(wb, curTick() + 1);
+o3/.svn/text-base/lsq_unit_impl.hh.svn-base:                if (cpu->checker) {
+o3/.svn/text-base/lsq_unit_impl.hh.svn-base:        ThreadContext *thread = cpu->tcBase(lsqID);
+o3/.svn/text-base/lsq_unit_impl.hh.svn-base:        if (cpu->checker) {
+o3/.svn/text-base/lsq_unit_impl.hh.svn-base:            cpu->checker->verify(storeQueue[storeWBIdx].inst);
+o3/.svn/text-base/lsq_unit_impl.hh.svn-base:    cpu->wakeCPU();
+o3/.svn/text-base/lsq_unit_impl.hh.svn-base:    cpu->activityThisCycle();
+o3/.svn/text-base/lsq_unit_impl.hh.svn-base:    if (cpu->checker) {
+o3/.svn/text-base/lsq_unit_impl.hh.svn-base:        cpu->checker->verify(storeQueue[store_idx].inst);
+o3/.svn/text-base/rob.hh.svn-base:     *  This will always be set to cpu->instList.end() if it is invalid.
+o3/.svn/text-base/fetch_impl.hh.svn-base:    return cpu->name() + ".fetch";
+o3/.svn/text-base/fetch_impl.hh.svn-base:    idleRate = fetchIdleCycles * 100 / cpu->numCycles;
+o3/.svn/text-base/fetch_impl.hh.svn-base:    branchRate = fetchedBranches / cpu->numCycles;
+o3/.svn/text-base/fetch_impl.hh.svn-base:    fetchRate = fetchedInsts / cpu->numCycles;
+o3/.svn/text-base/fetch_impl.hh.svn-base:        pc[tid] = cpu->pcState(tid);
+o3/.svn/text-base/fetch_impl.hh.svn-base:    assert(cpu->getInstPort().isConnected());
+o3/.svn/text-base/fetch_impl.hh.svn-base:    cacheBlkSize = cpu->getInstPort().peerBlockSize();
+o3/.svn/text-base/fetch_impl.hh.svn-base:        cpu->wakeCPU();
+o3/.svn/text-base/fetch_impl.hh.svn-base:    cpu->signalDrained();
+o3/.svn/text-base/fetch_impl.hh.svn-base:        pc[i] = cpu->pcState(i);
+o3/.svn/text-base/fetch_impl.hh.svn-base:        cpu->activateStage(O3CPU::FetchIdx);
+o3/.svn/text-base/fetch_impl.hh.svn-base:        cpu->deactivateStage(O3CPU::FetchIdx);
+o3/.svn/text-base/fetch_impl.hh.svn-base:                    cpu->instMasterId(), pc, cpu->thread[tid]->contextId(), tid);
+o3/.svn/text-base/fetch_impl.hh.svn-base:    cpu->itb->translateTiming(mem_req, cpu->thread[tid]->getTC(),
+o3/.svn/text-base/fetch_impl.hh.svn-base:    cpu->wakeCPU();
+o3/.svn/text-base/fetch_impl.hh.svn-base:        if (!cpu->system->isMemAddr(mem_req->getPaddr())) {
+o3/.svn/text-base/fetch_impl.hh.svn-base:        if (!cpu->getInstPort().sendTimingReq(data_pkt)) {
+o3/.svn/text-base/fetch_impl.hh.svn-base:            cpu->schedule(finishTranslationEvent, cpu->nextCycle(curTick() + cpu->ticks(1)));
+o3/.svn/text-base/fetch_impl.hh.svn-base:        cpu->activityThisCycle();
+o3/.svn/text-base/fetch_impl.hh.svn-base:    cpu->removeInstsUntil(seq_num, tid);
+o3/.svn/text-base/fetch_impl.hh.svn-base:    if (cpu->contextSwitch) {
+o3/.svn/text-base/fetch_impl.hh.svn-base:                cpu->activateStage(O3CPU::FetchIdx);
+o3/.svn/text-base/fetch_impl.hh.svn-base:        cpu->deactivateStage(O3CPU::FetchIdx);
+o3/.svn/text-base/fetch_impl.hh.svn-base:    cpu->removeInstsNotInROB(tid);
+o3/.svn/text-base/fetch_impl.hh.svn-base:    if (wroteToTimeBuffer || cpu->contextSwitch) {
+o3/.svn/text-base/fetch_impl.hh.svn-base:        cpu->activityThisCycle();
+o3/.svn/text-base/fetch_impl.hh.svn-base:    InstSeqNum seq = cpu->getAndIncrementInstSeq();
+o3/.svn/text-base/fetch_impl.hh.svn-base:    instruction->setThreadState(cpu->thread[tid]);
+o3/.svn/text-base/fetch_impl.hh.svn-base:            cpu->getTracer()->getInstRecord(curTick(), cpu->tcBase(tid),
+o3/.svn/text-base/fetch_impl.hh.svn-base:    instruction->setInstListIt(cpu->addInst(instruction));
+o3/.svn/text-base/fetch_impl.hh.svn-base:            decoder[tid]->setTC(cpu->thread[tid]->getTC());
+o3/.svn/text-base/fetch_impl.hh.svn-base:                    staticInst = cpu->microcodeRom.fetchMicroop(
+o3/.svn/text-base/fetch_impl.hh.svn-base:        if (cpu->getInstPort().sendTimingReq(retryPkt)) {
+o3/.svn/text-base/inst_queue_impl.hh.svn-base:    return cpu->name() + ".iq";
+o3/.svn/text-base/inst_queue_impl.hh.svn-base:    issueRate = iqInstsIssued / cpu->numCycles;
+o3/.svn/text-base/inst_queue_impl.hh.svn-base:                cpu->schedule(execution, curTick() + cpu->ticks(op_latency - 1));
+o3/.svn/text-base/inst_queue_impl.hh.svn-base:        cpu->activityThisCycle();
+o3/.svn/text-base/lsq_unit.hh.svn-base:        ThreadContext *thread = cpu->tcBase(lsqID);
+o3/.svn/text-base/lsq_unit.hh.svn-base:        cpu->schedule(wb, curTick() + delay);
+o3/.svn/text-base/lsq_unit.hh.svn-base:            cpu->schedule(wb, curTick());
+o3/commit_impl.hh:    return cpu->name() + ".commit";
+o3/commit_impl.hh:        .init(cpu->numThreads)
+o3/commit_impl.hh:        .init(cpu->numThreads)
+o3/commit_impl.hh:        .init(cpu->numThreads)
+o3/commit_impl.hh:        .init(cpu->numThreads)
+o3/commit_impl.hh:        .init(cpu->numThreads)
+o3/commit_impl.hh:        .init(cpu->numThreads)
+o3/commit_impl.hh:        .init(cpu->numThreads)
+o3/commit_impl.hh:        .init(cpu->numThreads)
+o3/commit_impl.hh:        .init(cpu->numThreads)
+o3/commit_impl.hh:        .init(cpu->numThreads)
+o3/commit_impl.hh:        .init(cpu->numThreads)
+o3/commit_impl.hh:    cpu->activateStage(O3CPU::CommitIdx);
+o3/commit_impl.hh:    cpu->activityThisCycle();
+o3/commit_impl.hh:    trapLatency = cpu->ticks(trapLatency);
+o3/commit_impl.hh:        cpu->deactivateStage(O3CPU::CommitIdx);
+o3/commit_impl.hh:        cpu->activateStage(O3CPU::CommitIdx);
+o3/commit_impl.hh:    cpu->schedule(trap, curTick() + trapLatency);
+o3/commit_impl.hh:    cpu->activityThisCycle();
+o3/commit_impl.hh:    cpu->activityThisCycle();
+o3/commit_impl.hh:        cpu->signalDrained();
+o3/commit_impl.hh:        cpu->activityThisCycle();
+o3/commit_impl.hh:    if (!cpu->checkInterrupts(cpu->tcBase(0))) {
+o3/commit_impl.hh:    if (canHandleInterrupts && cpu->instList.empty()) {
+o3/commit_impl.hh:        if (cpu->checker) {
+o3/commit_impl.hh:            cpu->checker->handlePendingInt();
+o3/commit_impl.hh:        cpu->processInterrupts(interrupt);
+o3/commit_impl.hh:                cpu->instList.empty() ? "" : "not " );
+o3/commit_impl.hh:    interrupt = cpu->getInterrupts();
+o3/commit_impl.hh:        if (cpu->checkInterrupts(cpu->tcBase(0)))
+o3/commit_impl.hh:                    cpu->instDone(tid, head_inst);
+o3/commit_impl.hh:                cpu->traceFunctions(pc[tid].instAddr());
+o3/commit_impl.hh:                    cpu->system->pcEventQueue.service(thread[tid]->getTC());
+o3/commit_impl.hh:    if (cpu->checker) {
+o3/commit_impl.hh:        cpu->checker->verify(head_inst);
+o3/commit_impl.hh:        if (cpu->checker) {
+o3/commit_impl.hh:            cpu->checker->verify(head_inst);
+o3/commit_impl.hh:        cpu->trap(inst_fault, tid, head_inst->staticInst);
+o3/decode_impl.hh:    return cpu->name() + ".decode";
+o3/decode_impl.hh:    cpu->signalDrained();
+o3/decode_impl.hh:    cpu->removeInstsUntil(squash_seq_num, tid);
+o3/decode_impl.hh:            cpu->activateStage(O3CPU::DecodeIdx);
+o3/decode_impl.hh:            cpu->deactivateStage(O3CPU::DecodeIdx);
+o3/decode_impl.hh:        cpu->activityThisCycle();
+o3/rob.hh:     *  This will always be set to cpu->instList.end() if it is invalid.
+o3/thread_context.hh:    TheISA::TLB *getITBPtr() { return cpu->itb; }
+o3/thread_context.hh:    TheISA::TLB *getDTBPtr() { return cpu->dtb; }
+o3/thread_context.hh:        return cpu->fetch.decoder[thread->threadId()];
+o3/thread_context.hh:    virtual int cpuId() { return cpu->cpuId(); }
+o3/thread_context.hh:    virtual System *getSystemPtr() { return cpu->system; }
+o3/thread_context.hh:    { return cpu->pcState(thread->threadId()); }
+o3/thread_context.hh:    { return cpu->instAddr(thread->threadId()); }
+o3/thread_context.hh:    { return cpu->nextInstAddr(thread->threadId()); }
+o3/thread_context.hh:    { return cpu->microPC(thread->threadId()); }
+o3/thread_context.hh:    { return cpu->readMiscRegNoEffect(misc_reg, thread->threadId()); }
+o3/thread_context.hh:    { return cpu->readMiscReg(misc_reg, thread->threadId()); }
+o3/thread_context.hh:    { return cpu->syscall(callnum, thread->threadId()); }
+o3/cpu.cc:    cpu->tick();
+o3/cpu.cc:    cpu->activateThread(tid);
+o3/cpu.cc:    cpu->deactivateThread(tid);
+o3/cpu.cc:        cpu->removeThread(tid);
+o3/dyn_inst.hh:        return this->cpu->readMiscReg(misc_reg, this->threadNumber);
+o3/dyn_inst.hh:        return this->cpu->readMiscReg(
+o3/dyn_inst.hh:            this->cpu->setMiscReg(
+o3/dyn_inst.hh:                this->setIntRegOperand(this->staticInst.get(), idx, this->cpu->readIntReg(prev_phys_reg));
+o3/dyn_inst.hh:                this->setFloatRegOperandBits(this->staticInst.get(), idx, this->cpu->readFloatRegBits(prev_phys_reg));
+o3/dyn_inst.hh:        return this->cpu->readIntReg(this->_srcRegIdx[idx]);
+o3/dyn_inst.hh:        return this->cpu->readFloatReg(this->_srcRegIdx[idx]);
+o3/dyn_inst.hh:        return this->cpu->readFloatRegBits(this->_srcRegIdx[idx]);
+o3/dyn_inst.hh:        this->cpu->setIntReg(this->_destRegIdx[idx], val);
+o3/dyn_inst.hh:        this->cpu->setFloatReg(this->_destRegIdx[idx], val);
+o3/dyn_inst.hh:        this->cpu->setFloatRegBits(this->_destRegIdx[idx], val);
+o3/fetch_impl.hh:    return cpu->name() + ".fetch";
+o3/fetch_impl.hh:    idleRate = fetchIdleCycles * 100 / cpu->numCycles;
+o3/fetch_impl.hh:    branchRate = fetchedBranches / cpu->numCycles;
+o3/fetch_impl.hh:    fetchRate = fetchedInsts / cpu->numCycles;
+o3/fetch_impl.hh:        pc[tid] = cpu->pcState(tid);
+o3/fetch_impl.hh:    assert(cpu->getInstPort().isConnected());
+o3/fetch_impl.hh:    cacheBlkSize = cpu->getInstPort().peerBlockSize();
+o3/fetch_impl.hh:        cpu->wakeCPU();
+o3/fetch_impl.hh:    cpu->signalDrained();
+o3/fetch_impl.hh:        pc[i] = cpu->pcState(i);
+o3/fetch_impl.hh:        cpu->activateStage(O3CPU::FetchIdx);
+o3/fetch_impl.hh:        cpu->deactivateStage(O3CPU::FetchIdx);
+o3/fetch_impl.hh:                    cpu->instMasterId(), pc, cpu->thread[tid]->contextId(), tid);
+o3/fetch_impl.hh:    cpu->itb->translateTiming(mem_req, cpu->thread[tid]->getTC(),
+o3/fetch_impl.hh:    cpu->wakeCPU();
+o3/fetch_impl.hh:        if (!cpu->system->isMemAddr(mem_req->getPaddr())) {
+o3/fetch_impl.hh:        if (!cpu->getInstPort().sendTimingReq(data_pkt)) {
+o3/fetch_impl.hh:            cpu->schedule(finishTranslationEvent, cpu->nextCycle(curTick() + cpu->ticks(1)));
+o3/fetch_impl.hh:        cpu->activityThisCycle();
+o3/fetch_impl.hh:    cpu->removeInstsUntil(seq_num, tid);
+o3/fetch_impl.hh:    if (cpu->contextSwitch) {
+o3/fetch_impl.hh:                cpu->activateStage(O3CPU::FetchIdx);
+o3/fetch_impl.hh:        cpu->deactivateStage(O3CPU::FetchIdx);
+o3/fetch_impl.hh:    cpu->removeInstsNotInROB(tid);
+o3/fetch_impl.hh:    if (wroteToTimeBuffer || cpu->contextSwitch) {
+o3/fetch_impl.hh:        cpu->activityThisCycle();
+o3/fetch_impl.hh:    InstSeqNum seq = cpu->getAndIncrementInstSeq();
+o3/fetch_impl.hh:    instruction->setThreadState(cpu->thread[tid]);
+o3/fetch_impl.hh:            cpu->getTracer()->getInstRecord(curTick(), cpu->tcBase(tid),
+o3/fetch_impl.hh:    instruction->setInstListIt(cpu->addInst(instruction));
+o3/fetch_impl.hh:            decoder[tid]->setTC(cpu->thread[tid]->getTC());
+o3/fetch_impl.hh:                    staticInst = cpu->microcodeRom.fetchMicroop(
+o3/fetch_impl.hh:        if (cpu->getInstPort().sendTimingReq(retryPkt)) {
+o3/inst_queue_impl.hh:    return cpu->name() + ".iq";
+o3/inst_queue_impl.hh:    issueRate = iqInstsIssued / cpu->numCycles;
+o3/inst_queue_impl.hh:                cpu->schedule(execution, curTick() + cpu->ticks(op_latency - 1));
+o3/inst_queue_impl.hh:        cpu->activityThisCycle();
+o3/iew_impl.hh:    return cpu->name() + ".iew";
+o3/iew_impl.hh:        .init(cpu->numThreads)
+o3/iew_impl.hh:        .init(cpu->numThreads)
+o3/iew_impl.hh:        .init(cpu->numThreads)
+o3/iew_impl.hh:        .init(cpu->numThreads)
+o3/iew_impl.hh:        .init(cpu->numThreads)
+o3/iew_impl.hh:    iewExecRate = iewExecutedInsts / cpu->numCycles;
+o3/iew_impl.hh:        .init(cpu->numThreads)
+o3/iew_impl.hh:        .init(cpu->numThreads)
+o3/iew_impl.hh:        .init(cpu->numThreads)
+o3/iew_impl.hh:        .init(cpu->numThreads)
+o3/iew_impl.hh:        .init(cpu->numThreads)
+o3/iew_impl.hh:    wbRate = writebackCount / cpu->numCycles;
+o3/iew_impl.hh:    if (cpu->checker) {
+o3/iew_impl.hh:        cpu->checker->setDcachePort(&cpu->getDataPort());
+o3/iew_impl.hh:    cpu->activateStage(O3CPU::IEWIdx);
+o3/iew_impl.hh:    cpu->signalDrained();
+o3/iew_impl.hh:    cpu->activityThisCycle();
+o3/iew_impl.hh:    cpu->wakeCPU();
+o3/iew_impl.hh:    cpu->activityThisCycle();
+o3/iew_impl.hh:    cpu->activateStage(O3CPU::IEWIdx);
+o3/iew_impl.hh:    cpu->deactivateStage(O3CPU::IEWIdx);
+o3/iew_impl.hh:        cpu->activityThisCycle();
+o3/iew_impl.hh:        cpu->activityThisCycle();
+o3/thread_state.hh:        if (cpu->params()->profile) {
+o3/thread_state.hh:                    cpu->params()->system->kernelSymtab);
+o3/thread_state.hh:        std::ostream *os = simout.create(csprintf("profile.%s.dat", cpu->name()));
+o3/lsq_unit.hh:        ThreadContext *thread = cpu->tcBase(lsqID);
+o3/lsq_unit.hh:        cpu->schedule(wb, curTick() + delay);
+o3/lsq_unit.hh:            cpu->schedule(wb, curTick());
+o3/dyn_inst_impl.hh:    if (this->cpu->checker) {
+o3/dyn_inst_impl.hh:    pc.npc(this->cpu->readMiscRegNoEffect(AlphaISA::IPR_EXC_ADDR,
+o3/dyn_inst_impl.hh:        ThreadContext *tc = this->cpu->tcBase(this->threadNumber);
+o3/dyn_inst_impl.hh:    this->cpu->hwrei(this->threadNumber);
+o3/dyn_inst_impl.hh:    this->cpu->trap(fault, this->threadNumber, this->staticInst);
+o3/dyn_inst_impl.hh:    return this->cpu->simPalCheck(palFunc, this->threadNumber);
+o3/dyn_inst_impl.hh:    TheISA::PCState curPC = this->cpu->pcState(this->threadNumber);
+o3/dyn_inst_impl.hh:    this->cpu->syscall(callnum, this->threadNumber);
+o3/dyn_inst_impl.hh:    TheISA::PCState newPC = this->cpu->pcState(this->threadNumber);
+o3/thread_context_impl.hh:        cpu->lockFlag = false;
+o3/thread_context_impl.hh:    cpu->activateContext(thread->threadId(), delay);
+o3/thread_context_impl.hh:    cpu->suspendContext(thread->threadId());
+o3/thread_context_impl.hh:    cpu->haltContext(thread->threadId());
+o3/thread_context_impl.hh:        thread->kernelStats = new TheISA::Kernel::Statistics(cpu->system);
+o3/thread_context_impl.hh:    cpu->isa[thread->threadId()].clear();
+o3/thread_context_impl.hh:    reg_idx = cpu->isa[thread->threadId()].flattenIntIndex(reg_idx);
+o3/thread_context_impl.hh:    return cpu->readArchIntReg(reg_idx, thread->threadId());
+o3/thread_context_impl.hh:    reg_idx = cpu->isa[thread->threadId()].flattenFloatIndex(reg_idx);
+o3/thread_context_impl.hh:    return cpu->readArchFloatReg(reg_idx, thread->threadId());
+o3/thread_context_impl.hh:    reg_idx = cpu->isa[thread->threadId()].flattenFloatIndex(reg_idx);
+o3/thread_context_impl.hh:    return cpu->readArchFloatRegInt(reg_idx, thread->threadId());
+o3/thread_context_impl.hh:    reg_idx = cpu->isa[thread->threadId()].flattenIntIndex(reg_idx);
+o3/thread_context_impl.hh:    cpu->setArchIntReg(reg_idx, val, thread->threadId());
+o3/thread_context_impl.hh:        cpu->squashFromTC(thread->threadId());
+o3/thread_context_impl.hh:    reg_idx = cpu->isa[thread->threadId()].flattenFloatIndex(reg_idx);
+o3/thread_context_impl.hh:    cpu->setArchFloatReg(reg_idx, val, thread->threadId());
+o3/thread_context_impl.hh:        cpu->squashFromTC(thread->threadId());
+o3/thread_context_impl.hh:    reg_idx = cpu->isa[thread->threadId()].flattenFloatIndex(reg_idx);
+o3/thread_context_impl.hh:    cpu->setArchFloatRegInt(reg_idx, val, thread->threadId());
+o3/thread_context_impl.hh:        cpu->squashFromTC(thread->threadId());
+o3/thread_context_impl.hh:    cpu->pcState(val, thread->threadId());
+o3/thread_context_impl.hh:        cpu->squashFromTC(thread->threadId());
+o3/thread_context_impl.hh:    cpu->pcState(val, thread->threadId());
+o3/thread_context_impl.hh:        cpu->squashFromTC(thread->threadId());
+o3/thread_context_impl.hh:    return cpu->isa[thread->threadId()].flattenIntIndex(reg);
+o3/thread_context_impl.hh:    return cpu->isa[thread->threadId()].flattenFloatIndex(reg);
+o3/thread_context_impl.hh:    cpu->setMiscRegNoEffect(misc_reg, val, thread->threadId());
+o3/thread_context_impl.hh:        cpu->squashFromTC(thread->threadId());
+o3/thread_context_impl.hh:    cpu->setMiscReg(misc_reg, val, thread->threadId());
+o3/thread_context_impl.hh:        cpu->squashFromTC(thread->threadId());
+o3/rob_impl.hh:    return cpu->name() + ".rob";
+o3/rob_impl.hh:    cpu->removeFrontInst(head_inst);
+o3/lsq_unit_impl.hh:                cpu->schedule(wb, curTick() + 1);
+o3/lsq_unit_impl.hh:                if (cpu->checker) {
+o3/lsq_unit_impl.hh:        ThreadContext *thread = cpu->tcBase(lsqID);
+o3/lsq_unit_impl.hh:        if (cpu->checker) {
+o3/lsq_unit_impl.hh:            cpu->checker->verify(storeQueue[storeWBIdx].inst);
+o3/lsq_unit_impl.hh:    cpu->wakeCPU();
+o3/lsq_unit_impl.hh:    cpu->activityThisCycle();
+o3/lsq_unit_impl.hh:    if (cpu->checker) {
+o3/lsq_unit_impl.hh:        cpu->checker->verify(storeQueue[store_idx].inst);
+o3/rename_impl.hh:    return cpu->name() + ".rename";
+o3/rename_impl.hh:    cpu->signalDrained();
+o3/rename_impl.hh:        cpu->activityThisCycle();
+o3/rename_impl.hh:            cpu->activateStage(O3CPU::RenameIdx);
+o3/rename_impl.hh:            cpu->deactivateStage(O3CPU::RenameIdx);
+ozone/.svn/text-base/thread_state.hh.svn-base:        if (cpu->params->profile) {
+ozone/.svn/text-base/thread_state.hh.svn-base:            profile = new FunctionProfile(cpu->params->system->kernelSymtab);
+ozone/.svn/text-base/thread_state.hh.svn-base:        std::ostream *os = simout.create(csprintf("profile.%s.dat", cpu->name()));
+ozone/.svn/text-base/front_end_impl.hh.svn-base:    return cpu->name() + ".frontend";
+ozone/.svn/text-base/front_end_impl.hh.svn-base:    if (cpu->checker) {
+ozone/.svn/text-base/front_end_impl.hh.svn-base:        cpu->checker->setIcachePort(&icachePort);
+ozone/.svn/text-base/front_end_impl.hh.svn-base:    idleRate = fetchIdleCycles * 100 / cpu->numCycles;
+ozone/.svn/text-base/front_end_impl.hh.svn-base:    branchRate = fetchedBranches / cpu->numCycles;
+ozone/.svn/text-base/front_end_impl.hh.svn-base:    fetchRate = fetchedInsts / cpu->numCycles;
+ozone/.svn/text-base/front_end_impl.hh.svn-base:    IFQOccupancy = IFQCount / cpu->numCycles;
+ozone/.svn/text-base/front_end_impl.hh.svn-base:    IFQFullRate = IFQFcount * Stats::constant(100) / cpu->numCycles;
+ozone/.svn/text-base/front_end_impl.hh.svn-base:    dispatchRate = dispatchCountStat / cpu->numCycles;
+ozone/.svn/text-base/front_end_impl.hh.svn-base:                         PC, cpu->thread->contextId());
+ozone/.svn/text-base/front_end_impl.hh.svn-base:    fault = cpu->itb->translateAtomic(memReq, thread, false, true);
+ozone/.svn/text-base/front_end_impl.hh.svn-base:        if (cpu->system->memctrl->badaddr(memReq->paddr) ||
+ozone/.svn/text-base/front_end_impl.hh.svn-base:    bool be_block = cpu->decoupledFrontEnd ? false : backEnd->isBlocked();
+ozone/.svn/text-base/front_end_impl.hh.svn-base:    bool be_block = cpu->decoupledFrontEnd ? false : backEnd->isBlocked();
+ozone/.svn/text-base/front_end_impl.hh.svn-base:    cpu->signalSwitched();
+ozone/.svn/text-base/lw_lsq_impl.hh.svn-base:    if (cpu->checker) {
+ozone/.svn/text-base/lw_lsq_impl.hh.svn-base:        cpu->checker->setDcachePort(&dcachePort);
+ozone/.svn/text-base/lw_lsq_impl.hh.svn-base:                if (cpu->lockFlag) {
+ozone/.svn/text-base/lw_lsq_impl.hh.svn-base:        if (cpu->checker) {
+ozone/.svn/text-base/lw_lsq_impl.hh.svn-base:            cpu->checker->verify(inst);
+ozone/.svn/text-base/lw_lsq_impl.hh.svn-base:    if (cpu->checker) {
+ozone/.svn/text-base/lw_lsq_impl.hh.svn-base:        cpu->checker->verify(inst);
+ozone/.svn/text-base/cpu_impl.hh.svn-base:    cpu->tick();
+ozone/.svn/text-base/cpu_impl.hh.svn-base:    cpu->activateContext(thread->threadId(), delay);
+ozone/.svn/text-base/cpu_impl.hh.svn-base:    cpu->suspendContext(thread->threadId());
+ozone/.svn/text-base/cpu_impl.hh.svn-base:    cpu->haltContext(thread->threadId());
+ozone/.svn/text-base/cpu_impl.hh.svn-base:    cpu->lockFlag = false;
+ozone/.svn/text-base/cpu_impl.hh.svn-base:        thread->kernelStats = new TheISA::Kernel::Statistics(cpu->system);
+ozone/.svn/text-base/cpu_impl.hh.svn-base:    cpu->frontEnd->setPC(thread->PC);
+ozone/.svn/text-base/cpu_impl.hh.svn-base:    cpu->frontEnd->setNextPC(thread->nextPC);
+ozone/.svn/text-base/cpu_impl.hh.svn-base:        cpu->squashFromTC();
+ozone/.svn/text-base/cpu_impl.hh.svn-base:        cpu->squashFromTC();
+ozone/.svn/text-base/cpu_impl.hh.svn-base:    cpu->frontEnd->setPC(val);
+ozone/.svn/text-base/cpu_impl.hh.svn-base:        cpu->squashFromTC();
+ozone/.svn/text-base/cpu_impl.hh.svn-base:    cpu->frontEnd->setNextPC(val);
+ozone/.svn/text-base/cpu_impl.hh.svn-base:        cpu->squashFromTC();
+ozone/.svn/text-base/cpu_impl.hh.svn-base:        cpu->squashFromTC();
+ozone/.svn/text-base/cpu_impl.hh.svn-base:        cpu->squashFromTC();
+ozone/.svn/text-base/dyn_inst_impl.hh.svn-base:    this->cpu->hwrei();
+ozone/.svn/text-base/dyn_inst_impl.hh.svn-base:    return this->cpu->simPalCheck(palFunc);
+ozone/.svn/text-base/dyn_inst_impl.hh.svn-base:    this->cpu->syscall(callnum);
+ozone/.svn/text-base/back_end_impl.hh.svn-base:    occ_rate = inst_count / be->cpu->numCycles;
+ozone/.svn/text-base/back_end_impl.hh.svn-base:    avg_residency = occ_rate / be->cpu->numCycles;
+ozone/.svn/text-base/back_end_impl.hh.svn-base:    empty_rate = 100 * empty_count / be->cpu->numCycles;
+ozone/.svn/text-base/back_end_impl.hh.svn-base:    full_rate = 100 * fullCount / be->cpu->numCycles;
+ozone/.svn/text-base/back_end_impl.hh.svn-base:    return cpu->name() + ".backend";
+ozone/.svn/text-base/back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/back_end_impl.hh.svn-base:    wb_rate = writeback_count / cpu->numCycles;
+ozone/.svn/text-base/back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/back_end_impl.hh.svn-base:    ROB_full_rate = ROB_fcount / cpu->numCycles;
+ozone/.svn/text-base/back_end_impl.hh.svn-base:    ROB_occ_rate = ROB_count / cpu->numCycles;
+ozone/.svn/text-base/back_end_impl.hh.svn-base:        .init(cpu->numThreads, 0, numROBEntries, 2)
+ozone/.svn/text-base/back_end_impl.hh.svn-base:    if (!cpu->decoupledFrontEnd) {
+ozone/.svn/text-base/back_end_impl.hh.svn-base:    cpu->numInst++;
+ozone/.svn/text-base/back_end_impl.hh.svn-base:        cpu->system->pcEventQueue.service(
+ozone/.svn/text-base/cpu.hh.svn-base:        TheISA::TLB *getITBPtr() { return cpu->itb; }
+ozone/.svn/text-base/cpu.hh.svn-base:        TheISA::TLB * getDTBPtr() { return cpu->dtb; }
+ozone/.svn/text-base/cpu.hh.svn-base:        System *getSystemPtr() { return cpu->system; }
+ozone/.svn/text-base/cpu.hh.svn-base:        cpu->itb->demap(vaddr, asn);
+ozone/.svn/text-base/cpu.hh.svn-base:        cpu->dtb->demap(vaddr, asn);
+ozone/.svn/text-base/cpu.hh.svn-base:        cpu->itb->demap(vaddr, asn);
+ozone/.svn/text-base/cpu.hh.svn-base:        cpu->dtb->demap(vaddr, asn);
+ozone/.svn/text-base/lw_lsq.hh.svn-base:        cpu->lockFlag = true;
+ozone/.svn/text-base/back_end.hh.svn-base:    Fault fault = cpu->translateDataReadReq(memReq);
+ozone/.svn/text-base/back_end.hh.svn-base:    Fault fault = cpu->translateDataWriteReq(memReq);
+ozone/.svn/text-base/lsq_unit_impl.hh.svn-base://    lsqPtr->cpu->wakeCPU();
+ozone/.svn/text-base/lsq_unit_impl.hh.svn-base://      Fault fault = cpu->translateDataReadReq(req);
+ozone/.svn/text-base/lsq_unit_impl.hh.svn-base://    cpu->activityThisCycle();
+ozone/.svn/text-base/inorder_back_end.hh.svn-base:    Fault fault = cpu->dtb->translateAtomic(memReq, thread->getTC(), false);
+ozone/.svn/text-base/inorder_back_end.hh.svn-base:    Fault fault = cpu->dtb->translateAtomic(memReq, thread->getTC(), true);
+ozone/.svn/text-base/inorder_back_end.hh.svn-base://    Fault fault = cpu->translateDataReadReq(req);
+ozone/.svn/text-base/inorder_back_end.hh.svn-base:    Fault fault = cpu->read(req, data);
+ozone/.svn/text-base/inorder_back_end.hh.svn-base://    Fault fault = cpu->translateDataWriteReq(req);
+ozone/.svn/text-base/inorder_back_end.hh.svn-base:        cpu->write(req, (uint8_t &)data);
+ozone/.svn/text-base/inorder_back_end.hh.svn-base:        cpu->write(req, (uint16_t &)data);
+ozone/.svn/text-base/inorder_back_end.hh.svn-base:        cpu->write(req, (uint32_t &)data);
+ozone/.svn/text-base/inorder_back_end.hh.svn-base:        cpu->write(req, (uint64_t &)data);
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:    trap->schedule(curTick() + cpu->ticks(latency));
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:    return cpu->name() + ".backend";
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:    wbRate = writebackCount / cpu->numCycles;
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:        .init(cpu->numThreads)
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:    ROBFullRate = ROBFcount / cpu->numCycles;
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:    ROBOccRate = ROBCount / cpu->numCycles;
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:        .init(cpu->numThreads, 0, numROBEntries, 2)
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:    checker = cpu->checker;
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:    if (cpu->checkInterrupts(tc) && !trapSquash && !tcSquash) {
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:            cpu->processInterrupts();
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:        cpu->signalSwitched();
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:    if (!cpu->decoupledFrontEnd) {
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:            cpu->system->pcEventQueue.service(
+ozone/.svn/text-base/lw_back_end_impl.hh.svn-base:    cpu->numInst++;
+ozone/.svn/text-base/inst_queue_impl.hh.svn-base:    return cpu->name() + ".iq";
+ozone/.svn/text-base/inst_queue_impl.hh.svn-base:        cpu->activityThisCycle();
+ozone/.svn/text-base/inorder_back_end_impl.hh.svn-base:    return cpu->name() + ".inorderbackend";
+ozone/.svn/text-base/inorder_back_end_impl.hh.svn-base:    uint64_t interrupts = cpu->intr_status();
+ozone/.svn/text-base/inorder_back_end_impl.hh.svn-base:    if (FullSystem && (interruptBlocked || cpu->checkInterrupts(tc))) {
+ozone/.svn/text-base/inorder_back_end_impl.hh.svn-base:                cpu->system->pcEventQueue.service(
+ozone/.svn/text-base/inorder_back_end_impl.hh.svn-base:        cpu->numInst++;
+ozone/.svn/text-base/front_end.hh.svn-base:    { return cpu->globalSeqNum++; }
+ozone/inorder_back_end_impl.hh:    return cpu->name() + ".inorderbackend";
+ozone/inorder_back_end_impl.hh:    uint64_t interrupts = cpu->intr_status();
+ozone/inorder_back_end_impl.hh:    if (FullSystem && (interruptBlocked || cpu->checkInterrupts(tc))) {
+ozone/inorder_back_end_impl.hh:                cpu->system->pcEventQueue.service(
+ozone/inorder_back_end_impl.hh:        cpu->numInst++;
+ozone/inorder_back_end.hh:    Fault fault = cpu->dtb->translateAtomic(memReq, thread->getTC(), false);
+ozone/inorder_back_end.hh:    Fault fault = cpu->dtb->translateAtomic(memReq, thread->getTC(), true);
+ozone/inorder_back_end.hh://    Fault fault = cpu->translateDataReadReq(req);
+ozone/inorder_back_end.hh:    Fault fault = cpu->read(req, data);
+ozone/inorder_back_end.hh://    Fault fault = cpu->translateDataWriteReq(req);
+ozone/inorder_back_end.hh:        cpu->write(req, (uint8_t &)data);
+ozone/inorder_back_end.hh:        cpu->write(req, (uint16_t &)data);
+ozone/inorder_back_end.hh:        cpu->write(req, (uint32_t &)data);
+ozone/inorder_back_end.hh:        cpu->write(req, (uint64_t &)data);
+ozone/cpu_impl.hh:    cpu->tick();
+ozone/cpu_impl.hh:    cpu->activateContext(thread->threadId(), delay);
+ozone/cpu_impl.hh:    cpu->suspendContext(thread->threadId());
+ozone/cpu_impl.hh:    cpu->haltContext(thread->threadId());
+ozone/cpu_impl.hh:    cpu->lockFlag = false;
+ozone/cpu_impl.hh:        thread->kernelStats = new TheISA::Kernel::Statistics(cpu->system);
+ozone/cpu_impl.hh:    cpu->frontEnd->setPC(thread->PC);
+ozone/cpu_impl.hh:    cpu->frontEnd->setNextPC(thread->nextPC);
+ozone/cpu_impl.hh:        cpu->squashFromTC();
+ozone/cpu_impl.hh:        cpu->squashFromTC();
+ozone/cpu_impl.hh:    cpu->frontEnd->setPC(val);
+ozone/cpu_impl.hh:        cpu->squashFromTC();
+ozone/cpu_impl.hh:    cpu->frontEnd->setNextPC(val);
+ozone/cpu_impl.hh:        cpu->squashFromTC();
+ozone/cpu_impl.hh:        cpu->squashFromTC();
+ozone/cpu_impl.hh:        cpu->squashFromTC();
+ozone/inst_queue_impl.hh:    return cpu->name() + ".iq";
+ozone/inst_queue_impl.hh:        cpu->activityThisCycle();
+ozone/lw_back_end_impl.hh:    trap->schedule(curTick() + cpu->ticks(latency));
+ozone/lw_back_end_impl.hh:    return cpu->name() + ".backend";
+ozone/lw_back_end_impl.hh:        .init(cpu->numThreads)
+ozone/lw_back_end_impl.hh:        .init(cpu->numThreads)
+ozone/lw_back_end_impl.hh:        .init(cpu->numThreads)
+ozone/lw_back_end_impl.hh:        .init(cpu->numThreads)
+ozone/lw_back_end_impl.hh:        .init(cpu->numThreads)
+ozone/lw_back_end_impl.hh:        .init(cpu->numThreads)
+ozone/lw_back_end_impl.hh:        .init(cpu->numThreads)
+ozone/lw_back_end_impl.hh:        .init(cpu->numThreads)
+ozone/lw_back_end_impl.hh:        .init(cpu->numThreads)
+ozone/lw_back_end_impl.hh:        .init(cpu->numThreads)
+ozone/lw_back_end_impl.hh:        .init(cpu->numThreads)
+ozone/lw_back_end_impl.hh:        .init(cpu->numThreads)
+ozone/lw_back_end_impl.hh:        .init(cpu->numThreads)
+ozone/lw_back_end_impl.hh:        .init(cpu->numThreads)
+ozone/lw_back_end_impl.hh:        .init(cpu->numThreads)
+ozone/lw_back_end_impl.hh:        .init(cpu->numThreads)
+ozone/lw_back_end_impl.hh:        .init(cpu->numThreads)
+ozone/lw_back_end_impl.hh:        .init(cpu->numThreads)
+ozone/lw_back_end_impl.hh:        .init(cpu->numThreads)
+ozone/lw_back_end_impl.hh:    wbRate = writebackCount / cpu->numCycles;
+ozone/lw_back_end_impl.hh:        .init(cpu->numThreads)
+ozone/lw_back_end_impl.hh:        .init(cpu->numThreads)
+ozone/lw_back_end_impl.hh:        .init(cpu->numThreads)
+ozone/lw_back_end_impl.hh:        .init(cpu->numThreads)
+ozone/lw_back_end_impl.hh:        .init(cpu->numThreads)
+ozone/lw_back_end_impl.hh:        .init(cpu->numThreads)
+ozone/lw_back_end_impl.hh:        .init(cpu->numThreads)
+ozone/lw_back_end_impl.hh:        .init(cpu->numThreads)
+ozone/lw_back_end_impl.hh:        .init(cpu->numThreads)
+ozone/lw_back_end_impl.hh:        .init(cpu->numThreads)
+ozone/lw_back_end_impl.hh:    ROBFullRate = ROBFcount / cpu->numCycles;
+ozone/lw_back_end_impl.hh:    ROBOccRate = ROBCount / cpu->numCycles;
+ozone/lw_back_end_impl.hh:        .init(cpu->numThreads, 0, numROBEntries, 2)
+ozone/lw_back_end_impl.hh:    checker = cpu->checker;
+ozone/lw_back_end_impl.hh:    if (cpu->checkInterrupts(tc) && !trapSquash && !tcSquash) {
+ozone/lw_back_end_impl.hh:            cpu->processInterrupts();
+ozone/lw_back_end_impl.hh:        cpu->signalSwitched();
+ozone/lw_back_end_impl.hh:    if (!cpu->decoupledFrontEnd) {
+ozone/lw_back_end_impl.hh:            cpu->system->pcEventQueue.service(
+ozone/lw_back_end_impl.hh:    cpu->numInst++;
+ozone/lw_lsq.hh:        cpu->lockFlag = true;
+ozone/lw_lsq_impl.hh:    if (cpu->checker) {
+ozone/lw_lsq_impl.hh:        cpu->checker->setDcachePort(&dcachePort);
+ozone/lw_lsq_impl.hh:                if (cpu->lockFlag) {
+ozone/lw_lsq_impl.hh:        if (cpu->checker) {
+ozone/lw_lsq_impl.hh:            cpu->checker->verify(inst);
+ozone/lw_lsq_impl.hh:    if (cpu->checker) {
+ozone/lw_lsq_impl.hh:        cpu->checker->verify(inst);
+ozone/thread_state.hh:        if (cpu->params->profile) {
+ozone/thread_state.hh:            profile = new FunctionProfile(cpu->params->system->kernelSymtab);
+ozone/thread_state.hh:        std::ostream *os = simout.create(csprintf("profile.%s.dat", cpu->name()));
+ozone/back_end.hh:    Fault fault = cpu->translateDataReadReq(memReq);
+ozone/back_end.hh:    Fault fault = cpu->translateDataWriteReq(memReq);
+ozone/dyn_inst_impl.hh:    this->cpu->hwrei();
+ozone/dyn_inst_impl.hh:    return this->cpu->simPalCheck(palFunc);
+ozone/dyn_inst_impl.hh:    this->cpu->syscall(callnum);
+ozone/front_end_impl.hh:    return cpu->name() + ".frontend";
+ozone/front_end_impl.hh:    if (cpu->checker) {
+ozone/front_end_impl.hh:        cpu->checker->setIcachePort(&icachePort);
+ozone/front_end_impl.hh:    idleRate = fetchIdleCycles * 100 / cpu->numCycles;
+ozone/front_end_impl.hh:    branchRate = fetchedBranches / cpu->numCycles;
+ozone/front_end_impl.hh:    fetchRate = fetchedInsts / cpu->numCycles;
+ozone/front_end_impl.hh:    IFQOccupancy = IFQCount / cpu->numCycles;
+ozone/front_end_impl.hh:    IFQFullRate = IFQFcount * Stats::constant(100) / cpu->numCycles;
+ozone/front_end_impl.hh:    dispatchRate = dispatchCountStat / cpu->numCycles;
+ozone/front_end_impl.hh:                         PC, cpu->thread->contextId());
+ozone/front_end_impl.hh:    fault = cpu->itb->translateAtomic(memReq, thread, false, true);
+ozone/front_end_impl.hh:        if (cpu->system->memctrl->badaddr(memReq->paddr) ||
+ozone/front_end_impl.hh:    bool be_block = cpu->decoupledFrontEnd ? false : backEnd->isBlocked();
+ozone/front_end_impl.hh:    bool be_block = cpu->decoupledFrontEnd ? false : backEnd->isBlocked();
+ozone/front_end_impl.hh:    cpu->signalSwitched();
+ozone/lsq_unit_impl.hh://    lsqPtr->cpu->wakeCPU();
+ozone/lsq_unit_impl.hh://      Fault fault = cpu->translateDataReadReq(req);
+ozone/lsq_unit_impl.hh://    cpu->activityThisCycle();
+ozone/cpu.hh:        TheISA::TLB *getITBPtr() { return cpu->itb; }
+ozone/cpu.hh:        TheISA::TLB * getDTBPtr() { return cpu->dtb; }
+ozone/cpu.hh:        System *getSystemPtr() { return cpu->system; }
+ozone/cpu.hh:        cpu->itb->demap(vaddr, asn);
+ozone/cpu.hh:        cpu->dtb->demap(vaddr, asn);
+ozone/cpu.hh:        cpu->itb->demap(vaddr, asn);
+ozone/cpu.hh:        cpu->dtb->demap(vaddr, asn);
+ozone/front_end.hh:    { return cpu->globalSeqNum++; }
+ozone/back_end_impl.hh:    occ_rate = inst_count / be->cpu->numCycles;
+ozone/back_end_impl.hh:    avg_residency = occ_rate / be->cpu->numCycles;
+ozone/back_end_impl.hh:    empty_rate = 100 * empty_count / be->cpu->numCycles;
+ozone/back_end_impl.hh:    full_rate = 100 * fullCount / be->cpu->numCycles;
+ozone/back_end_impl.hh:    return cpu->name() + ".backend";
+ozone/back_end_impl.hh:        .init(cpu->numThreads)
+ozone/back_end_impl.hh:        .init(cpu->numThreads)
+ozone/back_end_impl.hh:        .init(cpu->numThreads)
+ozone/back_end_impl.hh:        .init(cpu->numThreads)
+ozone/back_end_impl.hh:        .init(cpu->numThreads)
+ozone/back_end_impl.hh:        .init(cpu->numThreads)
+ozone/back_end_impl.hh:        .init(cpu->numThreads)
+ozone/back_end_impl.hh:        .init(cpu->numThreads)
+ozone/back_end_impl.hh:        .init(cpu->numThreads)
+ozone/back_end_impl.hh:        .init(cpu->numThreads)
+ozone/back_end_impl.hh:        .init(cpu->numThreads)
+ozone/back_end_impl.hh:        .init(cpu->numThreads)
+ozone/back_end_impl.hh:        .init(cpu->numThreads)
+ozone/back_end_impl.hh:        .init(cpu->numThreads)
+ozone/back_end_impl.hh:        .init(cpu->numThreads)
+ozone/back_end_impl.hh:        .init(cpu->numThreads)
+ozone/back_end_impl.hh:        .init(cpu->numThreads)
+ozone/back_end_impl.hh:        .init(cpu->numThreads)
+ozone/back_end_impl.hh:        .init(cpu->numThreads)
+ozone/back_end_impl.hh:    wb_rate = writeback_count / cpu->numCycles;
+ozone/back_end_impl.hh:        .init(cpu->numThreads)
+ozone/back_end_impl.hh:        .init(cpu->numThreads)
+ozone/back_end_impl.hh:        .init(cpu->numThreads)
+ozone/back_end_impl.hh:        .init(cpu->numThreads)
+ozone/back_end_impl.hh:        .init(cpu->numThreads)
+ozone/back_end_impl.hh:        .init(cpu->numThreads)
+ozone/back_end_impl.hh:        .init(cpu->numThreads)
+ozone/back_end_impl.hh:        .init(cpu->numThreads)
+ozone/back_end_impl.hh:    ROB_full_rate = ROB_fcount / cpu->numCycles;
+ozone/back_end_impl.hh:    ROB_occ_rate = ROB_count / cpu->numCycles;
+ozone/back_end_impl.hh:        .init(cpu->numThreads, 0, numROBEntries, 2)
+ozone/back_end_impl.hh:    if (!cpu->decoupledFrontEnd) {
+ozone/back_end_impl.hh:    cpu->numInst++;
+ozone/back_end_impl.hh:        cpu->system->pcEventQueue.service(
+risc/.svn/text-base/cpu.cc.svn-base:    cpu->tick();
+risc/cpu.cc:    cpu->tick();
+risc/resources/.svn/text-base/dispatch.cc.svn-base:	if(!_cpu->no_res(this, 0)) return true;
+risc/resources/.svn/text-base/dispatch.cc.svn-base:	_cpu->incr_res(this,0);
+risc/resources/.svn/text-base/fetch.cc.svn-base:      _pc_state(cpu->get_pcs()),
+risc/resources/.svn/text-base/fetch.cc.svn-base:      _thread(cpu->get_thd()), _tc(cpu->get_tc())
+risc/resources/.svn/text-base/fetch.cc.svn-base:	    Request::INST_FETCH, _cpu->instMasterId(), fetch_addr);
+risc/resources/.svn/text-base/fetch.cc.svn-base:	_cpu->get_icp()->sendAtomic(&ifetch_pkt);
+risc/resources/dispatch.cc:	if(!_cpu->no_res(this, 0)) return true;
+risc/resources/dispatch.cc:	_cpu->incr_res(this,0);
+risc/resources/fetch.cc:      _pc_state(cpu->get_pcs()),
+risc/resources/fetch.cc:      _thread(cpu->get_thd()), _tc(cpu->get_tc())
+risc/resources/fetch.cc:	    Request::INST_FETCH, _cpu->instMasterId(), fetch_addr);
+risc/resources/fetch.cc:	_cpu->get_icp()->sendAtomic(&ifetch_pkt);
+risc/isa/.svn/text-base/static_inst.cc.svn-base:			uint32_t cond_val = cpu->read_cond_w_operand(this);
+risc/isa/categories/.svn/text-base/flow.cc.svn-base:		Addr cur_addr = cpu->get_inst_addr();
+risc/isa/categories/.svn/text-base/flow.cc.svn-base:		cpu->set_return_target(return_target);
+risc/isa/categories/.svn/text-base/flow.cc.svn-base:		Addr cur_addr = cpu->get_inst_addr();
+risc/isa/categories/.svn/text-base/flow.cc.svn-base:		Addr branch_target = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/flow.cc.svn-base:		cpu->set_return_target(return_target);
+risc/isa/categories/.svn/text-base/flow.cc.svn-base:		Addr cur_addr = cpu->get_inst_addr();
+risc/isa/categories/.svn/text-base/flow.cc.svn-base:		Addr branch_target = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/flow.cc.svn-base:		Addr branch_target = cpu->get_return_target();
+risc/isa/categories/.svn/text-base/arithmetic.cc.svn-base:		S_WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/arithmetic.cc.svn-base:		S_WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/arithmetic.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/arithmetic.cc.svn-base:		S_WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/arithmetic.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/arithmetic.cc.svn-base:		S_WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/arithmetic.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/arithmetic.cc.svn-base:		S_WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/arithmetic.cc.svn-base:		S_WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/arithmetic.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/arithmetic.cc.svn-base:		S_WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/arithmetic.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/arithmetic.cc.svn-base:		S_WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/arithmetic.cc.svn-base:		S_WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/arithmetic.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/arithmetic.cc.svn-base:		S_WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/arithmetic.cc.svn-base:		S_WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/arithmetic.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/arithmetic.cc.svn-base:		S_WORD op = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/arithmetic.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/arithmetic.cc.svn-base:		S_WORD op = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/arithmetic.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/template.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/template.cc.svn-base:		S_WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/template.cc.svn-base:		DWORD op_0 = cpu->read_src_dw_operand(this, 0);
+risc/isa/categories/.svn/text-base/template.cc.svn-base:		S_DWORD op_0 = cpu->read_src_dw_operand(this, 0);
+risc/isa/categories/.svn/text-base/template.cc.svn-base:		QWORD op_0 = cpu->read_src_qw_operand(this, 0);
+risc/isa/categories/.svn/text-base/template.cc.svn-base:		SP op_0 = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/.svn/text-base/template.cc.svn-base:		DP op_0 = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/.svn/text-base/template.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/template.cc.svn-base:		cpu->cache_dst_dw_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/template.cc.svn-base:		cpu->cache_dst_qw_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/template.cc.svn-base:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/template.cc.svn-base:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op_0 = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op_1 = cpu->read_src_sp_operand(this, 1);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op_0 = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op_1 = cpu->read_src_dp_operand(this, 1);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op_0 = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op_1 = cpu->read_src_sp_operand(this, 1);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op_0 = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op_1 = cpu->read_src_dp_operand(this, 1);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op_0 = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op_1 = cpu->read_src_sp_operand(this, 1);		
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op_0 = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op_1 = cpu->read_src_dp_operand(this, 1);		
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op_0 = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op_1 = cpu->read_src_sp_operand(this, 1);		
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op_0 = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op_1 = cpu->read_src_dp_operand(this, 1);		
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op_0 = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op_1 = cpu->read_src_sp_operand(this, 1);		
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op_0 = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op_1 = cpu->read_src_dp_operand(this, 1);		
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op_0 = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op_1 = cpu->read_src_sp_operand(this, 1);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op_0 = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op_1 = cpu->read_src_dp_operand(this, 1);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op_0 = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op_1 = cpu->read_src_sp_operand(this, 1);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op_0 = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op_1 = cpu->read_src_dp_operand(this, 1);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op_0 = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op_1 = cpu->read_src_sp_operand(this, 1);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op_0 = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op_1 = cpu->read_src_dp_operand(this, 1);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op_0 = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op_1 = cpu->read_src_sp_operand(this, 1);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op_0 = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op_1 = cpu->read_src_dp_operand(this, 1);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op_0 = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op_1 = cpu->read_src_sp_operand(this, 1);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op_2 = cpu->read_dst_sp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op_0 = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op_1 = cpu->read_src_dp_operand(this, 1);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op_2 = cpu->read_dst_dp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op_0 = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op_1 = cpu->read_src_sp_operand(this, 1);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op_2 = cpu->read_dst_sp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op_0 = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op_1 = cpu->read_src_dp_operand(this, 1);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op_2 = cpu->read_dst_dp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op_0 = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op_1 = cpu->read_src_sp_operand(this, 1);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op_2 = cpu->read_dst_sp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op_0 = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op_1 = cpu->read_src_dp_operand(this, 1);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op_2 = cpu->read_dst_dp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op_0 = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op_1 = cpu->read_src_sp_operand(this, 1);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op_2 = cpu->read_dst_sp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op_0 = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op_1 = cpu->read_src_dp_operand(this, 1);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op_2 = cpu->read_dst_dp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_dw_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_dw_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_dw_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_dw_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		S_WORD op = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		S_WORD op = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		S_DWORD op = cpu->read_src_dw_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		S_DWORD op = cpu->read_src_dw_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		WORD op = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		WORD op = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DWORD op = cpu->read_src_dw_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DWORD op = cpu->read_src_dw_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		SP op = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		DP op = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/.svn/text-base/fp.cc.svn-base:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/shift.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/shift.cc.svn-base:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/shift.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/shift.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/shift.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/shift.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/shift.cc.svn-base:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/shift.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/shift.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/shift.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/shift.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/shift.cc.svn-base:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/shift.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/shift.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/shift.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/multiply.cc.svn-base:		S_WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/multiply.cc.svn-base:		S_WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/multiply.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/multiply.cc.svn-base:		S_WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/multiply.cc.svn-base:		S_WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/multiply.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/multiply.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/multiply.cc.svn-base:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/multiply.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/move.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/move.cc.svn-base:		cpu->cache_dst_w_hi_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/move.cc.svn-base:		WORD op = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/move.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/move.cc.svn-base:		WORD op = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/move.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/compare.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/compare.cc.svn-base:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/compare.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/compare.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/compare.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/compare.cc.svn-base:		S_WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/compare.cc.svn-base:		S_WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/compare.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/compare.cc.svn-base:		S_WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/compare.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/compare.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/compare.cc.svn-base:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/compare.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/compare.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/compare.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/compare.cc.svn-base:		S_WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/compare.cc.svn-base:		S_WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/compare.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/compare.cc.svn-base:		S_WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/compare.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/compare.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/compare.cc.svn-base:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/compare.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/compare.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/compare.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		WORD op = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/logic.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/bit.cc.svn-base:		WORD op = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/bit.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/bit.cc.svn-base:		WORD op = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/bit.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/bit.cc.svn-base:		WORD op = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/bit.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/bit.cc.svn-base:		WORD op = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/bit.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/bit.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/bit.cc.svn-base:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/bit.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/bit.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/bit.cc.svn-base:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/bit.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/bit.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/bit.cc.svn-base:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/bit.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/bit.cc.svn-base:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/bit.cc.svn-base:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/bit.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->readMem(eff_addr, mem, size, mem_access_flags);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD offset = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->readMem(eff_addr, mem, size, mem_access_flags);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->readMem(eff_addr, mem, size, mem_access_flags);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->readMem(eff_addr, mem, size, mem_access_flags);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD offset = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->readMem(eff_addr, mem, size, mem_access_flags);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->readMem(eff_addr, mem, size, mem_access_flags);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->readMem(eff_addr, mem, size, mem_access_flags);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD offset = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->readMem(eff_addr, mem, size, mem_access_flags);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->readMem(eff_addr, mem, size, mem_access_flags);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->readMem(eff_addr, mem, size, mem_access_flags);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD offset = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->readMem(eff_addr, mem, size, mem_access_flags);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->readMem(eff_addr, mem, size, mem_access_flags);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->readMem(eff_addr, mem, size, mem_access_flags);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD offset = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->readMem(eff_addr, mem, size, mem_access_flags);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->readMem(eff_addr, mem, size, mem_access_flags);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD op = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->writeMem(mem, size, eff_addr, mem_access_flags, NULL);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD offset = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD op = cpu->read_src_w_operand(this, 2);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->writeMem(mem, size, eff_addr, mem_access_flags, NULL);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD op = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->writeMem(mem, size, eff_addr, mem_access_flags, NULL);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD op = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->writeMem(mem, size, eff_addr, mem_access_flags, NULL);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD offset = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD op = cpu->read_src_w_operand(this, 2);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->writeMem(mem, size, eff_addr, mem_access_flags, NULL);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD op = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->writeMem(mem, size, eff_addr, mem_access_flags, NULL);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD op = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->writeMem(mem, size, eff_addr, mem_access_flags, NULL);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD offset = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD op = cpu->read_src_w_operand(this, 2);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->writeMem(mem, size, eff_addr, mem_access_flags, NULL);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		WORD op = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/.svn/text-base/mem.cc.svn-base:		cpu->writeMem(mem, size, eff_addr, mem_access_flags, NULL);
+risc/isa/categories/arithmetic.cc:		S_WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/arithmetic.cc:		S_WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/arithmetic.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/arithmetic.cc:		S_WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/arithmetic.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/arithmetic.cc:		S_WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/arithmetic.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/arithmetic.cc:		S_WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/arithmetic.cc:		S_WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/arithmetic.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/arithmetic.cc:		S_WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/arithmetic.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/arithmetic.cc:		S_WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/arithmetic.cc:		S_WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/arithmetic.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/arithmetic.cc:		S_WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/arithmetic.cc:		S_WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/arithmetic.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/arithmetic.cc:		S_WORD op = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/arithmetic.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/arithmetic.cc:		S_WORD op = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/arithmetic.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/compare.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/compare.cc:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/compare.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/compare.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/compare.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/compare.cc:		S_WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/compare.cc:		S_WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/compare.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/compare.cc:		S_WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/compare.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/compare.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/compare.cc:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/compare.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/compare.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/compare.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/compare.cc:		S_WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/compare.cc:		S_WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/compare.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/compare.cc:		S_WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/compare.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/compare.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/compare.cc:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/compare.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/compare.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/compare.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/flow.cc:		Addr cur_addr = cpu->get_inst_addr();
+risc/isa/categories/flow.cc:		cpu->set_return_target(return_target);
+risc/isa/categories/flow.cc:		Addr cur_addr = cpu->get_inst_addr();
+risc/isa/categories/flow.cc:		Addr branch_target = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/flow.cc:		cpu->set_return_target(return_target);
+risc/isa/categories/flow.cc:		Addr cur_addr = cpu->get_inst_addr();
+risc/isa/categories/flow.cc:		Addr branch_target = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/flow.cc:		Addr branch_target = cpu->get_return_target();
+risc/isa/categories/move.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/move.cc:		cpu->cache_dst_w_hi_operand(this, 0, final);
+risc/isa/categories/move.cc:		WORD op = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/move.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/move.cc:		WORD op = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/move.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/move.cc:		QWORD op = cpu->read_src_qw_operand(this, 0);
+risc/isa/categories/move.cc:		cpu->cache_dst_qw_operand(this, 0, final);
+risc/isa/categories/move.cc:		QWORD op = cpu->read_src_qw_operand(this, 0);
+risc/isa/categories/move.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/move.cc:		WORD op = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/move.cc:				cpu->cache_dst_qw_h0_operand(this, 0, final);
+risc/isa/categories/move.cc:				cpu->cache_dst_qw_h1_operand(this, 0, final);
+risc/isa/categories/move.cc:				cpu->cache_dst_qw_h2_operand(this, 0, final);
+risc/isa/categories/move.cc:				cpu->cache_dst_qw_h3_operand(this, 0, final);
+risc/isa/categories/move.cc:				cpu->cache_dst_qw_h0_operand(this, 0, final);
+risc/isa/categories/mem.cc:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/mem.cc:		cpu->readMem(eff_addr, mem, size, mem_access_flags);
+risc/isa/categories/mem.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/mem.cc:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/mem.cc:		WORD offset = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/mem.cc:		cpu->readMem(eff_addr, mem, size, mem_access_flags);
+risc/isa/categories/mem.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/mem.cc:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/mem.cc:		cpu->readMem(eff_addr, mem, size, mem_access_flags);
+risc/isa/categories/mem.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/mem.cc:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/mem.cc:		cpu->readMem(eff_addr, mem, size, mem_access_flags);
+risc/isa/categories/mem.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/mem.cc:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/mem.cc:		WORD offset = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/mem.cc:		cpu->readMem(eff_addr, mem, size, mem_access_flags);
+risc/isa/categories/mem.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/mem.cc:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/mem.cc:		cpu->readMem(eff_addr, mem, size, mem_access_flags);
+risc/isa/categories/mem.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/mem.cc:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/mem.cc:		cpu->readMem(eff_addr, mem, size, mem_access_flags);
+risc/isa/categories/mem.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/mem.cc:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/mem.cc:		WORD offset = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/mem.cc:		cpu->readMem(eff_addr, mem, size, mem_access_flags);
+risc/isa/categories/mem.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/mem.cc:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/mem.cc:		cpu->readMem(eff_addr, mem, size, mem_access_flags);
+risc/isa/categories/mem.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/mem.cc:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/mem.cc:		cpu->readMem(eff_addr, mem, size, mem_access_flags);
+risc/isa/categories/mem.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/mem.cc:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/mem.cc:		WORD offset = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/mem.cc:		cpu->readMem(eff_addr, mem, size, mem_access_flags);
+risc/isa/categories/mem.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/mem.cc:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/mem.cc:		cpu->readMem(eff_addr, mem, size, mem_access_flags);
+risc/isa/categories/mem.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/mem.cc:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/mem.cc:		cpu->readMem(eff_addr, mem, size, mem_access_flags);
+risc/isa/categories/mem.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/mem.cc:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/mem.cc:		WORD offset = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/mem.cc:		cpu->readMem(eff_addr, mem, size, mem_access_flags);
+risc/isa/categories/mem.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/mem.cc:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/mem.cc:		cpu->readMem(eff_addr, mem, size, mem_access_flags);
+risc/isa/categories/mem.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/mem.cc:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/mem.cc:		WORD op = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/mem.cc:		cpu->writeMem(mem, size, eff_addr, mem_access_flags, NULL);
+risc/isa/categories/mem.cc:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/mem.cc:		WORD offset = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/mem.cc:		WORD op = cpu->read_src_w_operand(this, 2);
+risc/isa/categories/mem.cc:		cpu->writeMem(mem, size, eff_addr, mem_access_flags, NULL);
+risc/isa/categories/mem.cc:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/mem.cc:		WORD op = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/mem.cc:		cpu->writeMem(mem, size, eff_addr, mem_access_flags, NULL);
+risc/isa/categories/mem.cc:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/mem.cc:		WORD op = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/mem.cc:		cpu->writeMem(mem, size, eff_addr, mem_access_flags, NULL);
+risc/isa/categories/mem.cc:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/mem.cc:		WORD offset = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/mem.cc:		WORD op = cpu->read_src_w_operand(this, 2);
+risc/isa/categories/mem.cc:		cpu->writeMem(mem, size, eff_addr, mem_access_flags, NULL);
+risc/isa/categories/mem.cc:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/mem.cc:		WORD op = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/mem.cc:		cpu->writeMem(mem, size, eff_addr, mem_access_flags, NULL);
+risc/isa/categories/mem.cc:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/mem.cc:		WORD op = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/mem.cc:		cpu->writeMem(mem, size, eff_addr, mem_access_flags, NULL);
+risc/isa/categories/mem.cc:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/mem.cc:		WORD offset = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/mem.cc:		WORD op = cpu->read_src_w_operand(this, 2);
+risc/isa/categories/mem.cc:		cpu->writeMem(mem, size, eff_addr, mem_access_flags, NULL);
+risc/isa/categories/mem.cc:		WORD base = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/mem.cc:		WORD op = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/mem.cc:		cpu->writeMem(mem, size, eff_addr, mem_access_flags, NULL);
+risc/isa/categories/shift.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/shift.cc:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/shift.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/shift.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/shift.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/shift.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/shift.cc:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/shift.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/shift.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/shift.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/shift.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/shift.cc:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/shift.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/shift.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/shift.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/logic.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/logic.cc:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/logic.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/logic.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/logic.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/logic.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/logic.cc:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/logic.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/logic.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/logic.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/logic.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/logic.cc:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/logic.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/logic.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/logic.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/logic.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/logic.cc:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/logic.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/logic.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/logic.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/logic.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/logic.cc:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/logic.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/logic.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/logic.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/logic.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/logic.cc:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/logic.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/logic.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/logic.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/logic.cc:		WORD op = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/logic.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/logic.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/logic.cc:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/logic.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/logic.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/logic.cc:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/logic.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/logic.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/logic.cc:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/logic.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/logic.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/logic.cc:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/logic.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/fp.cc:		SP op_0 = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/fp.cc:		SP op_1 = cpu->read_src_sp_operand(this, 1);
+risc/isa/categories/fp.cc:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/fp.cc:		DP op_0 = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/fp.cc:		DP op_1 = cpu->read_src_dp_operand(this, 1);
+risc/isa/categories/fp.cc:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/fp.cc:		SP op_0 = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/fp.cc:		SP op_1 = cpu->read_src_sp_operand(this, 1);
+risc/isa/categories/fp.cc:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/fp.cc:		DP op_0 = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/fp.cc:		DP op_1 = cpu->read_src_dp_operand(this, 1);
+risc/isa/categories/fp.cc:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/fp.cc:		SP op_0 = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/fp.cc:		SP op_1 = cpu->read_src_sp_operand(this, 1);		
+risc/isa/categories/fp.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/fp.cc:		DP op_0 = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/fp.cc:		DP op_1 = cpu->read_src_dp_operand(this, 1);		
+risc/isa/categories/fp.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/fp.cc:		SP op_0 = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/fp.cc:		SP op_1 = cpu->read_src_sp_operand(this, 1);		
+risc/isa/categories/fp.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/fp.cc:		DP op_0 = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/fp.cc:		DP op_1 = cpu->read_src_dp_operand(this, 1);		
+risc/isa/categories/fp.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/fp.cc:		SP op_0 = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/fp.cc:		SP op_1 = cpu->read_src_sp_operand(this, 1);		
+risc/isa/categories/fp.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/fp.cc:		DP op_0 = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/fp.cc:		DP op_1 = cpu->read_src_dp_operand(this, 1);		
+risc/isa/categories/fp.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/fp.cc:		SP op_0 = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/fp.cc:		SP op_1 = cpu->read_src_sp_operand(this, 1);
+risc/isa/categories/fp.cc:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/fp.cc:		DP op_0 = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/fp.cc:		DP op_1 = cpu->read_src_dp_operand(this, 1);
+risc/isa/categories/fp.cc:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/fp.cc:		SP op_0 = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/fp.cc:		SP op_1 = cpu->read_src_sp_operand(this, 1);
+risc/isa/categories/fp.cc:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/fp.cc:		DP op_0 = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/fp.cc:		DP op_1 = cpu->read_src_dp_operand(this, 1);
+risc/isa/categories/fp.cc:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/fp.cc:		SP op_0 = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/fp.cc:		SP op_1 = cpu->read_src_sp_operand(this, 1);
+risc/isa/categories/fp.cc:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/fp.cc:		DP op_0 = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/fp.cc:		DP op_1 = cpu->read_src_dp_operand(this, 1);
+risc/isa/categories/fp.cc:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/fp.cc:		SP op_0 = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/fp.cc:		SP op_1 = cpu->read_src_sp_operand(this, 1);
+risc/isa/categories/fp.cc:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/fp.cc:		DP op_0 = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/fp.cc:		DP op_1 = cpu->read_src_dp_operand(this, 1);
+risc/isa/categories/fp.cc:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/fp.cc:		SP op_0 = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/fp.cc:		SP op_1 = cpu->read_src_sp_operand(this, 1);
+risc/isa/categories/fp.cc:		SP op_2 = cpu->read_src_sp_operand(this, 2);
+risc/isa/categories/fp.cc:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/fp.cc:		DP op_0 = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/fp.cc:		DP op_1 = cpu->read_src_dp_operand(this, 1);
+risc/isa/categories/fp.cc:		DP op_2 = cpu->read_src_dp_operand(this, 2);
+risc/isa/categories/fp.cc:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/fp.cc:		SP op_0 = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/fp.cc:		SP op_1 = cpu->read_src_sp_operand(this, 1);
+risc/isa/categories/fp.cc:		SP op_2 = cpu->read_src_sp_operand(this, 2);
+risc/isa/categories/fp.cc:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/fp.cc:		DP op_0 = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/fp.cc:		DP op_1 = cpu->read_src_dp_operand(this, 1);
+risc/isa/categories/fp.cc:		DP op_2 = cpu->read_src_dp_operand(this, 2);
+risc/isa/categories/fp.cc:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/fp.cc:		SP op_0 = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/fp.cc:		SP op_1 = cpu->read_src_sp_operand(this, 1);
+risc/isa/categories/fp.cc:		SP op_2 = cpu->read_src_sp_operand(this, 2);
+risc/isa/categories/fp.cc:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/fp.cc:		DP op_0 = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/fp.cc:		DP op_1 = cpu->read_src_dp_operand(this, 1);
+risc/isa/categories/fp.cc:		DP op_2 = cpu->read_src_dp_operand(this, 2);
+risc/isa/categories/fp.cc:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/fp.cc:		SP op_0 = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/fp.cc:		SP op_1 = cpu->read_src_sp_operand(this, 1);
+risc/isa/categories/fp.cc:		SP op_2 = cpu->read_src_sp_operand(this, 2);
+risc/isa/categories/fp.cc:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/fp.cc:		DP op_0 = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/fp.cc:		DP op_1 = cpu->read_src_dp_operand(this, 1);
+risc/isa/categories/fp.cc:		DP op_2 = cpu->read_src_dp_operand(this, 2);
+risc/isa/categories/fp.cc:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/fp.cc:		SP op = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/fp.cc:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/fp.cc:		DP op = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/fp.cc:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/fp.cc:		SP op = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/fp.cc:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/fp.cc:		DP op = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/fp.cc:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/fp.cc:		SP op = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/fp.cc:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/fp.cc:		DP op = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/fp.cc:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/fp.cc:		SP op = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/fp.cc:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/fp.cc:		DP op = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/fp.cc:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/fp.cc:		SP op = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/fp.cc:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/fp.cc:		DP op = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/fp.cc:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/fp.cc:		SP op = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/fp.cc:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/fp.cc:		DP op = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/fp.cc:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/fp.cc://		SP op = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/fp.cc://		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/fp.cc://		SP op = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/fp.cc://		cpu->cache_dst_dw_operand(this, 0, final);
+risc/isa/categories/fp.cc://		DP op = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/fp.cc://		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/fp.cc://		DP op = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/fp.cc://		cpu->cache_dst_dw_operand(this, 0, final);
+risc/isa/categories/fp.cc://		SP op = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/fp.cc://		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/fp.cc://		SP op = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/fp.cc://		cpu->cache_dst_dw_operand(this, 0, final);
+risc/isa/categories/fp.cc://		DP op = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/fp.cc://		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/fp.cc://		DP op = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/fp.cc://		cpu->cache_dst_dw_operand(this, 0, final);
+risc/isa/categories/fp.cc://		SP op = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/fp.cc://		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/fp.cc://		DP op = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/fp.cc://		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/fp.cc://		S_WORD op = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/fp.cc://		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/fp.cc://		S_WORD op = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/fp.cc://		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/fp.cc://		S_DWORD op = cpu->read_src_dw_operand(this, 0);
+risc/isa/categories/fp.cc://		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/fp.cc://		S_DWORD op = cpu->read_src_dw_operand(this, 0);
+risc/isa/categories/fp.cc://		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/fp.cc://		WORD op = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/fp.cc://		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/fp.cc://		WORD op = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/fp.cc://		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/fp.cc://		DWORD op = cpu->read_src_dw_operand(this, 0);
+risc/isa/categories/fp.cc://		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/fp.cc://		DWORD op = cpu->read_src_dw_operand(this, 0);
+risc/isa/categories/fp.cc://		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/fp.cc://		SP op = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/fp.cc://		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/categories/fp.cc://		DP op = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/fp.cc://		cpu->cache_dst_sp_operand(this, 0, final);
+Binary file risc/isa/categories/.move.cc.swp matches
+risc/isa/categories/multiply.cc:		S_WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/multiply.cc:		S_WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/multiply.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/multiply.cc:		S_WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/multiply.cc:		S_WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/multiply.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/multiply.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/multiply.cc:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/multiply.cc:		cpu->cache_dst_w_operand(this, 0, final);
+Binary file risc/isa/categories/.mem.cc.swp matches
+risc/isa/categories/bit.cc:		WORD op = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/bit.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/bit.cc:		WORD op = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/bit.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/bit.cc:		WORD op = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/bit.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/bit.cc:		WORD op = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/bit.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/bit.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/bit.cc:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/bit.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/bit.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/bit.cc:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/bit.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/bit.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/bit.cc:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/bit.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/bit.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/bit.cc:		WORD op_1 = cpu->read_src_w_operand(this, 1);
+risc/isa/categories/bit.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/vector.cc:                QWORD op_0 = cpu->read_src_qw_operand(this, 0);
+risc/isa/categories/vector.cc:                QWORD op_1 = cpu->read_src_qw_operand(this, 1);
+risc/isa/categories/vector.cc:                cpu->cache_dst_qw_operand(this, 0, final);
+risc/isa/categories/vector.cc:                QWORD op_0 = cpu->read_src_qw_operand(this, 0);
+risc/isa/categories/vector.cc:                QWORD op_1 = cpu->read_src_qw_operand(this, 1);
+risc/isa/categories/vector.cc:                cpu->cache_dst_qw_operand(this, 0, final);
+risc/isa/categories/vector.cc:                QWORD op_0 = cpu->read_src_qw_operand(this, 0);
+risc/isa/categories/vector.cc:                cpu->cache_dst_qw_operand(this, 0, final);
+risc/isa/categories/vector.cc:                QWORD op_0 = cpu->read_src_qw_operand(this, 0);
+risc/isa/categories/vector.cc:                cpu->cache_dst_qw_operand(this, 0, final);
+risc/isa/categories/vector.cc:                QSP op_0 = cpu->read_src_qsp_operand(this, 0);
+risc/isa/categories/vector.cc:                QSP op_1 = cpu->read_src_qsp_operand(this, 1);
+risc/isa/categories/vector.cc:                cpu->cache_dst_qsp_operand(this, 0, final);
+risc/isa/categories/vector.cc:                QSP op_0 = cpu->read_src_qsp_operand(this, 0);
+risc/isa/categories/vector.cc:                QSP op_1 = cpu->read_src_qsp_operand(this, 1);
+risc/isa/categories/vector.cc:                cpu->cache_dst_qsp_operand(this, 0, final);
+risc/isa/categories/vector.cc:                QSP op_0 = cpu->read_src_qsp_operand(this, 0);
+risc/isa/categories/vector.cc:                QSP op_1 = cpu->read_src_qsp_operand(this, 1);
+risc/isa/categories/vector.cc:                cpu->cache_dst_qsp_operand(this, 0, final);
+risc/isa/categories/vector.cc:                QSP op_0 = cpu->read_src_qsp_operand(this, 0);
+risc/isa/categories/vector.cc:                QSP op_1 = cpu->read_src_qsp_operand(this, 1);
+risc/isa/categories/vector.cc:                cpu->cache_dst_qsp_operand(this, 0, final);
+risc/isa/categories/vector.cc:                QSP op_0 = cpu->read_src_qsp_operand(this, 0);
+risc/isa/categories/vector.cc:                QSP op_1 = cpu->read_src_qsp_operand(this, 1);
+risc/isa/categories/vector.cc:                QSP op_2 = cpu->read_src_qsp_operand(this, 2);
+risc/isa/categories/vector.cc:                cpu->cache_dst_qsp_operand(this, 0, final);
+risc/isa/categories/vector.cc:                QSP op_0 = cpu->read_src_qsp_operand(this, 0);
+risc/isa/categories/vector.cc:                QSP op_1 = cpu->read_src_qsp_operand(this, 1);
+risc/isa/categories/vector.cc:                QSP op_2 = cpu->read_src_qsp_operand(this, 2);
+risc/isa/categories/vector.cc:                cpu->cache_dst_qsp_operand(this, 0, final);
+risc/isa/categories/vector.cc:                QSP op_0 = cpu->read_src_qsp_operand(this, 0);
+risc/isa/categories/vector.cc:                QSP op_1 = cpu->read_src_qsp_operand(this, 1);
+risc/isa/categories/vector.cc:                QSP op_2 = cpu->read_src_qsp_operand(this, 2);
+risc/isa/categories/vector.cc:                cpu->cache_dst_qsp_operand(this, 0, final);
+risc/isa/categories/vector.cc:                QSP op_0 = cpu->read_src_qsp_operand(this, 0);
+risc/isa/categories/vector.cc:                QSP op_1 = cpu->read_src_qsp_operand(this, 1);
+risc/isa/categories/vector.cc:                QSP op_2 = cpu->read_src_qsp_operand(this, 2);
+risc/isa/categories/vector.cc:                cpu->cache_dst_qsp_operand(this, 0, final);
+risc/isa/categories/vector.cc:                QSP op_0 = cpu->read_src_qsp_operand(this, 0);
+risc/isa/categories/vector.cc:                cpu->cache_dst_qsp_operand(this, 0, final);
+risc/isa/categories/template.cc:		WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/template.cc:		S_WORD op_0 = cpu->read_src_w_operand(this, 0);
+risc/isa/categories/template.cc:		DWORD op_0 = cpu->read_src_dw_operand(this, 0);
+risc/isa/categories/template.cc:		S_DWORD op_0 = cpu->read_src_dw_operand(this, 0);
+risc/isa/categories/template.cc:		QWORD op_0 = cpu->read_src_qw_operand(this, 0);
+risc/isa/categories/template.cc:		SP op_0 = cpu->read_src_sp_operand(this, 0);
+risc/isa/categories/template.cc:		DP op_0 = cpu->read_src_dp_operand(this, 0);
+risc/isa/categories/template.cc:		cpu->cache_dst_w_operand(this, 0, final);
+risc/isa/categories/template.cc:		cpu->cache_dst_dw_operand(this, 0, final);
+risc/isa/categories/template.cc:		cpu->cache_dst_qw_operand(this, 0, final);
+risc/isa/categories/template.cc:		cpu->cache_dst_sp_operand(this, 0, final);
+risc/isa/categories/template.cc:		cpu->cache_dst_dp_operand(this, 0, final);
+risc/isa/static_inst.cc:			uint32_t cond_val = cpu->read_cond_w_operand(this);
+simple/.svn/text-base/atomic.cc.svn-base:    cpu->tick();
+simple/.svn/text-base/timing.hh.svn-base:            assert(cpu->_status == Running);
+simple/.svn/text-base/timing.hh.svn-base:            cpu->_status = ITBWaitResponse;
+simple/.svn/text-base/timing.hh.svn-base:            cpu->sendFetch(fault, req, tc);
+simple/.svn/text-base/timing.hh.svn-base:            : TimingCPUPort(_cpu->name() + "-iport", _cpu),
+simple/.svn/text-base/timing.hh.svn-base:            : TimingCPUPort(_cpu->name() + "-dport", _cpu), tickEvent(_cpu)
+simple/.svn/text-base/timing.cc.svn-base:    cpu->schedule(this, t);
+simple/.svn/text-base/timing.cc.svn-base:    cpu->completeIfetch(pkt);
+simple/.svn/text-base/timing.cc.svn-base:        Tick next_tick = cpu->nextCycle(curTick());
+simple/.svn/text-base/timing.cc.svn-base:            cpu->completeIfetch(pkt);
+simple/.svn/text-base/timing.cc.svn-base:        assert(cpu->_status == IcacheWaitResponse);
+simple/.svn/text-base/timing.cc.svn-base:            cpu->_status = IcacheRetry;
+simple/.svn/text-base/timing.cc.svn-base:            cpu->ifetch_pkt = pkt;
+simple/.svn/text-base/timing.cc.svn-base:    assert(cpu->ifetch_pkt != NULL);
+simple/.svn/text-base/timing.cc.svn-base:    assert(cpu->_status == IcacheRetry);
+simple/.svn/text-base/timing.cc.svn-base:    PacketPtr tmp = cpu->ifetch_pkt;
+simple/.svn/text-base/timing.cc.svn-base:        cpu->_status = IcacheWaitResponse;
+simple/.svn/text-base/timing.cc.svn-base:        cpu->ifetch_pkt = NULL;
+simple/.svn/text-base/timing.cc.svn-base:        Tick next_tick = cpu->nextCycle(curTick());
+simple/.svn/text-base/timing.cc.svn-base:            cpu->completeDataAccess(pkt);
+simple/.svn/text-base/timing.cc.svn-base:                    cpu->schedule(retryEvent, next_tick);
+simple/.svn/text-base/timing.cc.svn-base:        assert(cpu->_status == DcacheWaitResponse);
+simple/.svn/text-base/timing.cc.svn-base:            cpu->_status = DcacheRetry;
+simple/.svn/text-base/timing.cc.svn-base:            cpu->dcache_pkt = pkt;
+simple/.svn/text-base/timing.cc.svn-base:    cpu->completeDataAccess(pkt);
+simple/.svn/text-base/timing.cc.svn-base:    assert(cpu->dcache_pkt != NULL);
+simple/.svn/text-base/timing.cc.svn-base:    assert(cpu->_status == DcacheRetry);
+simple/.svn/text-base/timing.cc.svn-base:    PacketPtr tmp = cpu->dcache_pkt;
+simple/.svn/text-base/timing.cc.svn-base:                cpu->dcache_pkt = tmp;
+simple/.svn/text-base/timing.cc.svn-base:                if ((big_pkt->isRead() && cpu->handleReadPacket(tmp)) ||
+simple/.svn/text-base/timing.cc.svn-base:                        (big_pkt->isWrite() && cpu->handleWritePacket())) {
+simple/.svn/text-base/timing.cc.svn-base:                cpu->_status = DcacheWaitResponse;
+simple/.svn/text-base/timing.cc.svn-base:                cpu->dcache_pkt = NULL;
+simple/.svn/text-base/timing.cc.svn-base:        cpu->_status = DcacheWaitResponse;
+simple/.svn/text-base/timing.cc.svn-base:        cpu->dcache_pkt = NULL;
+simple/.svn/text-base/timing.cc.svn-base:    cpu->schedule(this, t);
+simple/.svn/text-base/timing.cc.svn-base:    cpu->completeDataAccess(pkt);
+simple/timing.cc:    cpu->schedule(this, t);
+simple/timing.cc:    cpu->completeIfetch(pkt);
+simple/timing.cc:        Tick next_tick = cpu->nextCycle(curTick());
+simple/timing.cc:            cpu->completeIfetch(pkt);
+simple/timing.cc:        assert(cpu->_status == IcacheWaitResponse);
+simple/timing.cc:            cpu->_status = IcacheRetry;
+simple/timing.cc:            cpu->ifetch_pkt = pkt;
+simple/timing.cc:    assert(cpu->ifetch_pkt != NULL);
+simple/timing.cc:    assert(cpu->_status == IcacheRetry);
+simple/timing.cc:    PacketPtr tmp = cpu->ifetch_pkt;
+simple/timing.cc:        cpu->_status = IcacheWaitResponse;
+simple/timing.cc:        cpu->ifetch_pkt = NULL;
+simple/timing.cc:        Tick next_tick = cpu->nextCycle(curTick());
+simple/timing.cc:            cpu->completeDataAccess(pkt);
+simple/timing.cc:                    cpu->schedule(retryEvent, next_tick);
+simple/timing.cc:        assert(cpu->_status == DcacheWaitResponse);
+simple/timing.cc:            cpu->_status = DcacheRetry;
+simple/timing.cc:            cpu->dcache_pkt = pkt;
+simple/timing.cc:    cpu->completeDataAccess(pkt);
+simple/timing.cc:    assert(cpu->dcache_pkt != NULL);
+simple/timing.cc:    assert(cpu->_status == DcacheRetry);
+simple/timing.cc:    PacketPtr tmp = cpu->dcache_pkt;
+simple/timing.cc:                cpu->dcache_pkt = tmp;
+simple/timing.cc:                if ((big_pkt->isRead() && cpu->handleReadPacket(tmp)) ||
+simple/timing.cc:                        (big_pkt->isWrite() && cpu->handleWritePacket())) {
+simple/timing.cc:                cpu->_status = DcacheWaitResponse;
+simple/timing.cc:                cpu->dcache_pkt = NULL;
+simple/timing.cc:        cpu->_status = DcacheWaitResponse;
+simple/timing.cc:        cpu->dcache_pkt = NULL;
+simple/timing.cc:    cpu->schedule(this, t);
+simple/timing.cc:    cpu->completeDataAccess(pkt);
+simple/timing.hh:            assert(cpu->_status == Running);
+simple/timing.hh:            cpu->_status = ITBWaitResponse;
+simple/timing.hh:            cpu->sendFetch(fault, req, tc);
+simple/timing.hh:            : TimingCPUPort(_cpu->name() + "-iport", _cpu),
+simple/timing.hh:            : TimingCPUPort(_cpu->name() + "-dport", _cpu), tickEvent(_cpu)
+simple/atomic.cc:    cpu->tick();
+simple_thread.cc://      cpu->activateWhenReady(_threadId);
+testers/networktest/.svn/text-base/networktest.hh.svn-base:        void process() { cpu->tick(); }
+testers/networktest/networktest.hh:        void process() { cpu->tick(); }
+testers/memtest/.svn/text-base/memtest.hh.svn-base:        void process() { cpu->tick(); }
+testers/memtest/memtest.hh:        void process() { cpu->tick(); }
+trace/.svn/text-base/opt_cpu.cc.svn-base:    cpu->tick();
+trace/.svn/text-base/trace_cpu.cc.svn-base:    cpu->tick();
+trace/trace_cpu.cc:    cpu->tick();
+trace/opt_cpu.cc:    cpu->tick();

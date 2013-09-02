@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/fs/10.linux-boot/ref/x86/linux/pc-simple-atomic
+END
+stats.txt
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/fs/10.linux-boot/ref/x86/linux/pc-simple-atomic/stats.txt
+END
+system.pc.terminal
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/fs/10.linux-boot/ref/x86/linux/pc-simple-atomic/system.pc.terminal
+END
+simout
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/fs/10.linux-boot/ref/x86/linux/pc-simple-atomic/simout
+END
+simerr
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/fs/10.linux-boot/ref/x86/linux/pc-simple-atomic/simerr
+END
+config.ini
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/fs/10.linux-boot/ref/x86/linux/pc-simple-atomic/config.ini
+END

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/alpha/isa
+END
+unknown.isa
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/alpha/isa/unknown.isa
+END
+main.isa
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/alpha/isa/main.isa
+END
+decoder.isa
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/alpha/isa/decoder.isa
+END
+fp.isa
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/alpha/isa/fp.isa
+END
+unimp.isa
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/alpha/isa/unimp.isa
+END
+int.isa
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/alpha/isa/int.isa
+END
+pal.isa
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/alpha/isa/pal.isa
+END
+branch.isa
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/alpha/isa/branch.isa
+END
+opcdec.isa
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/alpha/isa/opcdec.isa
+END
+util.isa
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/alpha/isa/util.isa
+END
+mem.isa
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/alpha/isa/mem.isa
+END

@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/arm
+END
+pl011.hh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/arm/pl011.hh
+END
+rtc_pl031.cc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/arm/rtc_pl031.cc
+END
+pl111.hh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/arm/pl111.hh
+END
+rv_ctrl.cc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/arm/rv_ctrl.cc
+END
+gic.hh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/arm/gic.hh
+END
+timer_cpulocal.hh
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/arm/timer_cpulocal.hh
+END
+realview.cc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/arm/realview.cc
+END
+timer_sp804.cc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/arm/timer_sp804.cc
+END
+amba_device.cc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/arm/amba_device.cc
+END
+kmi.cc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/arm/kmi.cc
+END
+RealView.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/arm/RealView.py
+END
+rtc_pl031.hh
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/arm/rtc_pl031.hh
+END
+a9scu.cc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/arm/a9scu.cc
+END
+rv_ctrl.hh
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/arm/rv_ctrl.hh
+END
+amba_fake.cc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/arm/amba_fake.cc
+END
+realview.hh
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/arm/realview.hh
+END
+timer_sp804.hh
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/arm/timer_sp804.hh
+END
+amba_device.hh
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/arm/amba_device.hh
+END
+kmi.hh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/arm/kmi.hh
+END
+pl011.cc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/arm/pl011.cc
+END
+pl111.cc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/arm/pl111.cc
+END
+a9scu.hh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/arm/a9scu.hh
+END
+amba_fake.hh
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/arm/amba_fake.hh
+END
+gic.cc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/arm/gic.cc
+END
+timer_cpulocal.cc
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/arm/timer_cpulocal.cc
+END
+SConscript
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/arm/SConscript
+END

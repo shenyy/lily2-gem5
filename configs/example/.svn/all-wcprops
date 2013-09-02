@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/configs/example
+END
+se.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/configs/example/se.py
+END
+fs.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/configs/example/fs.py
+END
+ruby_fs.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/configs/example/ruby_fs.py
+END
+ruby_network_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/configs/example/ruby_network_test.py
+END
+ruby_direct_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/configs/example/ruby_direct_test.py
+END
+memtest.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/configs/example/memtest.py
+END
+ruby_mem_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/configs/example/ruby_mem_test.py
+END
+ruby_random_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/configs/example/ruby_random_test.py
+END

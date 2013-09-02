@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/arm/isa/templates
+END
+macromem.isa
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/arm/isa/templates/macromem.isa
+END
+basic.isa
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/arm/isa/templates/basic.isa
+END
+mult.isa
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/arm/isa/templates/mult.isa
+END
+pred.isa
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/arm/isa/templates/pred.isa
+END
+misc.isa
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/arm/isa/templates/misc.isa
+END
+vfp.isa
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/arm/isa/templates/vfp.isa
+END
+branch.isa
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/arm/isa/templates/branch.isa
+END
+mem.isa
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/arm/isa/templates/mem.isa
+END
+templates.isa
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/arm/isa/templates/templates.isa
+END
+neon.isa
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/arm/isa/templates/neon.isa
+END

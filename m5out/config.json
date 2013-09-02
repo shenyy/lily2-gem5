@@ -1,0 +1,160 @@
+{
+    "name": null, 
+    "system": {
+        "work_end_ckpt_count": 0, 
+        "mem_mode": "timing", 
+        "name": "system", 
+        "init_param": 0, 
+        "membus": {
+            "slave": {
+                "peer": [
+                    "system.system_port", 
+                    "system.cpu.icache_port", 
+                    "system.cpu.dcache_port"
+                ], 
+                "role": "SLAVE"
+            }, 
+            "name": "membus", 
+            "clock": 1e-09, 
+            "header_cycles": 1, 
+            "width": 64, 
+            "use_default_range": false, 
+            "master": {
+                "peer": [
+                    "system.physmem.port[0]"
+                ], 
+                "role": "MASTER"
+            }, 
+            "cxx_class": "CoherentBus", 
+            "path": "system.membus", 
+            "block_size": 64, 
+            "type": "CoherentBus"
+        }, 
+        "work_begin_ckpt_count": 0, 
+        "load_addr_mask": 1099511627775, 
+        "physmem": {
+            "latency": 3.0000000000000004e-08, 
+            "in_addr_map": true, 
+            "latency_var": 0.0, 
+            "zero": false, 
+            "conf_table_reported": false, 
+            "cxx_class": "SimpleMemory", 
+            "path": "system.physmem", 
+            "null": false, 
+            "type": "SimpleMemory", 
+            "port": {
+                "peer": [
+                    "system.membus.master[0]"
+                ], 
+                "role": "SLAVE"
+            }, 
+            "name": "physmem"
+        }, 
+        "system_port": {
+            "peer": "system.membus.slave[0]", 
+            "role": "MASTER"
+        }, 
+        "cpu": [
+            {
+                "profile": 0.0, 
+                "do_statistics_insts": true, 
+                "numThreads": 1, 
+                "itb": {
+                    "path": "system.cpu.itb", 
+                    "size": 64, 
+                    "type": "Lily2TLB", 
+                    "name": "itb", 
+                    "cxx_class": "Lily2ISA::TLB"
+                }, 
+                "function_trace": false, 
+                "do_checkpoint_insts": true, 
+                "cxx_class": "RiscCPU", 
+                "max_loads_all_threads": 0, 
+                "clock": 5e-10, 
+                "simulate_data_stalls": false, 
+                "function_trace_start": 0, 
+                "cpu_id": 0, 
+                "width": 1, 
+                "UnifiedTLB": true, 
+                "do_quiesce": true, 
+                "type": "RiscCPU", 
+                "fastmem": false, 
+                "G_W_Port": 10, 
+                "Y_R_Port": 8, 
+                "icache_port": {
+                    "peer": "system.membus.slave[1]", 
+                    "role": "MASTER"
+                }, 
+                "defer_registration": false, 
+                "interrupts": {
+                    "path": "system.cpu.interrupts", 
+                    "type": "Lily2Interrupts", 
+                    "name": "interrupts", 
+                    "cxx_class": "Lily2ISA::Interrupts"
+                }, 
+                "max_insts_all_threads": 0, 
+                "phase": 0.0, 
+                "path": "system.cpu", 
+                "Y_W_Port": 6, 
+                "workload": [
+                    {
+                        "gid": 100, 
+                        "ppid": 99, 
+                        "name": "workload", 
+                        "pid": 100, 
+                        "simpoint": 0, 
+                        "egid": 100, 
+                        "euid": 100, 
+                        "cxx_class": "LiveProcess", 
+                        "path": "system.cpu.workload", 
+                        "max_stack_size": 67108864, 
+                        "type": "LiveProcess", 
+                        "uid": 100
+                    }
+                ], 
+                "name": "cpu", 
+                "dtb": {
+                    "path": "system.cpu.dtb", 
+                    "size": 64, 
+                    "type": "Lily2TLB", 
+                    "name": "dtb", 
+                    "cxx_class": "Lily2ISA::TLB"
+                }, 
+                "max_insts_any_thread": 0, 
+                "simulate_inst_stalls": false, 
+                "B_PREDICT": 0, 
+                "progress_interval": 0, 
+                "dcache_port": {
+                    "peer": "system.membus.slave[2]", 
+                    "role": "MASTER"
+                }, 
+                "X_W_Port": 6, 
+                "max_loads_any_thread": 0, 
+                "X_R_Port": 8, 
+                "tracer": {
+                    "path": "system.cpu.tracer", 
+                    "type": "ExeTracer", 
+                    "name": "tracer", 
+                    "cxx_class": "Trace::ExeTracer"
+                }, 
+                "G_R_Port": 10
+            }
+        ], 
+        "work_cpus_ckpt_count": 0, 
+        "work_begin_exit_count": 0, 
+        "cxx_class": "System", 
+        "path": "system", 
+        "work_begin_cpu_id_exit": -1, 
+        "type": "System", 
+        "work_item_id": -1, 
+        "work_end_exit_count": 0, 
+        "num_work_ids": 16
+    }, 
+    "time_sync_period": 0.1, 
+    "time_sync_spin_threshold": 9.999999999999999e-05, 
+    "cxx_class": "Root", 
+    "path": "root", 
+    "time_sync_enable": false, 
+    "type": "Root", 
+    "full_system": false
+}

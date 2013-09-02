@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/data_transfer_and_conversion
+END
+conditional_move.py
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/data_transfer_and_conversion/conditional_move.py
+END
+convert_and_load_or_store_integer.py
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/data_transfer_and_conversion/convert_and_load_or_store_integer.py
+END
+extract.py
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/data_transfer_and_conversion/extract.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/data_transfer_and_conversion/__init__.py
+END
+exchange.py
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/data_transfer_and_conversion/exchange.py
+END
+convert_and_load_or_store_bcd.py
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/data_transfer_and_conversion/convert_and_load_or_store_bcd.py
+END
+load_or_store_floating_point.py
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/data_transfer_and_conversion/load_or_store_floating_point.py
+END

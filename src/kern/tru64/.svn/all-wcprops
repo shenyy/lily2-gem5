@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/kern/tru64
+END
+dump_mbuf.hh
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/kern/tru64/dump_mbuf.hh
+END
+tru64_events.cc
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/kern/tru64/tru64_events.cc
+END
+tru64_syscalls.hh
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/kern/tru64/tru64_syscalls.hh
+END
+printf.hh
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/kern/tru64/printf.hh
+END
+dump_mbuf.cc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/kern/tru64/dump_mbuf.cc
+END
+tru64.hh
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/kern/tru64/tru64.hh
+END
+tru64_syscalls.cc
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/kern/tru64/tru64_syscalls.cc
+END
+printf.cc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/kern/tru64/printf.cc
+END
+tru64_events.hh
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/kern/tru64/tru64_events.hh
+END
+mbuf.hh
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/kern/tru64/mbuf.hh
+END

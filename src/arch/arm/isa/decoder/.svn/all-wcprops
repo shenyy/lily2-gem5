@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/arm/isa/decoder
+END
+arm.isa
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/arm/isa/decoder/arm.isa
+END
+thumb.isa
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/arm/isa/decoder/thumb.isa
+END
+decoder.isa
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/arm/isa/decoder/decoder.isa
+END

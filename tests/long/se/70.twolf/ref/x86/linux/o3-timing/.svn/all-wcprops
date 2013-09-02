@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/long/se/70.twolf/ref/x86/linux/o3-timing
+END
+smred.pin
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/long/se/70.twolf/ref/x86/linux/o3-timing/smred.pin
+END
+simout
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/long/se/70.twolf/ref/x86/linux/o3-timing/simout
+END
+smred.out
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/long/se/70.twolf/ref/x86/linux/o3-timing/smred.out
+END
+simerr
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/long/se/70.twolf/ref/x86/linux/o3-timing/simerr
+END
+smred.sav
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/long/se/70.twolf/ref/x86/linux/o3-timing/smred.sav
+END
+config.ini
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/long/se/70.twolf/ref/x86/linux/o3-timing/config.ini
+END
+smred.sv2
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/long/se/70.twolf/ref/x86/linux/o3-timing/smred.sv2
+END
+smred.pl1
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/long/se/70.twolf/ref/x86/linux/o3-timing/smred.pl1
+END
+smred.pl2
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/long/se/70.twolf/ref/x86/linux/o3-timing/smred.pl2
+END
+smred.twf
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/long/se/70.twolf/ref/x86/linux/o3-timing/smred.twf
+END
+stats.txt
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/long/se/70.twolf/ref/x86/linux/o3-timing/stats.txt
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/simd128/integer/logical
+END
+por.py
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/simd128/integer/logical/por.py
+END
+pand.py
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/simd128/integer/logical/pand.py
+END
+exclusive_or.py
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/simd128/integer/logical/exclusive_or.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/simd128/integer/logical/__init__.py
+END

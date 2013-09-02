@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/fs/80.netperf-stream/ref/alpha/linux/twosys-tsunami-simple-atomic
+END
+testsys.terminal
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/fs/80.netperf-stream/ref/alpha/linux/twosys-tsunami-simple-atomic/testsys.terminal
+END
+stats.txt
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/fs/80.netperf-stream/ref/alpha/linux/twosys-tsunami-simple-atomic/stats.txt
+END
+simout
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/fs/80.netperf-stream/ref/alpha/linux/twosys-tsunami-simple-atomic/simout
+END
+simerr
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/fs/80.netperf-stream/ref/alpha/linux/twosys-tsunami-simple-atomic/simerr
+END
+drivesys.terminal
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/fs/80.netperf-stream/ref/alpha/linux/twosys-tsunami-simple-atomic/drivesys.terminal
+END
+config.ini
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/fs/80.netperf-stream/ref/alpha/linux/twosys-tsunami-simple-atomic/config.ini
+END

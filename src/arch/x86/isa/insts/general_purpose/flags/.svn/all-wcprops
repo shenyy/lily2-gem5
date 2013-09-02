@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/general_purpose/flags
+END
+load_and_store.py
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/general_purpose/flags/load_and_store.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/general_purpose/flags/__init__.py
+END
+push_and_pop.py
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/general_purpose/flags/push_and_pop.py
+END
+set_and_clear.py
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/general_purpose/flags/set_and_clear.py
+END

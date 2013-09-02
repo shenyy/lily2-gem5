@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/lily2-gem5/!svn/ver/8/gem5-stable-f75ee4849c40/build_opts
+END
+MIPS
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/build_opts/MIPS
+END
+SPARC
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/build_opts/SPARC
+END
+NOISA
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/build_opts/NOISA
+END
+ALPHA_MOESI_hammer
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/build_opts/ALPHA_MOESI_hammer
+END
+LILY2
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/lily2-gem5/!svn/ver/8/gem5-stable-f75ee4849c40/build_opts/LILY2
+END
+POWER
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/build_opts/POWER
+END
+ALPHA_Network_test
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/build_opts/ALPHA_Network_test
+END
+ARM
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/build_opts/ARM
+END
+ALPHA_MOESI_CMP_token
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/build_opts/ALPHA_MOESI_CMP_token
+END
+ALPHA_MOESI_CMP_directory
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/build_opts/ALPHA_MOESI_CMP_directory
+END
+ALPHA
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/build_opts/ALPHA
+END
+ALPHA_MESI_CMP_directory
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/build_opts/ALPHA_MESI_CMP_directory
+END
+X86
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/build_opts/X86
+END
+X86_MESI_CMP_directory
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/build_opts/X86_MESI_CMP_directory
+END

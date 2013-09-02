@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/se/50.memtest/ref/alpha/linux/memtest-ruby-MESI_CMP_directory
+END
+stats.txt
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/se/50.memtest/ref/alpha/linux/memtest-ruby-MESI_CMP_directory/stats.txt
+END
+ruby.stats
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/se/50.memtest/ref/alpha/linux/memtest-ruby-MESI_CMP_directory/ruby.stats
+END
+simout
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/se/50.memtest/ref/alpha/linux/memtest-ruby-MESI_CMP_directory/simout
+END
+simerr
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/se/50.memtest/ref/alpha/linux/memtest-ruby-MESI_CMP_directory/simerr
+END
+config.ini
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/se/50.memtest/ref/alpha/linux/memtest-ruby-MESI_CMP_directory/config.ini
+END

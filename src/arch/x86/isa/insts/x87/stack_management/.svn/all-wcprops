@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/stack_management
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/stack_management/__init__.py
+END
+stack_control.py
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/stack_management/stack_control.py
+END
+clear_state.py
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/stack_management/clear_state.py
+END

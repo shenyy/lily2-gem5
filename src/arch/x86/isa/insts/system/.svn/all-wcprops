@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/system
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/system/__init__.py
+END
+invlpg.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/system/invlpg.py
+END
+undefined_operation.py
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/system/undefined_operation.py
+END
+msrs.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/system/msrs.py
+END
+control_registers.py
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/system/control_registers.py
+END
+halt.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/system/halt.py
+END
+segmentation.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/system/segmentation.py
+END

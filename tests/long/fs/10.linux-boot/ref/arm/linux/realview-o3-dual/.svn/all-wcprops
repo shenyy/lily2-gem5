@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/long/fs/10.linux-boot/ref/arm/linux/realview-o3-dual
+END
+stats.txt
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/long/fs/10.linux-boot/ref/arm/linux/realview-o3-dual/stats.txt
+END
+system.terminal
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/long/fs/10.linux-boot/ref/arm/linux/realview-o3-dual/system.terminal
+END
+simout
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/long/fs/10.linux-boot/ref/arm/linux/realview-o3-dual/simout
+END
+simerr
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/long/fs/10.linux-boot/ref/arm/linux/realview-o3-dual/simerr
+END
+config.ini
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/long/fs/10.linux-boot/ref/arm/linux/realview-o3-dual/config.ini
+END
+status
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/long/fs/10.linux-boot/ref/arm/linux/realview-o3-dual/status
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/se/00.hello/ref/x86/linux/o3-timing
+END
+stats.txt
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/se/00.hello/ref/x86/linux/o3-timing/stats.txt
+END
+simout
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/se/00.hello/ref/x86/linux/o3-timing/simout
+END
+simerr
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/se/00.hello/ref/x86/linux/o3-timing/simerr
+END
+config.ini
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/se/00.hello/ref/x86/linux/o3-timing/config.ini
+END

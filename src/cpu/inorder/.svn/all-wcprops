@@ -1,0 +1,227 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder
+END
+thread_state.cc
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/thread_state.cc
+END
+inorder_dyn_inst.cc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/inorder_dyn_inst.cc
+END
+thread_context.cc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/thread_context.cc
+END
+reg_dep_map.hh
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/reg_dep_map.hh
+END
+InOrderCPU.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/InOrderCPU.py
+END
+resource_pool.cc
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/resource_pool.cc
+END
+inorder_trace.cc
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/inorder_trace.cc
+END
+pipeline_traits.5stage.cc
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/pipeline_traits.5stage.cc
+END
+InOrderTrace.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/InOrderTrace.py
+END
+pipeline_traits.9stage.smt2.hh
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/pipeline_traits.9stage.smt2.hh
+END
+first_stage.hh
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/first_stage.hh
+END
+pipeline_traits.9stage.cc
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/pipeline_traits.9stage.cc
+END
+resource.cc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/resource.cc
+END
+params.hh
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/params.hh
+END
+cpu.hh
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/cpu.hh
+END
+pipeline_stage.hh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/pipeline_stage.hh
+END
+reg_dep_map.cc
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/reg_dep_map.cc
+END
+comm.hh
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/comm.hh
+END
+SConsopts
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/SConsopts
+END
+resource_sked.hh
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/resource_sked.hh
+END
+pipeline_traits.9stage.smt2.cc
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/pipeline_traits.9stage.smt2.cc
+END
+first_stage.cc
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/first_stage.cc
+END
+resource_pool.9stage.cc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/resource_pool.9stage.cc
+END
+inorder_cpu_builder.cc
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/inorder_cpu_builder.cc
+END
+thread_state.hh
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/thread_state.hh
+END
+inorder_dyn_inst.hh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/inorder_dyn_inst.hh
+END
+thread_context.hh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/thread_context.hh
+END
+cpu.cc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/cpu.cc
+END
+pipeline_stage.cc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/pipeline_stage.cc
+END
+resource_pool.hh
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/resource_pool.hh
+END
+inorder_trace.hh
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/inorder_trace.hh
+END
+pipeline_traits.5stage.hh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/pipeline_traits.5stage.hh
+END
+resource_sked.cc
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/resource_sked.cc
+END
+pipeline_traits.9stage.hh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/pipeline_traits.9stage.hh
+END
+resource.hh
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/resource.hh
+END
+SConscript
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/SConscript
+END
+pipeline_traits.hh
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/cpu/inorder/pipeline_traits.hh
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/se/00.hello/ref/power/linux/simple-atomic
+END
+stats.txt
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/se/00.hello/ref/power/linux/simple-atomic/stats.txt
+END
+simout
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/se/00.hello/ref/power/linux/simple-atomic/simout
+END
+simerr
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/se/00.hello/ref/power/linux/simple-atomic/simerr
+END
+config.ini
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/se/00.hello/ref/power/linux/simple-atomic/config.ini
+END

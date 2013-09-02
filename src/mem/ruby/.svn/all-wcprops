@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/ruby
+END
+Decomissioning_note
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/ruby/Decomissioning_note
+END
+README.debugging
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/ruby/README.debugging
+END
+SConscript
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/ruby/SConscript
+END
+SConsopts
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/ruby/SConsopts
+END

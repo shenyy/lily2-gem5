@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/se/00.hello/ref/alpha/linux/simple-timing-ruby-MOESI_CMP_token
+END
+config.ini
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/se/00.hello/ref/alpha/linux/simple-timing-ruby-MOESI_CMP_token/config.ini
+END
+stats.txt
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/se/00.hello/ref/alpha/linux/simple-timing-ruby-MOESI_CMP_token/stats.txt
+END
+ruby.stats
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/se/00.hello/ref/alpha/linux/simple-timing-ruby-MOESI_CMP_token/ruby.stats
+END
+simout
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/se/00.hello/ref/alpha/linux/simple-timing-ruby-MOESI_CMP_token/simout
+END
+simerr
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/se/00.hello/ref/alpha/linux/simple-timing-ruby-MOESI_CMP_token/simerr
+END

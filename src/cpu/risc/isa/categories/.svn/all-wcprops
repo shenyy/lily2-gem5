@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/lily2-gem5/!svn/ver/25/gem5-stable-f75ee4849c40/src/cpu/risc/isa/categories
+END
+template.cc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/lily2-gem5/!svn/ver/25/gem5-stable-f75ee4849c40/src/cpu/risc/isa/categories/template.cc
+END
+shift.cc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/lily2-gem5/!svn/ver/25/gem5-stable-f75ee4849c40/src/cpu/risc/isa/categories/shift.cc
+END
+mem.cc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/lily2-gem5/!svn/ver/25/gem5-stable-f75ee4849c40/src/cpu/risc/isa/categories/mem.cc
+END
+bit.cc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/lily2-gem5/!svn/ver/25/gem5-stable-f75ee4849c40/src/cpu/risc/isa/categories/bit.cc
+END
+fp.hh
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/lily2-gem5/!svn/ver/22/gem5-stable-f75ee4849c40/src/cpu/risc/isa/categories/fp.hh
+END
+multiply.cc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/lily2-gem5/!svn/ver/23/gem5-stable-f75ee4849c40/src/cpu/risc/isa/categories/multiply.cc
+END
+includes.hh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/lily2-gem5/!svn/ver/23/gem5-stable-f75ee4849c40/src/cpu/risc/isa/categories/includes.hh
+END
+move.hh
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lily2-gem5/!svn/ver/18/gem5-stable-f75ee4849c40/src/cpu/risc/isa/categories/move.hh
+END
+flow.hh
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lily2-gem5/!svn/ver/23/gem5-stable-f75ee4849c40/src/cpu/risc/isa/categories/flow.hh
+END
+mode.cc
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lily2-gem5/!svn/ver/25/gem5-stable-f75ee4849c40/src/cpu/risc/isa/categories/mode.cc
+END
+template.hh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/lily2-gem5/!svn/ver/14/gem5-stable-f75ee4849c40/src/cpu/risc/isa/categories/template.hh
+END
+compare.cc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/lily2-gem5/!svn/ver/25/gem5-stable-f75ee4849c40/src/cpu/risc/isa/categories/compare.cc
+END
+shift.hh
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/lily2-gem5/!svn/ver/23/gem5-stable-f75ee4849c40/src/cpu/risc/isa/categories/shift.hh
+END
+mem.hh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/lily2-gem5/!svn/ver/21/gem5-stable-f75ee4849c40/src/cpu/risc/isa/categories/mem.hh
+END
+bit.hh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/lily2-gem5/!svn/ver/18/gem5-stable-f75ee4849c40/src/cpu/risc/isa/categories/bit.hh
+END
+arithmetic.cc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/lily2-gem5/!svn/ver/25/gem5-stable-f75ee4849c40/src/cpu/risc/isa/categories/arithmetic.cc
+END
+multiply.hh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/lily2-gem5/!svn/ver/23/gem5-stable-f75ee4849c40/src/cpu/risc/isa/categories/multiply.hh
+END
+misc.cc
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lily2-gem5/!svn/ver/23/gem5-stable-f75ee4849c40/src/cpu/risc/isa/categories/misc.cc
+END
+logic.cc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/lily2-gem5/!svn/ver/25/gem5-stable-f75ee4849c40/src/cpu/risc/isa/categories/logic.cc
+END
+mode.hh
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lily2-gem5/!svn/ver/18/gem5-stable-f75ee4849c40/src/cpu/risc/isa/categories/mode.hh
+END
+compare.hh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/lily2-gem5/!svn/ver/18/gem5-stable-f75ee4849c40/src/cpu/risc/isa/categories/compare.hh
+END
+arithmetic.hh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/lily2-gem5/!svn/ver/14/gem5-stable-f75ee4849c40/src/cpu/risc/isa/categories/arithmetic.hh
+END
+fp.cc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/lily2-gem5/!svn/ver/22/gem5-stable-f75ee4849c40/src/cpu/risc/isa/categories/fp.cc
+END
+misc.hh
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lily2-gem5/!svn/ver/23/gem5-stable-f75ee4849c40/src/cpu/risc/isa/categories/misc.hh
+END
+move.cc
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lily2-gem5/!svn/ver/25/gem5-stable-f75ee4849c40/src/cpu/risc/isa/categories/move.cc
+END
+logic.hh
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/lily2-gem5/!svn/ver/14/gem5-stable-f75ee4849c40/src/cpu/risc/isa/categories/logic.hh
+END
+flow.cc
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lily2-gem5/!svn/ver/25/gem5-stable-f75ee4849c40/src/cpu/risc/isa/categories/flow.cc
+END

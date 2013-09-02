@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/decoder
+END
+one_byte_opcodes.isa
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/decoder/one_byte_opcodes.isa
+END
+decoder.isa
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/decoder/decoder.isa
+END
+three_byte_opcodes.isa
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/decoder/three_byte_opcodes.isa
+END
+x87.isa
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/decoder/x87.isa
+END
+two_byte_opcodes.isa
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/decoder/two_byte_opcodes.isa
+END
+locked_opcodes.isa
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/decoder/locked_opcodes.isa
+END

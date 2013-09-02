@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/fs/10.linux-boot/ref/alpha/linux/tsunami-simple-timing
+END
+system.terminal
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/fs/10.linux-boot/ref/alpha/linux/tsunami-simple-timing/system.terminal
+END
+simout
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/fs/10.linux-boot/ref/alpha/linux/tsunami-simple-timing/simout
+END
+simerr
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/fs/10.linux-boot/ref/alpha/linux/tsunami-simple-timing/simerr
+END
+config.ini
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/fs/10.linux-boot/ref/alpha/linux/tsunami-simple-timing/config.ini
+END
+stats.txt
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/fs/10.linux-boot/ref/alpha/linux/tsunami-simple-timing/stats.txt
+END

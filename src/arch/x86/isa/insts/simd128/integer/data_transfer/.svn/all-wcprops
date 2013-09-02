@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/simd128/integer/data_transfer
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/simd128/integer/data_transfer/__init__.py
+END
+move_mask.py
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/simd128/integer/data_transfer/move_mask.py
+END
+move_non_temporal.py
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/simd128/integer/data_transfer/move_non_temporal.py
+END
+move.py
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/simd128/integer/data_transfer/move.py
+END

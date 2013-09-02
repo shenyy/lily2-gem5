@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/se/20.eio-short/ref/alpha/eio/detailed
+END
+stats.txt
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/se/20.eio-short/ref/alpha/eio/detailed/stats.txt
+END
+simout
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/se/20.eio-short/ref/alpha/eio/detailed/simout
+END
+simerr
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/se/20.eio-short/ref/alpha/eio/detailed/simerr
+END
+config.ini
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/quick/se/20.eio-short/ref/alpha/eio/detailed/config.ini
+END

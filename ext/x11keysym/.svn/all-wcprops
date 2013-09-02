@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/ext/x11keysym
+END
+keysymdef.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/ext/x11keysym/keysymdef.h
+END
+keysym.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/ext/x11keysym/keysym.h
+END

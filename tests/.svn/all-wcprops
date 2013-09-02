@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests
+END
+SConscript
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/SConscript
+END
+run.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/run.py
+END
+diff-out
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/diff-out
+END
+halt.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/halt.sh
+END

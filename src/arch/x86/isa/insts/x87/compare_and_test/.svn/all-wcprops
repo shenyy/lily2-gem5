@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/compare_and_test
+END
+floating_point_unordered_compare.py
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/compare_and_test/floating_point_unordered_compare.py
+END
+classify.py
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/compare_and_test/classify.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/compare_and_test/__init__.py
+END
+test.py
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/compare_and_test/test.py
+END
+integer_compare.py
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/compare_and_test/integer_compare.py
+END
+floating_point_ordered_compare.py
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/compare_and_test/floating_point_ordered_compare.py
+END

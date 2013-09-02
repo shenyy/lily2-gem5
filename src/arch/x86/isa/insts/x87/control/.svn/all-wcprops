@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/control
+END
+clear_exceptions.py
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/control/clear_exceptions.py
+END
+wait_for_exceptions.py
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/control/wait_for_exceptions.py
+END
+save_and_restore_x87_environment.py
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/control/save_and_restore_x87_environment.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/control/__init__.py
+END
+initialize.py
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/control/initialize.py
+END
+save_x87_status_word.py
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/control/save_x87_status_word.py
+END
+save_and_restore_x87_control_word.py
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/control/save_and_restore_x87_control_word.py
+END

@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/x86
+END
+cmos.cc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/x86/cmos.cc
+END
+pc.cc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/x86/pc.cc
+END
+intdev.hh
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/x86/intdev.hh
+END
+speaker.hh
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/x86/speaker.hh
+END
+I82094AA.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/x86/I82094AA.py
+END
+I8042.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/x86/I8042.py
+END
+i82094aa.hh
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/x86/i82094aa.hh
+END
+i8237.cc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/x86/i8237.cc
+END
+I8254.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/x86/I8254.py
+END
+i8259.cc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/x86/i8259.cc
+END
+i8042.hh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/x86/i8042.hh
+END
+SouthBridge.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/x86/SouthBridge.py
+END
+i8254.hh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/x86/i8254.hh
+END
+south_bridge.hh
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/x86/south_bridge.hh
+END
+intdev.cc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/x86/intdev.cc
+END
+speaker.cc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/x86/speaker.cc
+END
+i82094aa.cc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/x86/i82094aa.cc
+END
+SConscript
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/x86/SConscript
+END
+Cmos.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/x86/Cmos.py
+END
+Pc.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/x86/Pc.py
+END
+i8042.cc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/x86/i8042.cc
+END
+X86IntPin.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/x86/X86IntPin.py
+END
+i8254.cc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/x86/i8254.cc
+END
+cmos.hh
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/x86/cmos.hh
+END
+pc.hh
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/x86/pc.hh
+END
+south_bridge.cc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/x86/south_bridge.cc
+END
+I8237.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/x86/I8237.py
+END
+PcSpeaker.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/x86/PcSpeaker.py
+END
+I8259.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/x86/I8259.py
+END
+i8237.hh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/x86/i8237.hh
+END
+i8259.hh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/dev/x86/i8259.hh
+END

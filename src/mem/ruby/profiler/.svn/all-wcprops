@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/ruby/profiler
+END
+AddressProfiler.hh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/ruby/profiler/AddressProfiler.hh
+END
+Profiler.cc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/ruby/profiler/Profiler.cc
+END
+SConscript
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/ruby/profiler/SConscript
+END
+MemCntrlProfiler.cc
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/ruby/profiler/MemCntrlProfiler.cc
+END
+Profiler.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/ruby/profiler/Profiler.py
+END
+StoreTrace.hh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/ruby/profiler/StoreTrace.hh
+END
+CacheProfiler.cc
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/ruby/profiler/CacheProfiler.cc
+END
+AccessTraceForAddress.hh
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/ruby/profiler/AccessTraceForAddress.hh
+END
+AddressProfiler.cc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/ruby/profiler/AddressProfiler.cc
+END
+StoreTrace.cc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/ruby/profiler/StoreTrace.cc
+END
+Profiler.hh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/ruby/profiler/Profiler.hh
+END
+AccessTraceForAddress.cc
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/ruby/profiler/AccessTraceForAddress.cc
+END
+MemCntrlProfiler.hh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/ruby/profiler/MemCntrlProfiler.hh
+END
+CacheProfiler.hh
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/mem/ruby/profiler/CacheProfiler.hh
+END

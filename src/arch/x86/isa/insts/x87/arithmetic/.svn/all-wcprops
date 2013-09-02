@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/arithmetic
+END
+addition.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/arithmetic/addition.py
+END
+multiplication.py
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/arithmetic/multiplication.py
+END
+subtraction.py
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/arithmetic/subtraction.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/arithmetic/__init__.py
+END
+partial_remainder.py
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/arithmetic/partial_remainder.py
+END
+square_root.py
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/arithmetic/square_root.py
+END
+division.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/arithmetic/division.py
+END
+change_sign.py
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/arithmetic/change_sign.py
+END
+round.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/x87/arithmetic/round.py
+END

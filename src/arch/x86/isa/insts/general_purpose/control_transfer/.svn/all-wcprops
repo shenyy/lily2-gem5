@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/general_purpose/control_transfer
+END
+call.py
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/general_purpose/control_transfer/call.py
+END
+jump.py
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/general_purpose/control_transfer/jump.py
+END
+conditional_jump.py
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/general_purpose/control_transfer/conditional_jump.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/general_purpose/control_transfer/__init__.py
+END
+interrupts_and_exceptions.py
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/general_purpose/control_transfer/interrupts_and_exceptions.py
+END
+xreturn.py
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/general_purpose/control_transfer/xreturn.py
+END
+loop.py
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/general_purpose/control_transfer/loop.py
+END

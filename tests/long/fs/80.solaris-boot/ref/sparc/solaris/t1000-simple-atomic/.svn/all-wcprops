@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/long/fs/80.solaris-boot/ref/sparc/solaris/t1000-simple-atomic
+END
+simout
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/long/fs/80.solaris-boot/ref/sparc/solaris/t1000-simple-atomic/simout
+END
+simerr
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/long/fs/80.solaris-boot/ref/sparc/solaris/t1000-simple-atomic/simerr
+END
+config.ini
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/long/fs/80.solaris-boot/ref/sparc/solaris/t1000-simple-atomic/config.ini
+END
+system.t1000.hterm
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/long/fs/80.solaris-boot/ref/sparc/solaris/t1000-simple-atomic/system.t1000.hterm
+END
+stats.txt
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/long/fs/80.solaris-boot/ref/sparc/solaris/t1000-simple-atomic/stats.txt
+END
+system.t1000.pterm
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/long/fs/80.solaris-boot/ref/sparc/solaris/t1000-simple-atomic/system.t1000.pterm
+END

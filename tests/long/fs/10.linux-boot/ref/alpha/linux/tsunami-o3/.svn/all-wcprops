@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/long/fs/10.linux-boot/ref/alpha/linux/tsunami-o3
+END
+stats.txt
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/long/fs/10.linux-boot/ref/alpha/linux/tsunami-o3/stats.txt
+END
+system.terminal
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/long/fs/10.linux-boot/ref/alpha/linux/tsunami-o3/system.terminal
+END
+simout
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/long/fs/10.linux-boot/ref/alpha/linux/tsunami-o3/simout
+END
+simerr
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/long/fs/10.linux-boot/ref/alpha/linux/tsunami-o3/simerr
+END
+config.ini
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/tests/long/fs/10.linux-boot/ref/alpha/linux/tsunami-o3/config.ini
+END

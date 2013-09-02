@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/lily2-gem5/!svn/ver/25/gem5-stable-f75ee4849c40/src
+END
+Doxyfile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/Doxyfile
+END
+SConscript
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/SConscript
+END

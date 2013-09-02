@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/power
+END
+tlb.hh
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/power/tlb.hh
+END
+stacktrace.hh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/power/stacktrace.hh
+END
+PowerInterrupts.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/power/PowerInterrupts.py
+END
+PowerTLB.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/power/PowerTLB.py
+END
+decoder.cc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/power/decoder.cc
+END
+faults.hh
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/power/faults.hh
+END
+kernel_stats.hh
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/power/kernel_stats.hh
+END
+locked_mem.hh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/power/locked_mem.hh
+END
+utility.hh
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/power/utility.hh
+END
+types.hh
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/power/types.hh
+END
+tlb.cc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/power/tlb.cc
+END
+remote_gdb.hh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/power/remote_gdb.hh
+END
+registers.hh
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/power/registers.hh
+END
+stacktrace.cc
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/power/stacktrace.cc
+END
+miscregs.hh
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/power/miscregs.hh
+END
+vtophys.hh
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/power/vtophys.hh
+END
+process.hh
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/power/process.hh
+END
+interrupts.hh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/power/interrupts.hh
+END
+microcode_rom.hh
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/power/microcode_rom.hh
+END
+pagetable.hh
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/power/pagetable.hh
+END
+utility.cc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/power/utility.cc
+END
+SConscript
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/power/SConscript
+END
+mmapped_ipr.hh
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/power/mmapped_ipr.hh
+END
+SConsopts
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/power/SConsopts
+END
+isa_traits.hh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/power/isa_traits.hh
+END
+vtophys.cc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/power/vtophys.cc
+END
+process.cc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/power/process.cc
+END
+decoder.hh
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/power/decoder.hh
+END
+interrupts.cc
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/power/interrupts.cc
+END
+pagetable.cc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/power/pagetable.cc
+END
+isa.hh
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/power/isa.hh
+END

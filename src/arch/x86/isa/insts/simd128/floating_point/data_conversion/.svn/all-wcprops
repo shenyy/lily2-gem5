@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/simd128/floating_point/data_conversion
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/simd128/floating_point/data_conversion/__init__.py
+END
+convert_floating_point_to_gpr_integer.py
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/simd128/floating_point/data_conversion/convert_floating_point_to_gpr_integer.py
+END
+convert_floating_point_to_floating_point.py
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/simd128/floating_point/data_conversion/convert_floating_point_to_floating_point.py
+END
+convert_floating_point_to_mmx_integer.py
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/simd128/floating_point/data_conversion/convert_floating_point_to_mmx_integer.py
+END
+convert_floating_point_to_xmm_integer.py
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/lily2-gem5/!svn/ver/1/gem5-stable-f75ee4849c40/src/arch/x86/isa/insts/simd128/floating_point/data_conversion/convert_floating_point_to_xmm_integer.py
+END
