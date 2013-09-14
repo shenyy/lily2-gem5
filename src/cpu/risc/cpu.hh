@@ -71,7 +71,7 @@ template <int N> class QWRegFile;
 }
 
 class RiscCPU : public BaseSimpleCPU
-{	
+{
   public:
 
     RiscCPU(RiscCPUParams *params);
@@ -132,7 +132,7 @@ class RiscCPU : public BaseSimpleCPU
     Request data_write_req;
 
     bool dcache_access;
-    Tick dcache_latency;                  
+    Tick dcache_latency;
 
   protected:
 
@@ -164,7 +164,7 @@ class RiscCPU : public BaseSimpleCPU
      * debugging).
      */
     void printAddr(Addr a);
-    
+
 public:
     typedef LILY2_NS::WORD WORD;
     typedef LILY2_NS::DWORD DWORD;
@@ -177,58 +177,64 @@ public:
     typedef LILY2_NS::PCState PCState;
     typedef LILY2_NS::RegIndex RegIndex;
     typedef LILY2_NS::RegType RegType;
-    
+
     typedef LILY2_NS::Resource Resource;
     typedef LILY2_NS::Fetch Fetch;
     typedef LILY2_NS::Decode Decode;
     typedef LILY2_NS::Dispatch Dispatch;
     typedef LILY2_NS::Execute Execute;
-    
+
     typedef LILY2_NS::RetStack RetStack;
     typedef LILY2_NS::WRegFile<LILY2_NS::Num_X_Regs> XRegFile;
     typedef LILY2_NS::QWRegFile<LILY2_NS::Num_Y_Regs> YRegFile;
     typedef LILY2_NS::QWRegFile<LILY2_NS::Num_G_Regs> GRegFile;
     typedef LILY2_NS::WRegFile<LILY2_NS::Num_C_Regs> CRegFile;
-    
+
 private:
     /* Pc State. */
     LILY2_NS::PCState *__pc_state;
-    
+
     /* Pipeline: Fetch. */
     LILY2_NS::Fetch *__fetch;
-    
+
     /* Pipeline: Decode. */
     Decode *__decode;
-    
+
     /* Pipeline: Dispatch. */
     Dispatch *__dispatch;
-    
+
     /* Pipeline: Execute. */
     Execute *__xa_exec, *__xm_exec, *__xd_exec;
     Execute *__ya_exec, *__ym_exec, *__yd_exec;
-    
+
     /* Register files. */
     XRegFile *__x_regfile;
     YRegFile *__y_regfile;
     GRegFile *__g_regfile;
     CRegFile *__c_regfile;
-    
+
     /* Return address stack. */
     RetStack *__ret_stack;
-    
+
 private:
+    enum Mode {
+        RISC,
+        VLIW
+    };
+
     enum State {
 		INITIAL,
-		RUNNING, 
-		BUBBLES, 
-		MODECUT,  
-		HALTING     
+		RUNNING,
+		BUBBLES,
+		MODECUT,
+		HALTING
 	};
-	
+
 	static const int Initial_Cycle = 6;
 	static const int Bubbles_Cycle = 6;
 	static const int Modecut_Cycle = 3;
-	
+
+    Mode __mode;
 	State __state;
 	Tick __cycle;
 
@@ -239,41 +245,41 @@ public:
     ThreadContext   *get_tc (void) { return tc;          }
     SimpleThread    *get_thd(void) { return thread;      }
     AtomicCPUPort *get_icp(void) { return &icachePort; }
-    
+
     /**
      * List of the interfaces of resources.
      */
-    LILY2_NS::PCState *get_pcs(void) { return __pc_state; }  
+    LILY2_NS::PCState *get_pcs(void) { return __pc_state; }
     LILY2_NS::Fetch *get_fetch(void) { return __fetch; }
-	
+
 	int get_num_res(Resource *res);
-	
+
 	/**
 	 * Check whether there is no resources.
-	 * 
+	 *
 	 * @param (res)     : Pointer to resource.
 	 * @param (res_idx) : Index of the resources.
-     * 
+     *
      * @return : No resources or not.
 	 */
 	bool no_res(Resource *res, int res_idx);
-	
+
 	/**
      * Increase tick-used and total-used resources.
-     * 
+     *
      * @param (res)     : Pointer to resource.
      * @param (res_idx) : Index of the resources.
      * @param (delta)   : Increment, default value is 1.
      */
     void incr_res(Resource *res, int res_idx, int delta = 1);
-    
+
     /**
      * Clear the tick-used resources.
-     * 
+     *
      * @param (res) : Pointer to resource.
      */
     void clr_res(Resource *res);
-    
+
     /**
      * Source operands reading interfaces.
      */
@@ -304,12 +310,12 @@ public:
      * Condition register interfaces.
      */
     WORD read_cond_w_operand(const StaticInst *s_ptr);
-    
+
     Addr get_inst_addr(void);
     void set_branch_target(Addr branch_target);
     void set_return_target(Addr return_target);
     Addr get_return_target(void);
-    
+
 public:
     void commit(void);
 };
