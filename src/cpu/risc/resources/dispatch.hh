@@ -1,6 +1,6 @@
 /**
  * Copyright (C) Tsinghua University 2013
- * 
+ *
  * Version : 1.0
  * Date    : 24 April 2013
  * Author  : Li Xiaotian
@@ -19,15 +19,15 @@
 
 namespace LILY2_NS
 {
-	
+
 class Dispatch : public Resource
 {
 private:
     /* Register dependence table. */
     RegDepTable *_reg_dep;
-    
+
     int num_branch, num_store;
-	
+
 private:
     typedef struct {
 		int reg_dep;
@@ -36,27 +36,29 @@ private:
 		int issue_width;
 	} Parallel_Record;
 
+    Unit unit;
+
     /* Parallel record table. */
     Parallel_Record table;
-    
+
 public:
     /**
      * Recommended constructor.
-     * 
+     *
      * @param (cpu)         : Pointer to cpu.
      * @param (num_res)     : Kinds of resource.
      * @param (issue_width) : Issue width.
      */
     Dispatch(RiscCPU *cpu, int num_res, int issue_width);
-    
+
     ~Dispatch(void);
-    
+
 public:
     /**
      * Dispatch the instructions.
      */
-    bool dispatch_inst(const StaticInst *s_ptr);
-    
+    bool dispatch_inst(const StaticInst *s_ptr, int mode);
+
     /**
      * Instruction parallelism detection in Risc.
      * a. Register dependence relationship.
@@ -68,7 +70,7 @@ public:
     bool is_parallel_branch(const StaticInst *s_ptr);
     bool is_parallel_mem_ref(const StaticInst *s_ptr);
     bool is_parallel_issue_width(const StaticInst *s_ptr);
-    
+
     /**
      * Do statistics after dispatch.
      * a. Update register dependence table.
@@ -80,7 +82,7 @@ public:
     void statistics_branch(const StaticInst *s_ptr);
     void statistics_mem_ref(const StaticInst *s_ptr);
     void statistics_issue_width(const StaticInst *s_ptr);
-    
+
     void clr_res(void)
     {
 		Resource::clr_res();
@@ -88,13 +90,13 @@ public:
 		num_branch = 0;
 		num_store = 0;
 	}
-    
+
 /* ********************************************************************
  * *************************** DEBUG CODE *****************************
  * *******************************************************************/
 private:
     bool __FLAG;
-    
+
 public:
     void __DEBUG(void)
     {
@@ -102,7 +104,7 @@ public:
 		_reg_dep->__DEBUG();
 	}
 };
-	
+
 }
 
 #endif // __RISC_RESOURCES_DISPATCH_HH__
