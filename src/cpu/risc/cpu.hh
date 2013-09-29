@@ -185,7 +185,7 @@ public:
     typedef LILY2_NS::Execute Execute;
 
     typedef LILY2_NS::RetStack RetStack;
-    typedef LILY2_NS::WRegFile<LILY2_NS::Num_X_Regs> XRegFile;
+    typedef LILY2_NS::QWRegFile<LILY2_NS::Num_X_Regs> XRegFile;
     typedef LILY2_NS::QWRegFile<LILY2_NS::Num_Y_Regs> YRegFile;
     typedef LILY2_NS::QWRegFile<LILY2_NS::Num_G_Regs> GRegFile;
     typedef LILY2_NS::WRegFile<LILY2_NS::Num_C_Regs> CRegFile;

@@ -719,7 +719,7 @@ RiscCPU::read_src_w_operand(const StaticInst *s_ptr, int idx)
 	    && reg_idx<LILY2_NS::O_Base_DepTag);
 
 	if(reg_idx<LILY2_NS::Y_Base_DepTag)
-	    return __x_regfile->read(reg_idx-LILY2_NS::X_Base_DepTag);
+	    return __x_regfile->read_h0(reg_idx-LILY2_NS::X_Base_DepTag);
 	else if(reg_idx<LILY2_NS::G_Base_DepTag)
 	    return __y_regfile->read_h0(reg_idx-LILY2_NS::Y_Base_DepTag);
 	else if(reg_idx<LILY2_NS::C_Base_DepTag)
@@ -738,9 +738,7 @@ RiscCPU::read_src_dw_operand(const StaticInst *s_ptr, int idx)
 	    && reg_idx<LILY2_NS::C_Base_DepTag);
 
 	if(reg_idx<LILY2_NS::Y_Base_DepTag) {
-		DWORD lo = __x_regfile->read(reg_idx-LILY2_NS::X_Base_DepTag);
-		DWORD hi = __x_regfile->read(reg_idx-LILY2_NS::X_Base_DepTag+1);
-		return (hi<<32) | lo;
+		return __x_regfile->read_h1h0(reg_idx-LILY2_NS::X_Base_DepTag);
 	}
 	else if(reg_idx<LILY2_NS::G_Base_DepTag)
 	    return __y_regfile->read_h1h0(reg_idx-LILY2_NS::Y_Base_DepTag);
@@ -754,10 +752,12 @@ RiscCPU::read_src_qw_operand(const StaticInst *s_ptr, int idx)
 	RegIndex reg_idx = s_ptr->get_src_reg_idx(idx);
 
 	/* Could be Y,G. */
-	ERR(reg_idx>=LILY2_NS::Y_Base_DepTag \
+	ERR(reg_idx>=LILY2_NS::X_Base_DepTag \
 	    && reg_idx<LILY2_NS::C_Base_DepTag);
 
-	if(reg_idx<LILY2_NS::G_Base_DepTag)
+    if(reg_idx<LILY2_NS::Y_Base_DepTag)
+        return __x_regfile->read(reg_idx-LILY2_NS::X_Base_DepTag);
+    else if(reg_idx<LILY2_NS::G_Base_DepTag)
 	    return __y_regfile->read(reg_idx-LILY2_NS::Y_Base_DepTag);
 	else
 	    return __g_regfile->read(reg_idx-LILY2_NS::G_Base_DepTag);
@@ -772,10 +772,12 @@ RiscCPU::read_src_qsp_operand(const StaticInst *s_ptr, int idx)
 	QSP treg_val;
 
 	/* Could be Y,G. */
-	ERR(reg_idx>=LILY2_NS::Y_Base_DepTag \
+	ERR(reg_idx>=LILY2_NS::X_Base_DepTag \
 	    && reg_idx<LILY2_NS::C_Base_DepTag);
 
-	if(reg_idx<LILY2_NS::G_Base_DepTag)
+    if(reg_idx<LILY2_NS::X_Base_DepTag)
+        reg_val = __x_regfile->read(reg_idx-LILY2_NS::X_Base_DepTag);
+    else if(reg_idx<LILY2_NS::G_Base_DepTag)
 	    reg_val = __y_regfile->read(reg_idx-LILY2_NS::Y_Base_DepTag);
 	else
 	    reg_val = __g_regfile->read(reg_idx-LILY2_NS::G_Base_DepTag);
@@ -799,7 +801,7 @@ RiscCPU::read_src_sp_operand(const StaticInst *s_ptr, int idx)
 
 	WORD val;
 	if(reg_idx<LILY2_NS::Y_Base_DepTag)
-	    val = __x_regfile->read(reg_idx-LILY2_NS::X_Base_DepTag);
+	    val = __x_regfile->read_h0(reg_idx-LILY2_NS::X_Base_DepTag);
 	else if(reg_idx<LILY2_NS::G_Base_DepTag)
 	    val = __y_regfile->read_h0(reg_idx-LILY2_NS::Y_Base_DepTag);
 	else
@@ -819,9 +821,7 @@ RiscCPU::read_src_dp_operand(const StaticInst *s_ptr, int idx)
 
 	DWORD val;
 	if(reg_idx<LILY2_NS::Y_Base_DepTag) {
-	    DWORD lo = __x_regfile->read(reg_idx-LILY2_NS::X_Base_DepTag);
-	    DWORD hi = __x_regfile->read(reg_idx-LILY2_NS::X_Base_DepTag+1);
-	    val = (hi<<32) | lo;
+	    val = __x_regfile->read_h1h0(reg_idx-LILY2_NS::X_Base_DepTag);
 	}
 	else if(reg_idx<LILY2_NS::G_Base_DepTag)
 	    val = __y_regfile->read_h1h0(reg_idx-LILY2_NS::Y_Base_DepTag);
@@ -842,7 +842,7 @@ RiscCPU::cache_dst_w_operand(const StaticInst *s_ptr, int idx, WORD reg_val)
 	    && reg_idx<LILY2_NS::O_Base_DepTag);
 
 	if(reg_idx<LILY2_NS::Y_Base_DepTag)
-	    __x_regfile->cache(reg_idx-LILY2_NS::X_Base_DepTag, \
+	    __x_regfile->cache_h0(reg_idx-LILY2_NS::X_Base_DepTag, \
 	        reg_val, delay_slot);
 	else if(reg_idx<LILY2_NS::G_Base_DepTag)
 	    __y_regfile->cache_h0(reg_idx-LILY2_NS::Y_Base_DepTag, \
@@ -866,10 +866,8 @@ RiscCPU::cache_dst_dw_operand(const StaticInst *s_ptr, int idx, DWORD reg_val)
 	    && reg_idx<LILY2_NS::C_Base_DepTag);
 
     if(reg_idx<LILY2_NS::Y_Base_DepTag) {
-	    __x_regfile->cache(reg_idx-LILY2_NS::X_Base_DepTag, \
-	        static_cast<WORD>(reg_val), delay_slot);
-	    __x_regfile->cache(reg_idx-LILY2_NS::X_Base_DepTag+1, \
-	        static_cast<WORD>(reg_val>>32), delay_slot);
+	    __x_regfile->cache_h1h0(reg_idx-LILY2_NS::X_Base_DepTag, \
+	        reg_val, delay_slot);
 	}
 	else if(reg_idx<LILY2_NS::G_Base_DepTag)
 	    __y_regfile->cache_h1h0(reg_idx-LILY2_NS::Y_Base_DepTag, \
@@ -886,10 +884,13 @@ RiscCPU::cache_dst_qw_operand(const StaticInst *s_ptr, int idx, QWORD reg_val)
 	Tick delay_slot = s_ptr->get_dyn_inst()->get_dyn_delay_slot(idx);
 
 	/* Could be Y,G. */
-	ERR(reg_idx>=LILY2_NS::Y_Base_DepTag \
+	ERR(reg_idx>=LILY2_NS::X_Base_DepTag \
 	    && reg_idx<LILY2_NS::C_Base_DepTag);
 
-	if(reg_idx<LILY2_NS::G_Base_DepTag)
+    if(reg_idx<LILY2_NS::Y_Base_DepTag)
+	    __x_regfile->cache(reg_idx-LILY2_NS::X_Base_DepTag, \
+	        reg_val, delay_slot);
+    else if(reg_idx<LILY2_NS::G_Base_DepTag)
 	    __y_regfile->cache(reg_idx-LILY2_NS::Y_Base_DepTag, \
 	        reg_val, delay_slot);
 	else
@@ -910,10 +911,13 @@ RiscCPU::cache_dst_qsp_operand(const StaticInst *s_ptr, int idx, QSP reg_val)
 	treg_val._h3 = *reinterpret_cast<WORD *>(&reg_val._h3);
 
 	/* Could be Y,G. */
-	ERR(reg_idx>=LILY2_NS::Y_Base_DepTag \
+	ERR(reg_idx>=LILY2_NS::X_Base_DepTag \
 	    && reg_idx<LILY2_NS::C_Base_DepTag);
 
-	if(reg_idx<LILY2_NS::G_Base_DepTag)
+	if(reg_idx<LILY2_NS::Y_Base_DepTag)
+	    __x_regfile->cache(reg_idx-LILY2_NS::X_Base_DepTag, \
+	        treg_val, delay_slot);
+    else if(reg_idx<LILY2_NS::G_Base_DepTag)
 	    __y_regfile->cache(reg_idx-LILY2_NS::Y_Base_DepTag, \
 	        treg_val, delay_slot);
 	else
@@ -1004,7 +1008,7 @@ RiscCPU::cache_dst_sp_operand(const StaticInst *s_ptr, int idx, SP reg_val)
 	    && reg_idx<LILY2_NS::C_Base_DepTag);
 
 	if(reg_idx<LILY2_NS::Y_Base_DepTag)
-	    __x_regfile->cache(reg_idx-LILY2_NS::X_Base_DepTag, \
+	    __x_regfile->cache_h0(reg_idx-LILY2_NS::X_Base_DepTag, \
 	        *reinterpret_cast<WORD *>(&reg_val), delay_slot);
 	else if(reg_idx<LILY2_NS::G_Base_DepTag)
 	    __y_regfile->cache_h0(reg_idx-LILY2_NS::Y_Base_DepTag, \
@@ -1025,10 +1029,8 @@ RiscCPU::cache_dst_dp_operand(const StaticInst *s_ptr, int idx, DP reg_val)
 	    && reg_idx<LILY2_NS::C_Base_DepTag);
 
 	if(reg_idx<LILY2_NS::Y_Base_DepTag) {
-		WORD lo = static_cast<WORD>(*reinterpret_cast<DWORD *>(&reg_val));
-		WORD hi = static_cast<WORD>((*reinterpret_cast<DWORD *>(&reg_val))>>32);
-		__x_regfile->cache(reg_idx-LILY2_NS::X_Base_DepTag, lo, delay_slot);
-	    __x_regfile->cache(reg_idx-LILY2_NS::X_Base_DepTag+1, hi, delay_slot);
+		__x_regfile->cache_h1h0(reg_idx-LILY2_NS::X_Base_DepTag, \
+            *reinterpret_cast<DWORD *>(&reg_val), delay_slot);
 	}
 	else if(reg_idx<LILY2_NS::G_Base_DepTag)
 	    __y_regfile->cache_h1h0(reg_idx-LILY2_NS::Y_Base_DepTag, \
@@ -1049,7 +1051,7 @@ RiscCPU::cache_dst_w_hi_operand(const StaticInst *s_ptr, int idx, WORD reg_val)
 	    && reg_idx<LILY2_NS::O_Base_DepTag);
 
 	if(reg_idx<LILY2_NS::Y_Base_DepTag) {
-	    __x_regfile->cache_hi(reg_idx-LILY2_NS::X_Base_DepTag, \
+	    __x_regfile->cache_h0_hi(reg_idx-LILY2_NS::X_Base_DepTag, \
 	        reg_val, delay_slot);
 	}
 	else if(reg_idx<LILY2_NS::G_Base_DepTag)
@@ -1074,7 +1076,7 @@ RiscCPU::cache_dst_w_lo_operand(const StaticInst *s_ptr, int idx, WORD reg_val)
 	    && reg_idx<LILY2_NS::O_Base_DepTag);
 
 	if(reg_idx<LILY2_NS::Y_Base_DepTag)
-	    __x_regfile->cache_lo(reg_idx-LILY2_NS::X_Base_DepTag, \
+	    __x_regfile->cache_h0_lo(reg_idx-LILY2_NS::X_Base_DepTag, \
 	        reg_val, delay_slot);
 	else if(reg_idx<LILY2_NS::G_Base_DepTag)
 	    __y_regfile->cache_h0_lo(reg_idx-LILY2_NS::Y_Base_DepTag, \
@@ -1098,7 +1100,7 @@ RiscCPU::read_cond_w_operand(const StaticInst *s_ptr)
 	    && reg_idx<LILY2_NS::C_Base_DepTag);
 
 	if(reg_idx<LILY2_NS::Y_Base_DepTag)
-	    return __x_regfile->read(reg_idx-LILY2_NS::X_Base_DepTag);
+	    return __x_regfile->read_h0(reg_idx-LILY2_NS::X_Base_DepTag);
 	else if(reg_idx<LILY2_NS::G_Base_DepTag)
 	    return  __y_regfile->read_h0(reg_idx-LILY2_NS::Y_Base_DepTag);
 	else
